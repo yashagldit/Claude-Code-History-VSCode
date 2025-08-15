@@ -22,9 +22,11 @@ A powerful VS Code extension that transforms your Claude Code chat history into 
 - **File Operations**: Track Read, Write, Edit, and MultiEdit operations from Claude Code
 
 ### Powerful Search & Navigation
-- **Full-Text Search**: Search across all chat history with instant results
+- **Lunr.js Search Engine**: Fast, intelligent full-text search powered by Lunr.js
+- **Advanced Search Index**: Compressed, cached search index for lightning-fast results
+- **Smart Query Processing**: Intelligent search with relevance scoring and context awareness
+- **Search Highlighting**: Visual highlighting of search terms in results
 - **Session Navigation**: Jump directly to specific conversations
-- **Context-Aware Results**: Search results maintain conversation context
 - **Quick Access**: Command palette integration for rapid access
 
 ## 🚀 Getting Started
@@ -50,13 +52,10 @@ A powerful VS Code extension that transforms your Claude Code chat history into 
 
 | Command | Description |
 |---------|-------------|
-| `Claude History: Open Modern Session Browser` | Focus the main browser panel |
 | `Claude History: Search History` | Search across all chat messages |
-| `Claude History: View File Changes` | Open detailed file changes panel |
-| `Claude History: Show Diff (VS Code Native)` | View file changes in native diff |
-| `Claude History: Apply Changes to Workspace` | Apply selected changes to current files |
-| `Claude History: Refresh Sessions` | Reload session data |
+| `Claude History: Refresh Sessions` | Reload session data and rebuild search index |
 | `Claude History: Clear Project Cache` | Clear internal caches (troubleshooting) |
+| `Claude History: Open Settings` | Access extension settings and configuration |
 
 ## ⚙️ Configuration
 
@@ -64,6 +63,8 @@ A powerful VS Code extension that transforms your Claude Code chat history into 
 - **`claude-history.claudeDirectory`**: Custom path to .claude directory (auto-detected if empty)
 - **`claude-history.autoRefreshEnabled`**: Enable automatic refresh for recent sessions (default: true)
 - **`claude-history.autoRefreshInterval`**: Time window in hours for auto-refresh (default: 2 hours)
+- **`claude-history.enableErrorReporting`**: Enable anonymous error reporting for debugging (default: true)
+- **`claude-history.searchIndexCacheSize`**: Maximum size for search index cache in MB (default: 50)
 
 ### Customization
 Access settings via:
@@ -90,9 +91,17 @@ Access settings via:
 - For missing files, you'll be prompted to create them
 
 **Performance issues with large history**
-- The extension loads sessions incrementally
+- The extension loads sessions incrementally with intelligent caching
+- Search index is automatically compressed and optimized for large datasets  
 - Use "Load More Sessions" to expand history as needed
 - Clear project cache if experiencing slowdowns
+- Rebuild search index if search performance degrades
+
+**Search not returning expected results**
+- Ensure search index has been built (automatic on first use)
+- Try rebuilding the search index via "Refresh Sessions"
+- Check search query syntax - supports partial matches and fuzzy search
+- Clear search cache if results seem outdated
 
 ### Data Privacy
 - **100% Local**: All data processing happens locally on your machine
@@ -111,11 +120,24 @@ The extension is built with a modular architecture:
 
 ## 📝 Version History
 
-See [CHANGELOG.md](./claude-history-viewer/changelog.md) for detailed release notes.
+See [CHANGELOG.md](./CHANGELOG.md) for detailed release notes.
 
 ## 🤝 Contributing
 
-We welcome contributions! See [CONTRIBUTING.md](./claude-history-viewer/CONTRIBUTING.md) for development setup and guidelines.
+We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for development setup and guidelines.
+
+## ☕ Support the Project
+
+If you find Claude History Viewer helpful and want to support its development, consider supporting me on Polar! You can choose your own amount and help maintain and improve this extension.
+
+**[💝 Support on Polar](https://buy.polar.sh/polar_cl_RdBqIIesUrrdeMywzxK5e6oSKjn3LSzSvALAq4CQDKp)** - Choose your own amount
+
+### 🎁 Supporter Benefits
+- **Repository Access**: Supporters get access to the private development repository
+- **Collaborator Status**: Become a collaborator and help shape the future of the extension
+- **Early Access**: Get early access to new features and beta releases
+- **Direct Communication**: Priority support and direct feedback channel
+
 
 ## 📄 License
 
