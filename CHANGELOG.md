@@ -1,6 +1,74 @@
 # Changelog
 
-All notable changes to the Claude History Viewer extension will be documented in this file.
+All notable changes to the Claude Code Assist extension will be documented in this file.
+
+## [0.1.7] - 2025-08-26
+
+### Added
+- **AI Thinking Display** - Added comprehensive handling and display of AI thinking content with collapsible blocks
+- **Enhanced Message Rendering** - Improved rendering system for different content types including thinking blocks
+- **Thinking Content Styling** - Added specialized CSS styles for AI thinking display with VS Code theme integration
+
+### Fixed
+- **Content Type Handling** - Better detection and rendering of thinking content vs tool uses
+- **Error Reporting** - Improved error handling in status bar file navigator
+
+## [0.1.6] - 2025-08-26
+
+### Added
+- **StatusBarFileNavigator** - New status bar component for enhanced file navigation and session monitoring
+- **File Reapply Functionality** - Ability to reapply file changes and individual edits directly from the interface
+- **Loading State Management** - Improved loading indicators for better user experience during file navigation
+- **Enhanced Navigation Commands** - New command palette options for file navigation operations
+
+### Improved
+- **Unified Diff Renderer** - Refactored to support selectable line numbers and enhanced gap handling
+- **Diff Generation Performance** - Streamlined diff generation to use unified diff renderer exclusively
+- **Parser Terminology** - Updated summary headers to reflect enhanced parser capabilities
+- **Code Maintainability** - Consolidated return statements and improved code readability
+- **File Change Tracking** - Better handling of file modifications and state management
+
+### Fixed
+- **Diff Display Consistency** - Removed priority checks for more reliable diff generation
+- **User Interface Responsiveness** - Enhanced status bar integration with better state management
+
+## 2025-08-25
+
+### Added
+- **StatusBarFileNavigator** - New status bar component for enhanced file navigation and session monitoring
+- **Session Monitoring** - Real-time tracking of active sessions and file states
+
+### Improved
+- **File Navigation Experience** - Streamlined navigation through chat history and file changes
+- **User Interface Integration** - Better integration with VS Code status bar functionality
+
+## 2025-08-24
+
+### Added
+- **File Reapply Functionality** - Ability to reapply file changes and individual edits directly from the interface
+- **Enhanced Gap Handling** - Improved detection and handling of missing content in diffs
+- **Selectable Line Numbers** - Interactive line number selection in diff displays
+
+### Improved
+- **Unified Diff Renderer** - Refactored to support advanced diff features and better performance
+- **Diff Generation Performance** - Streamlined diff generation to use unified diff renderer exclusively
+- **Parser System** - Enhanced parser terminology and consolidated code structure
+- **Code Maintainability** - Improved readability with consolidated return statements and cleaner architecture
+
+## [0.1.3] - 2025-08-16
+
+### Fixed
+- **Core Functionality** - Resolved critical bugs affecting extension stability and performance
+- **Search Operations** - Fixed various issues with search indexing and result retrieval
+
+
+### Improved
+- **Search Index Management** - Optimized search command structure and index handling
+- **User Interface** - Better loading indicators and enhanced user experience
+- **Cross-Platform Compatibility** - Improved file handling across different operating systems
+- **Performance Optimization** - Streamlined search service architecture for faster results
+
+
 
 ## [0.1.2] - 2025-08-15 
 
@@ -34,7 +102,7 @@ All notable changes to the Claude History Viewer extension will be documented in
 ## 2025-08-13
 
 ### Added
-- **First Official Release**: Initial stable release of Claude History Viewer
+- **First Official Release**: Initial stable release of Claude Code Assist
 - **Device Services**: Integrated device management and pricing information
 - **Enhanced Message Rendering**: Improved display of chat messages with compact tool formats
 - **Cost Calculation**: Added detailed cost tracking and analysis features
@@ -174,7 +242,7 @@ All notable changes to the Claude History Viewer extension will be documented in
 ## 2025-08-02
 
 ### Added
-- **Initial Release**: First version of Claude History Viewer
+- **Initial Release**: First version of Claude Code Assist
 - **Basic Chat Viewing**: Core functionality to view Claude chat history
 - **File Diff Support**: Basic diff viewing capabilities
 - **Native Integration**: Full integration with VS Code interface

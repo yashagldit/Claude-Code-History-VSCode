@@ -1,10 +1,12 @@
-# Claude History Viewer
+# Claude Code Assist
 
-A powerful VS Code extension that transforms your Claude Code chat history into an intuitive, organized interface. Browse conversations, review file changes, and track your development journey with ease.
+> **Note**: This is an unofficial extension and is not made by or affiliated with Anthropic.
 
-![Claude History Viewer Demo](./assets/AppVideo.gif)
+A powerful VS Code extension that enhances your development workflow with Claude Code integration. Browse chat history, review file changes, apply modifications from previous sessions, and manage your coding workflow with comprehensive history visualization.
 
-*See Claude History Viewer in action - browse sessions, view diffs, and track your development workflow*
+![Claude Code Assist Demo](./assets/AppVideo.gif)
+
+*See Claude Code Assist in action - browse sessions, view diffs, apply changes, and enhance your development workflow*
 
 ## 🌟 Features
 
@@ -29,6 +31,12 @@ A powerful VS Code extension that transforms your Claude Code chat history into 
 - **Session Navigation**: Jump directly to specific conversations
 - **Quick Access**: Command palette integration for rapid access
 
+### Status Bar Navigation
+- **Real-Time File Monitoring**: Status bar integration showing current file change status
+- **Quick Navigation**: Navigate between file changes using keyboard shortcuts
+- **Loading State Indicators**: Visual feedback during file operations
+- **Seamless Workflow**: Integrated navigation without leaving your editor
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -46,16 +54,36 @@ A powerful VS Code extension that transforms your Claude Code chat history into 
 2. **Browse Sessions**: Use the "Latest Chat" tab for recent conversations or "Chat History" for all sessions
 3. **View Changes**: Click any session to see the conversation and file changes
 4. **Review Diffs**: Use "File Changes" to see a commit-style summary with diffs
-5. **Search History**: Use Ctrl+Shift+P → "Claude History: Search History" to find specific conversations
+5. **Search History**: Use the search functionality within the extension's side panel
+6. **Navigate Files**: Use status bar buttons or keyboard shortcuts (`Ctrl+Shift+]` / `Ctrl+Shift+[`) to navigate between file changes
+7. **Quick Access**: Press `Ctrl+Shift+Q` to quickly open the Claude chat side panel
 
 ## 📋 Main Commands
 
+### Available in Command Palette (Ctrl+Shift+P)
+
 | Command | Description |
 |---------|-------------|
-| `Claude History: Search History` | Search across all chat messages |
-| `Claude History: Refresh Sessions` | Reload session data and rebuild search index |
-| `Claude History: Clear Project Cache` | Clear internal caches (troubleshooting) |
-| `Claude History: Open Settings` | Access extension settings and configuration |
+| `Claude Assist: Refresh Sessions` | Reload session data and rebuild search index |
+| `Claude Assist: Clear Project Cache` | Clear internal caches (troubleshooting) |
+| `Claude Assist: Open Settings` | Access extension settings and configuration |
+| `Claude Assist: Open Claude Chat Side Panel` | Open the Claude chat side panel |
+
+### Keyboard Shortcuts
+
+| Shortcut | Command | Description |
+|----------|---------|-------------|
+| `Ctrl+Shift+]` / `Cmd+Shift+]` | Navigate Next | Navigate to next file change in history |
+| `Ctrl+Shift+[` / `Cmd+Shift+[` | Navigate Previous | Navigate to previous file change in history |
+| `Ctrl+Shift+Q` / `Cmd+Shift+Q` | Open Side Panel | Open Claude chat side panel |
+
+### Context Menu Commands
+Additional commands are available through right-click context menus and the extension's interface:
+- Show File Diff
+- Apply Changes to Workspace  
+- Open File in Editor
+- View File Changes
+
 
 ## ⚙️ Configuration
 
@@ -68,7 +96,7 @@ A powerful VS Code extension that transforms your Claude Code chat history into 
 
 ### Customization
 Access settings via:
-- File → Preferences → Settings → Extensions → Claude History Viewer
+- File → Preferences → Settings → Extensions → Claude Code Assist
 - Or search for "Claude History" in VS Code settings
 
 ## 🔧 Troubleshooting
@@ -128,7 +156,7 @@ We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for developme
 
 ## ☕ Support the Project
 
-If you find Claude History Viewer helpful and want to support its development, consider supporting me on Polar! You can choose your own amount and help maintain and improve this extension.
+If you find Claude Code Assist helpful and want to support its development, consider supporting me on Polar! You can choose your own amount and help maintain and improve this extension.
 
 **[💝 Support on Polar](https://buy.polar.sh/polar_cl_RdBqIIesUrrdeMywzxK5e6oSKjn3LSzSvALAq4CQDKp)** - Choose your own amount
 
@@ -143,12 +171,21 @@ If you find Claude History Viewer helpful and want to support its development, c
 
 Apache-2.0 © [yashagldit](https://github.com/yashagldit)
 
-## 🔗 Links
+## � Contact & Support
+
+Have questions, suggestions, or want to connect? Reach out to me on Twitter!
+
+**[🐦 Follow me on Twitter/X: @yashagl](https://x.com/yashagl)**
+
+I'm always happy to help with issues, discuss new features, or chat about development!
+
+## �🔗 Links
 
 - [GitHub Repository](https://github.com/yashagldit/Claude-Code-History-VSCode)
 - [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=agsoft.claude-history-viewer)
 - [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code)
+- [Twitter/X: @yashagl](https://x.com/yashagl)
 
 ---
 
-**Enhance your Claude Code development workflow with rich history visualization and seamless file change tracking.**
+**Enhance your development workflow with comprehensive history visualization, file change tracking, and intelligent session management.**
