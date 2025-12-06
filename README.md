@@ -11,32 +11,32 @@ A powerful VS Code extension that enhances your development workflow with Claude
 ### 📚 Chat History & Diff Viewer
 Browse your Claude Code sessions with GitHub-style diffs and one-click file changes.
 
-<video src="./assets/session-browser.webm" controls width="100%"></video>
+![Chat History & Diff Viewer](./assets/session-browser.gif)
 
 ### 🔍 Full-Text Search
 Search across all conversations with instant results and session-grouped display.
 
-<video src="./assets/search-demo.webm" controls width="100%"></video>
+![Full-Text Search](./assets/search-demo.gif)
 
 ### 📊 Usage Analytics
 Track costs, tokens, and usage patterns with comprehensive analytics dashboard.
 
-<video src="./assets/analytics-demo.webm" controls width="100%"></video>
+![Usage Analytics](./assets/analytics-demo.gif)
 
 ### ⏱️ File History Timeline
 View complete modification history for any file across all your sessions.
 
-<video src="./assets/timeline-demo.webm" controls width="100%"></video>
+![File History Timeline](./assets/timeline-demo.gif)
 
 ### 📄 Export to Markdown
 Export conversations to beautifully formatted Markdown files.
 
-<video src="./assets/export-demo.webm" controls width="100%"></video>
+![Export to Markdown](./assets/export-demo.gif)
 
 ### 🔀 Session Fork & Resume
 Branch conversations and resume from any point in your chat history.
 
-<video src="./assets/fork-resume-demo.webm" controls width="100%"></video>
+![Session Fork & Resume](./assets/fork-resume-demo.gif)
 
 ## 🌟 Features
 
