@@ -4,9 +4,39 @@
 
 A powerful VS Code extension that enhances your development workflow with Claude Code integration. Browse chat history, review file changes, apply modifications from previous sessions, and manage your coding workflow with comprehensive history visualization.
 
-![Claude Code Assist Demo](./assets/AppVideo.gif)
+> ✅ **Cross-Platform Support**: Works seamlessly on macOS (Intel & Apple Silicon), Windows, and Linux. macOS compatibility fixed in v0.2.1 - no more native module errors!
 
-*See Claude Code Assist in action - browse sessions, view diffs, apply changes, and enhance your development workflow*
+## 🎬 Feature Demos
+
+### 📚 Chat History & Diff Viewer
+Browse your Claude Code sessions with GitHub-style diffs and one-click file changes.
+
+<video src="./assets/session-browser.webm" controls width="100%"></video>
+
+### 🔍 Full-Text Search
+Search across all conversations with instant results and session-grouped display.
+
+<video src="./assets/search-demo.webm" controls width="100%"></video>
+
+### 📊 Usage Analytics
+Track costs, tokens, and usage patterns with comprehensive analytics dashboard.
+
+<video src="./assets/analytics-demo.webm" controls width="100%"></video>
+
+### ⏱️ File History Timeline
+View complete modification history for any file across all your sessions.
+
+<video src="./assets/timeline-demo.webm" controls width="100%"></video>
+
+### 📄 Export to Markdown
+Export conversations to beautifully formatted Markdown files.
+
+<video src="./assets/export-demo.webm" controls width="100%"></video>
+
+### 🔀 Session Fork & Resume
+Branch conversations and resume from any point in your chat history.
+
+<video src="./assets/fork-resume-demo.webm" controls width="100%"></video>
 
 ## 🌟 Features
 
@@ -15,6 +45,11 @@ A powerful VS Code extension that enhances your development workflow with Claude
 - **Project-Based Filtering**: Automatically organizes sessions by project with smart current-project detection
 - **Latest Chat Priority**: Recent conversations are highlighted and easily accessible
 - **Auto-Refresh**: Automatically updates recent sessions (configurable time window)
+- **Session Resume**: Resume any past conversation directly in your terminal with one click, or copy the command to use elsewhere
+- **Session Fork**: Create a new conversation starting from any message - perfect for exploring alternative approaches without losing your original chat
+- **Enhanced Message Display**: Beautiful formatting for command outputs, code snippets, and tool results with GitHub-style views. Full support for agent and task tool operations
+- **Smart Session Titles**: Automatically extracts meaningful titles from your conversations
+- **Advanced Tool Visualization**: Improved rendering of tool results including Bash outputs, file operations, and agent-based task execution
 
 ### Advanced File Change Tracking
 - **GitHub-Style Diffs**: Beautiful, readable diff views showing exactly what changed
@@ -24,18 +59,40 @@ A powerful VS Code extension that enhances your development workflow with Claude
 - **File Operations**: Track Read, Write, Edit, and MultiEdit operations from Claude Code
 
 ### Powerful Search & Navigation
-- **Lunr.js Search Engine**: Fast, intelligent full-text search powered by Lunr.js
-- **Advanced Search Index**: Compressed, cached search index for lightning-fast results
-- **Smart Query Processing**: Intelligent search with relevance scoring and context awareness
-- **Search Highlighting**: Visual highlighting of search terms in results
-- **Session Navigation**: Jump directly to specific conversations
-- **Quick Access**: Command palette integration for rapid access
+- **SQLite-Based Search**: High-performance full-text search with SQLite backend for superior speed and accuracy
+- **Session-Grouped Results**: Search results are organized by session with collapsible groups, showing all matches within each conversation for easier navigation
+- **Improved Search Performance**: Faster and more accurate search results with optimized indexing and query processing
+- **Advanced Database Indexing**: Persistent search index with incremental updates and file change tracking
+- **Smart Query Processing**: Intelligent search with relevance scoring, context awareness, and file-based filtering
+- **Search Highlighting**: Visual highlighting of search terms in results with enhanced preview generation
+- **Session File Paths**: Search results now display session file paths for easier identification and navigation
+- **Session Navigation**: Jump directly to specific conversations with improved metadata tracking
+- **File History Timeline**: See complete modification history for any file across all your sessions. Visual timeline shows when files were changed, what operations were performed, and provides quick access to view diffs or navigate to the conversation
+- **Right-Click Context Menu**: Right-click any file in the explorer or editor to select "Show in Claude History Timeline" and instantly view its modification history
+- **Quick Access**: Command palette integration for rapid access to all search features
 
 ### Status Bar Navigation
 - **Real-Time File Monitoring**: Status bar integration showing current file change status
 - **Quick Navigation**: Navigate between file changes using keyboard shortcuts
 - **Loading State Indicators**: Visual feedback during file operations
 - **Seamless Workflow**: Integrated navigation without leaving your editor
+
+### 📊 Advanced Analytics & Cost Tracking
+- **Comprehensive Cost Analysis**: Detailed cost tracking with token usage breakdown for all Claude models
+- **Dashboard Analytics**: Interactive dashboard with usage statistics, activity timelines, and cost trends
+- **Engagement Distribution**: Visual breakdown of your usage patterns across different features and activities
+- **Usage Engagement Metrics**: Understand your development patterns with comprehensive analytics tracking
+- **Session Block Tracking**: Billing window identification following ccusage logic for accurate cost periods
+- **Token Usage Insights**: Detailed tracking of input, output, cache creation, and cache read tokens
+- **Daily Usage Statistics**: Track your daily usage patterns with activity heatmaps and efficiency metrics
+- **Cumulative Statistics**: Persistent tracking of your extension usage over time
+- **Model-Specific Breakdown**: Cost analysis per model with cache token optimization insights
+
+### 🏆 Community Features (Optional)
+- **Leaderboard Integration**: Optional community leaderboard with anonymous usage comparison
+- **User Profile Management**: Create profiles with privacy controls and data sharing preferences
+- **Achievement System**: Track coding milestones and compare with community stats
+- **Anonymous Analytics**: Opt-in community features while maintaining complete privacy control
 
 ## 🚀 Getting Started
 
@@ -54,9 +111,11 @@ A powerful VS Code extension that enhances your development workflow with Claude
 2. **Browse Sessions**: Use the "Latest Chat" tab for recent conversations or "Chat History" for all sessions
 3. **View Changes**: Click any session to see the conversation and file changes
 4. **Review Diffs**: Use "File Changes" to see a commit-style summary with diffs
-5. **Search History**: Use the search functionality within the extension's side panel
+5. **Search History**: Use the powerful SQLite-based search within the extension's side panel
 6. **Navigate Files**: Use status bar buttons or keyboard shortcuts (`Ctrl+Shift+]` / `Ctrl+Shift+[`) to navigate between file changes
-7. **Quick Access**: Press `Ctrl+Shift+Q` to quickly open the Claude chat side panel
+7. **Analyze Costs**: Access the Dashboard tab to view detailed cost analysis and usage statistics
+8. **Join Community** (Optional): Enable leaderboard features to compare usage with the community
+9. **Quick Access**: Press `Ctrl+Shift+Q` to quickly open the Claude chat side panel
 
 ## 📋 Main Commands
 
@@ -92,7 +151,11 @@ Additional commands are available through right-click context menus and the exte
 - **`claude-history.autoRefreshEnabled`**: Enable automatic refresh for recent sessions (default: true)
 - **`claude-history.autoRefreshInterval`**: Time window in hours for auto-refresh (default: 2 hours)
 - **`claude-history.enableErrorReporting`**: Enable anonymous error reporting for debugging (default: true)
-- **`claude-history.searchIndexCacheSize`**: Maximum size for search index cache in MB (default: 50)
+- **`claude-history.contextMenu.showFileTimeline`**: Show "Show in Claude History Timeline" in file context menus (default: true)
+- **`claude-history.search.maxFileSize`**: Maximum file size in MB for search indexing (default: 50)
+- **`claude-history.search.maxMessagesPerFile`**: Maximum messages per file to process (default: 1000)
+- **`claude-history.leaderboard.enableSharing`**: Enable community leaderboard data sharing (default: false)
+- **`claude-history.dashboard.showCostBreakdown`**: Show detailed cost breakdown in dashboard (default: true)
 
 ### Customization
 Access settings via:
@@ -100,6 +163,11 @@ Access settings via:
 - Or search for "Claude History" in VS Code settings
 
 ## 🔧 Troubleshooting
+
+### 🍎 **macOS Compatibility**
+✅ **Fully Supported** - The extension works perfectly on all Macs including Apple Silicon (M1/M2/M3/M4) and Intel processors.
+
+**Note**: If you're using a version older than v0.2.1, please update to the latest version for full macOS compatibility. Earlier versions had native module issues that have been resolved with WebAssembly.
 
 ### Common Issues
 
@@ -126,25 +194,43 @@ Access settings via:
 - Rebuild search index if search performance degrades
 
 **Search not returning expected results**
-- Ensure search index has been built (automatic on first use)
-- Try rebuilding the search index via "Refresh Sessions"
-- Check search query syntax - supports partial matches and fuzzy search
+- Ensure SQLite search index has been built (automatic on first use)
+- Try rebuilding the search index via "Refresh Sessions"  
+- Check search query syntax - supports full-text search with SQLite FTS
+- Verify database integrity if search results are inconsistent
 - Clear search cache if results seem outdated
 
+**Database-related issues**
+- The extension uses SQLite (WebAssembly) for improved performance and cross-platform compatibility
+- Database files are stored in the extension's global storage directory
+- Use "Rebuild Search Index" if experiencing database corruption
+- Check file permissions if database operations fail
+- v0.2.1+ uses sql.js (WASM) instead of native sqlite3 for universal compatibility
+
+**Cross-Platform Compatibility**
+- ✅ **Windows**: Fully supported (all versions)
+- ✅ **macOS**: Fixed in v0.2.1 - works on Intel and Apple Silicon Macs
+- ✅ **Linux**: Fully supported (all architectures)
+- Single .vsix file works on all platforms - no more architecture-specific issues!
+
 ### Data Privacy
-- **100% Local**: All data processing happens locally on your machine
-- **No External Calls**: The extension never sends data to external servers
+- **100% Local**: All core data processing happens locally on your machine
+- **Optional Cloud Features**: Leaderboard functionality is completely optional and requires explicit opt-in
+- **Privacy Controls**: Full control over what data (if any) is shared with community features
 - **Read-Only by Default**: Only reads your existing Claude history files
 - **Workspace Integration**: Only accesses your current VS Code workspace for file operations
+- **Anonymous Participation**: Community features use anonymous device IDs, never personal information
 
 ## 🏗️ Architecture Overview
 
 The extension is built with a modular architecture:
 
-- **Data Layer**: JSONL parsers for reading Claude Code chat history
-- **UI Layer**: Modern webview panels with GitHub-style interfaces  
-- **Services**: File watching, incremental parsing, and project mapping
-- **Utilities**: Diff rendering, file operations, and search functionality
+- **Data Layer**: JSONL parsers and SQLite database for efficient chat history processing
+- **Database Services**: SQLite-based search, cost tracking, and analytics with comprehensive data models
+- **UI Layer**: Modern webview panels with GitHub-style interfaces and interactive dashboards
+- **Services**: File watching, incremental parsing, project mapping, and optional leaderboard integration
+- **Utilities**: Advanced diff rendering, cost calculation, search indexing, and file operations
+- **Analytics**: Comprehensive usage tracking, cost analysis, and community features (optional)
 
 ## 📝 Version History
 
@@ -154,32 +240,22 @@ See [CHANGELOG.md](./CHANGELOG.md) for detailed release notes.
 
 We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for development setup and guidelines.
 
-## ☕ Support the Project
-
-If you find Claude Code Assist helpful and want to support its development, consider supporting me on Polar! You can choose your own amount and help maintain and improve this extension.
-
-**[💝 Support on Polar](https://buy.polar.sh/polar_cl_RdBqIIesUrrdeMywzxK5e6oSKjn3LSzSvALAq4CQDKp)** - Choose your own amount
-
-### 🎁 Supporter Benefits
-- **Repository Access**: Supporters get access to the private development repository
-- **Collaborator Status**: Become a collaborator and help shape the future of the extension
-- **Early Access**: Get early access to new features and beta releases
-- **Direct Communication**: Priority support and direct feedback channel
-
-
 ## 📄 License
 
-Apache-2.0 © [yashagldit](https://github.com/yashagldit)
+Proprietary - See [LICENSE](./LICENSE) for terms
 
-## � Contact & Support
+This software is proprietary and confidential. The extension is free to use but the source code is not open source.
 
-Have questions, suggestions, or want to connect? Reach out to me on Twitter!
+## Contact & Support
 
-**[🐦 Follow me on Twitter/X: @yashagl](https://x.com/yashagl)**
+Have questions, suggestions, or want to connect? Reach out to me!
+
+**📧 Email:** yashagl10@gmail.com
+**🐦 Twitter/X:** [@yashagl](https://x.com/yashagl)
 
 I'm always happy to help with issues, discuss new features, or chat about development!
 
-## �🔗 Links
+## 🔗 Links
 
 - [GitHub Repository](https://github.com/yashagldit/Claude-Code-History-VSCode)
 - [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=agsoft.claude-history-viewer)
