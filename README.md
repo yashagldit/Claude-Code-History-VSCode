@@ -1,15 +1,28 @@
-# Claude Code Assist
+# Claude Code and Codex Assist
 
-> **Note**: This is an unofficial extension and is not made by or affiliated with Anthropic.
+> **Note**: This is an unofficial extension and is not made by or affiliated with Anthropic or OpenAI.
 
-A powerful VS Code extension that enhances your development workflow with Claude Code integration. Browse chat history, review file changes, apply modifications from previous sessions, and manage your coding workflow with comprehensive history visualization.
+> 🎉 **Extension Renamed**: Previously known as "Claude Code Assist", this extension is now **Claude Code and Codex Assist** to reflect support for both AI assistants!
+
+A powerful VS Code extension that enhances your development workflow with **full support for both Claude Code and Codex**. Browse chat history from both AI assistants, review file changes, apply modifications from previous sessions, and manage your coding workflow with comprehensive history visualization.
+
+**🤖 Dual AI Assistant Support**:
+- **Claude Code** sessions from `~/.claude/projects/`
+- **Codex** sessions from `~/.codex/sessions/`
+- Visual badges clearly identify which assistant you were using
+- Unified interface for seamless browsing across both tools
 
 > ✅ **Cross-Platform Support**: Works seamlessly on macOS (Intel & Apple Silicon), Windows, and Linux. macOS compatibility fixed in v0.2.1 - no more native module errors!
 
 ## 🎬 Feature Demos
 
+### 📊 Usage Analytics
+Track Claude and Codex Subscription Usage, quotas, and token trends with a comprehensive analytics dashboard.
+
+![Usage Analytics](./assets/usage-analytics.gif)
+
 ### 📚 Chat History & Diff Viewer
-Browse your Claude Code sessions with GitHub-style diffs and one-click file changes.
+Browse your Claude Code and Codex sessions with GitHub-style diffs and one-click file changes.
 
 ![Chat History & Diff Viewer](./assets/session-browser.gif)
 
@@ -18,20 +31,20 @@ Search across all conversations with instant results and session-grouped display
 
 ![Full-Text Search](./assets/search-demo.gif)
 
-### 📊 Usage Analytics
-Track costs, tokens, and usage patterns with comprehensive analytics dashboard.
-
-![Usage Analytics](./assets/analytics-demo.gif)
-
 ### ⏱️ File History Timeline
 View complete modification history for any file across all your sessions.
 
 ![File History Timeline](./assets/timeline-demo.gif)
 
 ### 📄 Export to Markdown
-Export conversations to beautifully formatted Markdown files.
+Export conversations and plans to beautifully formatted Markdown files.
 
 ![Export to Markdown](./assets/export-demo.gif)
+
+### ✅ Review Changes View
+Review all file changes from a conversation in one organized place before applying updates.
+
+![Review Changes View](./assets/review-changes.gif)
 
 ### 🔀 Session Fork & Resume
 Branch conversations and resume from any point in your chat history.
@@ -41,32 +54,49 @@ Branch conversations and resume from any point in your chat history.
 ## 🌟 Features
 
 ### Smart Session Organization
-- **Sidepanel Interface**: Clean, intuitive sidebar panel for browsing chat sessions
+- **Dual Assistant Support**: Full support for both Claude Code and Codex sessions with visual source badges
+- **Welcome Guide**: First-time users get an interactive welcome screen showing all the features available - makes getting started super easy!
+- **Sidepanel Interface**: Clean, intuitive sidebar panel for browsing chat sessions from both Claude and Codex
 - **Project-Based Filtering**: Automatically organizes sessions by project with smart current-project detection
+- **Session Pinning**: Pin important sessions to keep them at the top of your list for quick access
+- **Custom Session Titles**: Rename sessions with custom titles to better organize your work
 - **Latest Chat Priority**: Recent conversations are highlighted and easily accessible
 - **Auto-Refresh**: Automatically updates recent sessions (configurable time window)
 - **Session Resume**: Resume any past conversation directly in your terminal with one click, or copy the command to use elsewhere
-- **Session Fork**: Create a new conversation starting from any message - perfect for exploring alternative approaches without losing your original chat
+- **Session Fork**: Create a new conversation starting from any message - perfect for exploring alternative approaches without losing your original chat. Enhanced with better summaries and automatic token count estimation
+- **Session Format Converter**: Convert sessions between Claude and Codex formats and resume instantly in the target assistant
+- **Markdown Export**: Export full sessions to beautifully formatted Markdown files with customizable metadata options for sharing, documentation, or archival
 - **Enhanced Message Display**: Beautiful formatting for command outputs, code snippets, and tool results with GitHub-style views. Full support for agent and task tool operations
-- **Smart Session Titles**: Automatically extracts meaningful titles from your conversations
+- **Smart Session Titles**: Automatically extracts meaningful titles from your conversations with improved extraction from recent chat summaries
 - **Advanced Tool Visualization**: Improved rendering of tool results including Bash outputs, file operations, and agent-based task execution
+- **Session Management Commands**: Comprehensive commands for renaming sessions, managing custom titles, and toggling pin status
+
+### Plan View & Management
+- **Plan Browser**: Browse all your Claude Code plans from `~/.claude/plans/` directory in a dedicated interface
+- **Plan Navigation**: Easily navigate between different plans with a clean, organized view
+- **Plan Actions**: Copy plan content to clipboard, export to Markdown, or open in VS Code editor
+- **Plan Export**: Export individual plans to beautifully formatted Markdown files
 
 ### Advanced File Change Tracking
 - **GitHub-Style Diffs**: Beautiful, readable diff views showing exactly what changed
 - **Multi-Diff Support**: View changes across multiple files simultaneously
+- **Review Changes View**: See all file changes from a conversation in one place with a clean, organized interface
+- **Syntax Highlighting**: Code diffs with syntax highlighting for better readability
+- **Undo & Reapply Changes**: Easily undo or reapply file modifications with one click
 - **Native VS Code Integration**: Leverages VS Code's built-in diff viewer
 - **Apply Changes**: One-click application of changes to your current workspace
-- **File Operations**: Track Read, Write, Edit, and MultiEdit operations from Claude Code
+- **File Operations**: Track Read, Write, Edit, and MultiEdit operations from both Claude Code and Codex
+- **Universal Support**: Works seamlessly with both Claude and Codex sessions, with visual badges to tell them apart
 
 ### Powerful Search & Navigation
-- **SQLite-Based Search**: High-performance full-text search with SQLite backend for superior speed and accuracy
+- **Multiple Search Modes**: Choose between indexed search for speed or direct file search for privacy - whatever works best for you
+- **Detailed Search Results**: See cost, tokens, and message count for each session right in the search results
 - **Session-Grouped Results**: Search results are organized by session with collapsible groups, showing all matches within each conversation for easier navigation
-- **Improved Search Performance**: Faster and more accurate search results with optimized indexing and query processing
-- **Advanced Database Indexing**: Persistent search index with incremental updates and file change tracking
-- **Smart Query Processing**: Intelligent search with relevance scoring, context awareness, and file-based filtering
-- **Search Highlighting**: Visual highlighting of search terms in results with enhanced preview generation
-- **Session File Paths**: Search results now display session file paths for easier identification and navigation
-- **Session Navigation**: Jump directly to specific conversations with improved metadata tracking
+- **Fast and Accurate**: Find what you need quickly with optimized search that understands your queries
+- **Privacy-Friendly Options**: New privacy mode lets you search without storing your messages separately - they stay only in your local files
+- **Search Highlighting**: Visual highlighting of search terms in results so you can quickly spot what you're looking for
+- **Session File Paths**: Search results display file paths for easier identification and navigation
+- **Session Navigation**: Jump directly to specific conversations with one click
 - **File History Timeline**: See complete modification history for any file across all your sessions. Visual timeline shows when files were changed, what operations were performed, and provides quick access to view diffs or navigate to the conversation
 - **Right-Click Context Menu**: Right-click any file in the explorer or editor to select "Show in Claude History Timeline" and instantly view its modification history
 - **Quick Access**: Command palette integration for rapid access to all search features
@@ -76,10 +106,12 @@ Branch conversations and resume from any point in your chat history.
 - **Quick Navigation**: Navigate between file changes using keyboard shortcuts
 - **Loading State Indicators**: Visual feedback during file operations
 - **Seamless Workflow**: Integrated navigation without leaving your editor
+- **API Usage Quota Indicator**: Optional status bar display of remaining Claude/Codex quota with quick access to the dashboard
 
 ### 📊 Advanced Analytics & Cost Tracking
 - **Comprehensive Cost Analysis**: Detailed cost tracking with token usage breakdown for all Claude models
 - **Dashboard Analytics**: Interactive dashboard with usage statistics, activity timelines, and cost trends
+- **Plan Usage & Quota Tracking**: Live Claude/Codex quota cards, burn-down chart, and weekly summary insights
 - **Engagement Distribution**: Visual breakdown of your usage patterns across different features and activities
 - **Usage Engagement Metrics**: Understand your development patterns with comprehensive analytics tracking
 - **Session Block Tracking**: Billing window identification following ccusage logic for accurate cost periods
@@ -98,24 +130,27 @@ Branch conversations and resume from any point in your chat history.
 
 ### Prerequisites
 - VS Code 1.80.0 or later
-- Claude Code CLI installed and configured
-- Existing Claude Code chat history (stored in `~/.claude/projects/`)
+- **Claude Code CLI** and/or **Codex CLI** installed and configured
+- Existing chat history:
+  - Claude Code sessions in `~/.claude/projects/`
+  - Codex sessions in `~/.codex/sessions/` (if using Codex)
 
 ### Installation
 1. Install from the VS Code Extensions marketplace
-2. The extension automatically detects your Claude directory
-3. Click the Claude History icon in the Activity Bar to start browsing
+2. The extension automatically detects your Claude and Codex directories
+3. Click the Claude Assist icon in the Activity Bar to start browsing
 
 ### Quick Start
-1. **Open the Extension**: Click the Claude History icon in VS Code's Activity Bar
-2. **Browse Sessions**: Use the "Latest Chat" tab for recent conversations or "Chat History" for all sessions
-3. **View Changes**: Click any session to see the conversation and file changes
-4. **Review Diffs**: Use "File Changes" to see a commit-style summary with diffs
-5. **Search History**: Use the powerful SQLite-based search within the extension's side panel
+1. **Open the Extension**: Click the Claude Assist icon in VS Code's Activity Bar
+2. **Browse Sessions**: Use the "Latest Chat" tab for recent conversations or "Chat History" for all sessions from both Claude Code and Codex
+3. **View Changes**: Click any session to see the conversation and file changes (source badge shows Claude or Codex)
+4. **Review Diffs**: Use "File Changes" to see a commit-style summary with syntax-highlighted diffs
+5. **Search History**: Use the powerful SQLite-based search within the extension's side panel to find conversations across both assistants
 6. **Navigate Files**: Use status bar buttons or keyboard shortcuts (`Ctrl+Shift+]` / `Ctrl+Shift+[`) to navigate between file changes
-7. **Analyze Costs**: Access the Dashboard tab to view detailed cost analysis and usage statistics
-8. **Join Community** (Optional): Enable leaderboard features to compare usage with the community
-9. **Quick Access**: Press `Ctrl+Shift+Q` to quickly open the Claude chat side panel
+7. **Analyze Costs**: Access the Dashboard tab to view detailed cost analysis and usage statistics for both Claude and Codex
+8. **Check Plan Usage**: Review your Claude/Codex quota and usage trends in the dashboard
+9. **Join Community** (Optional): Enable leaderboard features to compare usage with the community
+10. **Quick Access**: Press `Ctrl+Shift+Q` to quickly open the chat side panel
 
 ## 📋 Main Commands
 
@@ -126,6 +161,7 @@ Branch conversations and resume from any point in your chat history.
 | `Claude Assist: Refresh Sessions` | Reload session data and rebuild search index |
 | `Claude Assist: Clear Project Cache` | Clear internal caches (troubleshooting) |
 | `Claude Assist: Open Settings` | Access extension settings and configuration |
+| `Claude Assist: Refresh API Usage Quota` | Refresh Claude/Codex quota data for the dashboard and status bar |
 | `Claude Assist: Open Claude Chat Side Panel` | Open the Claude chat side panel |
 
 ### Keyboard Shortcuts
@@ -148,9 +184,10 @@ Additional commands are available through right-click context menus and the exte
 
 ### Settings
 - **`claude-history.claudeDirectory`**: Custom path to .claude directory (auto-detected if empty)
-- **`claude-history.autoRefreshEnabled`**: Enable automatic refresh for recent sessions (default: true)
+- **`claude-history.autoRefreshEnabled`**: Enable automatic refresh for recent sessions from both Claude and Codex (default: true)
 - **`claude-history.autoRefreshInterval`**: Time window in hours for auto-refresh (default: 2 hours)
 - **`claude-history.enableErrorReporting`**: Enable anonymous error reporting for debugging (default: true)
+- **`claude-history.statusBar.showApiUsage`**: Display the API usage quota indicator (default: true)
 - **`claude-history.contextMenu.showFileTimeline`**: Show "Show in Claude History Timeline" in file context menus (default: true)
 - **`claude-history.search.maxFileSize`**: Maximum file size in MB for search indexing (default: 50)
 - **`claude-history.search.maxMessagesPerFile`**: Maximum messages per file to process (default: 1000)
@@ -171,15 +208,17 @@ Access settings via:
 
 ### Common Issues
 
-**"No Claude directory found"**
-- Ensure Claude Code CLI is installed and has been used at least once
-- Check that `~/.claude/projects/` directory exists
-- Manually set the Claude directory in extension settings
+**"No Claude or Codex directory found"**
+- Ensure Claude Code CLI and/or Codex CLI is installed and has been used at least once
+- Check that `~/.claude/projects/` and/or `~/.codex/sessions/` directories exist
+- Manually set the Claude directory in extension settings if using a custom location
 
 **Sessions not loading**
 - Click "Refresh Sessions" in the panel
-- Check if your Claude directory path is correct in settings
-- Verify that JSONL files exist in your Claude projects folders
+- Check if your Claude/Codex directory paths are correct in settings
+- Verify that session files exist:
+  - Claude: JSONL files in `~/.claude/projects/`
+  - Codex: Session files in `~/.codex/sessions/`
 
 **Diffs not showing correctly**
 - Ensure the files exist in your current workspace
@@ -225,12 +264,12 @@ Access settings via:
 
 The extension is built with a modular architecture:
 
-- **Data Layer**: JSONL parsers and SQLite database for efficient chat history processing
-- **Database Services**: SQLite-based search, cost tracking, and analytics with comprehensive data models
-- **UI Layer**: Modern webview panels with GitHub-style interfaces and interactive dashboards
-- **Services**: File watching, incremental parsing, project mapping, and optional leaderboard integration
-- **Utilities**: Advanced diff rendering, cost calculation, search indexing, and file operations
-- **Analytics**: Comprehensive usage tracking, cost analysis, and community features (optional)
+- **Data Layer**: Dual parsers for Claude (JSONL) and Codex sessions with SQLite database for efficient chat history processing
+- **Database Services**: SQLite-based search, cost tracking, and analytics with comprehensive data models supporting both assistants
+- **UI Layer**: Modern webview panels with GitHub-style interfaces, syntax highlighting, and interactive dashboards
+- **Services**: File watching, incremental parsing, project mapping, and optional leaderboard integration for both Claude and Codex
+- **Utilities**: Advanced diff rendering with syntax highlighting, cost calculation, search indexing, and file operations
+- **Analytics**: Comprehensive usage tracking, cost analysis for both assistants, and community features (optional)
 
 ## 📝 Version History
 
@@ -264,4 +303,4 @@ I'm always happy to help with issues, discuss new features, or chat about develo
 
 ---
 
-**Enhance your development workflow with comprehensive history visualization, file change tracking, and intelligent session management.**
+**Enhance your development workflow with comprehensive history visualization, file change tracking, and intelligent session management across both Claude Code and Codex.**
