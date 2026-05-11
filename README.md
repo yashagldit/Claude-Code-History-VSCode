@@ -1,30 +1,27 @@
-# Claude Code and Codex Assist
+# Claude Code, Codex & OpenCode Assist - History & Diff Viewer for VS Code
 
-> **Note**: This is an unofficial extension and is not made by or affiliated with Anthropic or OpenAI.
+> **Note**: This is an unofficial extension and is not made by or affiliated with Anthropic, OpenAI, or SST.
 
-> 🎉 **Extension Renamed**: Previously known as "Claude Code Assist", this extension is now **Claude Code and Codex Assist** to reflect support for both AI assistants!
+The complete **Claude Code history viewer**, **Codex session browser**, and **OpenCode chat explorer** for VS Code. Browse chat history, view file diffs, search across all conversations, track token usage and costs, and resume past sessions — all from the editor.
 
-A powerful VS Code extension that enhances your development workflow with **full support for both Claude Code and Codex**. Browse chat history from both AI assistants, review file changes, apply modifications from previous sessions, and manage your coding workflow with comprehensive history visualization.
-
-**🤖 Dual AI Assistant Support**:
+**🤖 Triple AI Assistant Support**:
 - **Claude Code** sessions from `~/.claude/projects/`
 - **Codex** sessions from `~/.codex/sessions/`
+- **OpenCode** sessions from `~/.local/share/opencode/` (XDG-compliant)
 - Visual badges clearly identify which assistant you were using
-- Unified interface for seamless browsing across both tools
-
-> ✅ **Cross-Platform Support**: Works seamlessly on macOS (Intel & Apple Silicon), Windows, and Linux. macOS compatibility fixed in v0.2.1 - no more native module errors!
+- Unified interface for seamless browsing across all three tools
 
 ## 🎬 Feature Demos
 
 ### 📊 Usage Analytics
-Track Claude and Codex Subscription Usage, quotas, and token trends with a comprehensive analytics dashboard.
+Track Claude Code and Codex subscription usage and quotas, plus token trends across Claude Code, Codex, and OpenCode sessions in a single analytics dashboard.
 
 ![Usage Analytics](./assets/usage-analytics.gif)
 
 ### 📚 Chat History & Diff Viewer
-Browse your Claude Code and Codex sessions with GitHub-style diffs and one-click file changes.
+Browse your Claude Code, Codex, and OpenCode sessions with GitHub-style diffs and one-click file changes.
 
-![Chat History & Diff Viewer](./assets/session-browser.gif)
+![Chat History & Diff Viewer](./assets/session-browser.webp)
 
 ### 🔍 Full-Text Search
 Search across all conversations with instant results and session-grouped display.
@@ -54,18 +51,18 @@ Branch conversations and resume from any point in your chat history.
 ## 🌟 Features
 
 ### Smart Session Organization
-- **Dual Assistant Support**: Full support for both Claude Code and Codex sessions with visual source badges
+- **Triple Assistant Support**: Full support for Claude Code, Codex, and OpenCode sessions with visual source badges
 - **Welcome Guide**: First-time users get an interactive welcome screen showing all the features available - makes getting started super easy!
-- **Sidepanel Interface**: Clean, intuitive sidebar panel for browsing chat sessions from both Claude and Codex
+- **Sidepanel Interface**: Clean, intuitive sidebar panel for browsing chat sessions from Claude Code, Codex, and OpenCode
 - **Project-Based Filtering**: Automatically organizes sessions by project with smart current-project detection
 - **Session Pinning**: Pin important sessions to keep them at the top of your list for quick access
 - **Custom Session Titles**: Rename sessions with custom titles to better organize your work
 - **Latest Chat Priority**: Recent conversations are highlighted and easily accessible
 - **Auto-Refresh**: Automatically updates recent sessions (configurable time window)
 - **Session Resume**: Resume any past conversation directly in your terminal with one click, or copy the command to use elsewhere
-- **Session Fork**: Create a new conversation starting from any message - perfect for exploring alternative approaches without losing your original chat. Enhanced with better summaries and automatic token count estimation
-- **Session Format Converter**: Convert sessions between Claude and Codex formats and resume instantly in the target assistant
-- **Markdown Export**: Export full sessions to beautifully formatted Markdown files with customizable metadata options for sharing, documentation, or archival
+- **Session Fork**: Create a new conversation starting from any message - perfect for exploring alternative approaches without losing your original chat. `Pro` 
+- **Session Format Converter**: Convert sessions between Claude and Codex formats and resume instantly in the target assistant.`Pro`
+- **Markdown Export**: Export full sessions to beautifully formatted Markdown files with customizable metadata options for sharing, documentation, or archival. `Pro`
 - **Enhanced Message Display**: Beautiful formatting for command outputs, code snippets, and tool results with GitHub-style views. Full support for agent and task tool operations
 - **Smart Session Titles**: Automatically extracts meaningful titles from your conversations with improved extraction from recent chat summaries
 - **Advanced Tool Visualization**: Improved rendering of tool results including Bash outputs, file operations, and agent-based task execution
@@ -75,7 +72,7 @@ Branch conversations and resume from any point in your chat history.
 - **Plan Browser**: Browse all your Claude Code plans from `~/.claude/plans/` directory in a dedicated interface
 - **Plan Navigation**: Easily navigate between different plans with a clean, organized view
 - **Plan Actions**: Copy plan content to clipboard, export to Markdown, or open in VS Code editor
-- **Plan Export**: Export individual plans to beautifully formatted Markdown files
+- **Plan Export**: Export individual plans to beautifully formatted Markdown files. Export requires Pro.
 
 ### Advanced File Change Tracking
 - **GitHub-Style Diffs**: Beautiful, readable diff views showing exactly what changed
@@ -85,8 +82,8 @@ Branch conversations and resume from any point in your chat history.
 - **Undo & Reapply Changes**: Easily undo or reapply file modifications with one click
 - **Native VS Code Integration**: Leverages VS Code's built-in diff viewer
 - **Apply Changes**: One-click application of changes to your current workspace
-- **File Operations**: Track Read, Write, Edit, and MultiEdit operations from both Claude Code and Codex
-- **Universal Support**: Works seamlessly with both Claude and Codex sessions, with visual badges to tell them apart
+- **File Operations**: Track Read, Write, Edit, and MultiEdit operations from Claude Code, Codex, and OpenCode
+- **Universal Support**: Works seamlessly with Claude Code, Codex, and OpenCode sessions, with visual badges to tell them apart
 
 ### Powerful Search & Navigation
 - **Multiple Search Modes**: Choose between indexed search for speed or direct file search for privacy - whatever works best for you
@@ -109,7 +106,7 @@ Branch conversations and resume from any point in your chat history.
 - **API Usage Quota Indicator**: Optional status bar display of remaining Claude/Codex quota with quick access to the dashboard
 
 ### 📊 Advanced Analytics & Cost Tracking
-- **Comprehensive Cost Analysis**: Detailed cost tracking with token usage breakdown for all Claude models
+- **Comprehensive Cost Analysis**: Detailed cost tracking with token usage breakdown across all Claude, OpenAI, and OpenCode-supported models
 - **Dashboard Analytics**: Interactive dashboard with usage statistics, activity timelines, and cost trends
 - **Plan Usage & Quota Tracking**: Live Claude/Codex quota cards, burn-down chart, and weekly summary insights
 - **Engagement Distribution**: Visual breakdown of your usage patterns across different features and activities
@@ -130,24 +127,25 @@ Branch conversations and resume from any point in your chat history.
 
 ### Prerequisites
 - VS Code 1.80.0 or later
-- **Claude Code CLI** and/or **Codex CLI** installed and configured
+- **Claude Code CLI**, **Codex**, and/or **OpenCode CLI** installed and configured
 - Existing chat history:
   - Claude Code sessions in `~/.claude/projects/`
   - Codex sessions in `~/.codex/sessions/` (if using Codex)
+  - OpenCode sessions in `~/.local/share/opencode/` (if using OpenCode)
 
 ### Installation
 1. Install from the VS Code Extensions marketplace
-2. The extension automatically detects your Claude and Codex directories
+2. The extension automatically detects your Claude, Codex, and OpenCode directories
 3. Click the Claude Assist icon in the Activity Bar to start browsing
 
 ### Quick Start
 1. **Open the Extension**: Click the Claude Assist icon in VS Code's Activity Bar
-2. **Browse Sessions**: Use the "Latest Chat" tab for recent conversations or "Chat History" for all sessions from both Claude Code and Codex
-3. **View Changes**: Click any session to see the conversation and file changes (source badge shows Claude or Codex)
+2. **Browse Sessions**: Use the "Latest Chat" tab for recent conversations or "Chat History" for all sessions from Claude Code, Codex, and OpenCode
+3. **View Changes**: Click any session to see the conversation and file changes (source badge shows Claude, Codex, or OpenCode)
 4. **Review Diffs**: Use "File Changes" to see a commit-style summary with syntax-highlighted diffs
-5. **Search History**: Use the powerful SQLite-based search within the extension's side panel to find conversations across both assistants
+5. **Search History**: Use the powerful SQLite-based search within the extension's side panel to find conversations across all three assistants
 6. **Navigate Files**: Use status bar buttons or keyboard shortcuts (`Ctrl+Shift+]` / `Ctrl+Shift+[`) to navigate between file changes
-7. **Analyze Costs**: Access the Dashboard tab to view detailed cost analysis and usage statistics for both Claude and Codex
+7. **Analyze Costs**: Access the Dashboard tab to view detailed cost analysis and usage statistics for Claude Code, Codex, and OpenCode
 8. **Check Plan Usage**: Review your Claude/Codex quota and usage trends in the dashboard
 9. **Join Community** (Optional): Enable leaderboard features to compare usage with the community
 10. **Quick Access**: Press `Ctrl+Shift+Q` to quickly open the chat side panel
@@ -184,7 +182,7 @@ Additional commands are available through right-click context menus and the exte
 
 ### Settings
 - **`claude-history.claudeDirectory`**: Custom path to .claude directory (auto-detected if empty)
-- **`claude-history.autoRefreshEnabled`**: Enable automatic refresh for recent sessions from both Claude and Codex (default: true)
+- **`claude-history.autoRefreshEnabled`**: Enable automatic refresh for recent sessions from Claude Code, Codex, and OpenCode (default: true)
 - **`claude-history.autoRefreshInterval`**: Time window in hours for auto-refresh (default: 2 hours)
 - **`claude-history.enableErrorReporting`**: Enable anonymous error reporting for debugging (default: true)
 - **`claude-history.statusBar.showApiUsage`**: Display the API usage quota indicator (default: true)
@@ -208,17 +206,18 @@ Access settings via:
 
 ### Common Issues
 
-**"No Claude or Codex directory found"**
-- Ensure Claude Code CLI and/or Codex CLI is installed and has been used at least once
-- Check that `~/.claude/projects/` and/or `~/.codex/sessions/` directories exist
-- Manually set the Claude directory in extension settings if using a custom location
+**"No Claude, Codex, or OpenCode directory found"**
+- Ensure Claude Code CLI, Codex, and/or OpenCode CLI is installed and has been used at least once
+- Check that `~/.claude/projects/`, `~/.codex/sessions/`, and/or `~/.local/share/opencode/` directories exist
+- Manually set the Claude, Codex, or OpenCode directory in extension settings if using a custom location
 
 **Sessions not loading**
 - Click "Refresh Sessions" in the panel
-- Check if your Claude/Codex directory paths are correct in settings
+- Check if your Claude, Codex, and OpenCode directory paths are correct in settings
 - Verify that session files exist:
   - Claude: JSONL files in `~/.claude/projects/`
   - Codex: Session files in `~/.codex/sessions/`
+  - OpenCode: SQLite database in `~/.local/share/opencode/`
 
 **Diffs not showing correctly**
 - Ensure the files exist in your current workspace
@@ -256,7 +255,7 @@ Access settings via:
 - **100% Local**: All core data processing happens locally on your machine
 - **Optional Cloud Features**: Leaderboard functionality is completely optional and requires explicit opt-in
 - **Privacy Controls**: Full control over what data (if any) is shared with community features
-- **Read-Only by Default**: Only reads your existing Claude history files
+- **Read-Only by Default**: Only reads your existing Claude Code, Codex, and OpenCode session files
 - **Workspace Integration**: Only accesses your current VS Code workspace for file operations
 - **Anonymous Participation**: Community features use anonymous device IDs, never personal information
 
@@ -264,12 +263,12 @@ Access settings via:
 
 The extension is built with a modular architecture:
 
-- **Data Layer**: Dual parsers for Claude (JSONL) and Codex sessions with SQLite database for efficient chat history processing
-- **Database Services**: SQLite-based search, cost tracking, and analytics with comprehensive data models supporting both assistants
+- **Data Layer**: Parsers for Claude Code (JSONL), Codex (JSONL), and OpenCode (SQLite) sessions with a unified SQLite database for efficient chat history processing
+- **Database Services**: SQLite-based search, cost tracking, and analytics with comprehensive data models supporting all three assistants
 - **UI Layer**: Modern webview panels with GitHub-style interfaces, syntax highlighting, and interactive dashboards
-- **Services**: File watching, incremental parsing, project mapping, and optional leaderboard integration for both Claude and Codex
+- **Services**: File watching, incremental parsing, project mapping for Claude Code, Codex, and OpenCode
 - **Utilities**: Advanced diff rendering with syntax highlighting, cost calculation, search indexing, and file operations
-- **Analytics**: Comprehensive usage tracking, cost analysis for both assistants, and community features (optional)
+- **Analytics**: Comprehensive usage tracking, cost analysis across all three assistants, and community features (optional)
 
 ## 📝 Version History
 
@@ -299,8 +298,10 @@ I'm always happy to help with issues, discuss new features, or chat about develo
 - [GitHub Repository](https://github.com/yashagldit/Claude-Code-History-VSCode)
 - [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=agsoft.claude-history-viewer)
 - [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code)
+- [Codex](https://github.com/openai/codex)
+- [OpenCode CLI](https://opencode.ai/)
 - [Twitter/X: @yashagl](https://x.com/yashagl)
 
 ---
 
-**Enhance your development workflow with comprehensive history visualization, file change tracking, and intelligent session management across both Claude Code and Codex.**
+**Enhance your development workflow with comprehensive history visualization, file change tracking, and intelligent session management across Claude Code, Codex, and OpenCode.**

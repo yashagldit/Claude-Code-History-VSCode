@@ -1,6 +1,319 @@
 # Changelog
 
-All notable changes to the Claude Code Assist extension will be documented in this file.
+All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
+
+## [0.4.71] - 2026-05-11
+
+### Fixed
+- **Startup and Database Stability** - Fixed several startup-time and database-handling issues that could cause slower launches, repeated failures, or unreliable recovery after database problems.
+- **Session Analytics Accuracy** - Fixed an issue where some nested agent costs could be counted incorrectly in session analytics.
+- **Background Indexing Reliability** - Fixed race conditions that could affect indexing, session lookups, and related background updates while the extension was still initializing.
+- **Missing File Handling** - Fixed cases where opening files referenced by older sessions could produce noisy failures instead of a clearer message when the file no longer exists.
+- **Session Analytics Window Reopen** - Fixed a panel lifecycle issue that could affect reopening the session analytics view after it had been closed.
+
+
+## [0.4.70] - 2026-05-10
+
+### Added
+- **OpenCode Session Support** - You can now browse and work with OpenCode sessions alongside Claude and Codex history across the extension.
+- **OpenCode Session Analytics and History Views** - OpenCode sessions now appear properly in conversation views, analytics, file history, and search results.
+
+### Improved
+- **Live Session Updates** - OpenCode session refresh behavior is now smoother and more reliable while conversations are still changing.
+- **Child Session Handling** - Related child sessions are now handled more cleanly, making complex multi-session workflows easier to follow.
+- **Dashboard Filtering and Charts** - Dashboard views now better separate usage by source, including OpenCode, and chart interactions feel clearer.
+
+### Fixed
+- **Session Discovery Reliability** - Fixed a range of session lookup and parsing edge cases so newer session types appear more consistently.
+- **Database and Refresh Stability** - Fixed several reliability issues around background reads, transactions, and live refresh behavior.
+
+## [0.4.64] - 2026-05-01
+
+### Fixed
+- **History Refresh Reliability** - Fixed a history view caching issue so refreshed or newly indexed sessions appear more reliably without needing extra manual refreshes.
+
+## [0.4.63] - 2026-04-27
+
+### Added
+- **Claude/Codex Source Filter** - Added a source filter in history so you can quickly switch between Claude sessions, Codex sessions, or both.
+- **Sub-Agent Stats in Session Analytics** - Session analytics now include more detail about sub-agent activity, including usage and duration.
+
+### Improved
+- **History Refresh Behavior** - The refresh button now behaves more predictably and is better tuned for quick refreshes versus deeper scans.
+- **Cleaner Session Lists** - History and session views now do a better job of excluding internal subagent session files from normal chat browsing.
+- **Session Conversion Flow** - Converting a session now gives smoother follow-up actions for resuming or copying the next command.
+
+### Fixed
+- **Subagent Session Noise** - Fixed cases where Codex subagent session files could show up where regular chat sessions were expected.
+- **Time and Cost Accuracy** - Fixed some analytics calculations so time and usage details are represented more accurately.
+
+## [0.4.62] - 2026-04-20
+
+### Added
+- **Reload Conversation** - Added a refresh action in the chat view so you can reload the current conversation without reopening it.
+
+- **Live Agent Conversation Updates** - Agent conversations now update more naturally while work is still in progress, making long-running agent tasks easier to follow.
+- **Search and Review Progress Feedback** - Deep search and Review Changes now show clearer progress while results and diffs are being prepared.
+
+### Improved
+- **Clearer Agent Details** - Agent conversations now show better status, metadata, and message counts where available.
+- **Better Chat Context Markers** - Chats now surface important session events, such as summaries and context compaction, in a cleaner way.
+- **Conversation Recap** - Added recap display support based on latest Claude Code update
+- **Improved Session Analytics** - Session analytics now include more detail about activity patterns inside a conversation.
+- **More Helpful Missing File Handling** - When a linked file cannot be opened directly, the extension now helps you locate it through Quick Open.
+
+
+## [0.4.61] - 2026-04-14
+
+### Added
+- **API Analytics Dashboard** - Added a richer analytics dashboard with new charts and usage views to help you understand Claude and Codex activity over time.
+- **Project Group Expand and Collapse** - Project groups in the history view can now be expanded and collapsed, making large histories easier to browse.
+- **Better Agent Task Details** - Agent conversations now show clearer task details, including status, duration, and tool usage where available.
+
+### Improved
+- **Dashboard Navigation and Charts** - The dashboard now has cleaner tab navigation and more visual breakdowns for usage patterns, rate-limit activity, and daily trends.
+- **Large File Handling** - Search and indexing now handle large files more safely, reducing the chance of slowdowns or noisy failures.
+
+
+## [0.4.51] - 2026-04-06
+
+### Improved
+- **Better Windows Compatibility** - File matching, search, and session handling now work more reliably across Windows-style paths and mixed path formats.
+- **More Reliable Forking and Resume Actions** - Session forking and resume flows now handle more path and launch cases correctly, helping these actions work more consistently.
+- **More Dependable Usage Insights** - Usage and aggregate statistics are now more accurate and consistent across the extension.
+
+### Fixed
+- **Cross-Platform File History Matching** - Fixed cases where file history, search, or timeline results could miss matches because of path-format differences between platforms.
+- **Analytics Consistency** - Fixed several gaps in aggregate stats so reported activity better reflects the actual session data.
+
+## [0.4.5] - 2026-04-01
+
+### Added
+- **Session Analytics View** - Added a dedicated session analytics view so you can inspect a chat in more detail and better understand how a session progressed.
+- **Session Duration in Chat Details** - Chats now show session duration in the metadata area for better context at a glance.
+
+### Improved
+- **Smarter File Timeline Loading** - The File Timeline now behaves more efficiently during rapid file switching, helping it feel smoother and less distracting.
+- **Clearer Session Titles** - Session naming is more reliable, including better handling of AI-generated titles where available.
+
+### Fixed
+- **More Accurate Session Totals** - Fixed some cases where session usage totals could miss activity from related agent work.
+- **File Timeline Stability** - Fixed cases where the file timeline could keep loading unnecessarily or react poorly when the view was not active.
+
+
+## [0.4.4] - 2026-03-30
+
+### Added
+- **New File Timeline View** - Added a dedicated File Timeline view so you can quickly see which sessions changed the current file and jump straight into the relevant chat or diff.
+- **Task Progress in Chats** - Chats now show task progress more clearly, making it easier to follow longer workflows and multi-step sessions.
+- **More File Timeline Actions** - You can now refresh the file timeline, open the related chat, view diffs, and resume a session directly from the timeline.
+
+### Improved
+- **Faster, Smoother Chat Loading** - Session loading is now more consistent and responsive, especially when switching quickly between files or chats.
+- **Better Side Panel Workflow** - The side panel is easier to use, with cleaner search controls, better prompt grouping, and more polished history browsing.
+- **More Flexible Chat Opening** - Opening chats now works more smoothly across the side panel and editor, giving you more control over how sessions are viewed.
+- **Cleaner Conversation Flow** - Long conversations with task updates now feel easier to read without interrupting your place in the chat.
+
+### Fixed
+- **More Reliable Session Opening** - Fixed cases where older or delayed session loads could override the chat you actually wanted to open.
+- **Better Diff and Timeline Consistency** - Fixed a few cases where file history and diff actions could feel out of sync across views.
+- **Cleaner Chat Navigation** - Fixed small chat-view issues so navigation controls appear more appropriately depending on where the chat is opened.
+
+## [0.4.2] - 2026-03-24
+
+### Added
+- **Open Exported Chats in the Extension** - You can now reopen supported exported Markdown chat files directly inside the extension.
+- **Clearer Per-Prompt Change Summaries** - Each prompt now gives a clearer summary of what changed, making it easier to follow the flow of a conversation.
+- **Easier Undo and Reapply** - Undoing or reapplying changes is now smoother, especially when a prompt affected multiple files.
+
+### Improved
+- **More Accurate Change Views** - File changes and diffs are now shown more clearly and more consistently across chats.
+- **Better History Browsing** - Search, grouping, and timeline views in the side panel are easier to scan and navigate.
+- **More Reliable Session Details** - Session information now stays more consistent when opening and switching between chats.
+- **More Reliable Usage Insights** - Usage and analytics information is now more dependable across different session types.
+- **Smoother Upgrade Prompts** - Upgrade messages now feel more consistent and integrated throughout the extension.
+
+### Fixed
+- **Codex Chat History Accuracy** - Fixed some cases where child or forked Codex chats could appear incorrectly in history.
+- **Multi-File Change Display** - Fixed cases where changes across multiple files were not shown as clearly as they should be.
+- **History Reliability Across Views** - Fixed issues that could cause history and search results to behave inconsistently in different parts of the extension.
+- **Chat Rendering Cleanup** - Fixed a few export and rendering edge cases so chat output appears cleaner and more reliable.
+
+## [0.4.0] - 2026-03-16
+
+### Added
+- **Refreshed Chat View UI** - Replaced the older chat view with a new conversation view experience in the side panel, while keeping a toggle to switch back to the old session view if preferred.
+- **Codex-Aware Session Forking** - Expanded session forking to better support Codex conversations and preserve more session metadata when branching from existing chats.
+
+### Improved
+- **Session Titles and History Labels** - Improved title resolution for both Claude and Codex sessions, including better handling of newer session formats and cleaner labels in the history UI.
+- **Search and Session Discovery** - Improved search base-directory handling, adaptive reparsing, filtering, and session sorting so large histories and mixed Claude/Codex setups stay more accurate and responsive.
+- **Conversation View Usability** - Improved message copy behavior, session metadata display, diff access, and conversation-level interactions across the new viewer and side panel.
+
+### Fixed
+- **Workspace and Project Resolution** - Fixed several session discovery edge cases related to chat-path handling and project/workspace matching.
+- **History View Presentation** - Fixed inconsistencies in date formatting, session item styling, and message rendering in the side panel and search results.
+
+### Documentation
+- **Website and Onboarding Content Refresh** - Updated the landing and upgrade pages with a new How It Works section, refreshed marketing content, and improved deployment metadata such as headers, sitemap, robots, and security contact information.
+
+## [0.3.92] - 2026-03-10
+
+### Added
+- **Additional Chat Directories** - Added configurable `claudeChatDirectories` and `codexChatDirectories` settings, plus settings UI actions to save and validate custom history paths for both Claude and Codex sessions.
+- **Session Title Resolution from Codex Index** - Added support for reading Codex session titles from `session_index.jsonl` before falling back to legacy sources.
+- **Session Recovery on Large Files** - Added a **Show All** action so hidden messages in capped large sessions can be displayed on demand.
+
+### Improved
+
+- **Codex Tool Parsing Coverage** - Expanded Codex command parsing for additional write/read/list patterns (including heredoc writes, sed ranges, and `find -name`), improving extracted file change details in chat history.
+- **History Refresh Responsiveness** - Updated side panel refresh flow to refresh the history list immediately while reparsing to avoid stale content during long refreshes.
+
+### Fixed
+- **File Link Handling in Chat View** - Improved markdown file link parsing so local/relative links with line anchors now open in the editor correctly.
+- **Latest Session Resolution** - Improved latest-session selection to include configured additional chat roots and apply consistent project filtering.
+
+## [0.3.91] - 2026-03-05
+
+### Fixed
+- **Show Latest Chat** - Fixed `showLatestChat` not displaying the correct latest session for the current workspace. Now scans the filesystem directly instead of relying on potentially stale database queries
+- **Codex Workspace Filtering** - Fixed Codex sessions from unrelated workspaces being selected as the "latest" session. Both the side panel and status bar file navigator now filter Codex sessions by workspace when not in "All Projects" mode
+- **Empty Project Path Fallback** - Fixed sessions with no `cwd` in messages throwing parse errors. The parser now derives `projectPath` from the JSONL file's directory path when `cwd` is missing
+
+## [0.3.9] - 2026-02-25
+### Added
+- **Recent File Changes Quick View** - New Quick Pick experience for quickly browsing recent session file changes (Claude + Codex) with per-file aggregated diffs, session navigation, refresh, open-in-chat, and resume actions
+- **Quick View Keyboard Shortcut** - Added `Ctrl+Alt+;` (or `Cmd+Alt+;` on Mac) to open Recent File Changes Quick View from anywhere
+- **Session ID Search Support** - Added session ID fragment search in both the Quick View session jump input and the History page search box
+
+### Improved
+- **Status Bar File Changes UX** - Clicking the status bar file-change item now opens the Recent File Changes Quick View and preserves the currently displayed session/file selection
+- **History and Chat Tips Discoverability** - Added shortcut guidance for the Recent File Changes Quick View in status-bar onboarding tip and chat Tips section
+- **Quick View Session Context** - Quick View now defaults to All Projects and shows the current session project name in the header for clearer context while browsing
+
+### Fixed
+- **Windows WSL Claude Directory Path Handling** - Fixed search index rebuild failures when `claudeDirectory` is configured as a quoted WSL UNC path (for example `"\\\\wsl$\\Ubuntu\\home\\user\\.claude"`), by sanitizing pasted paths before saving and before index/database path creation
+
+## [0.3.8] - 2026-02-16
+
+### Added
+- **Review Changes Filtering and Search** - Added powerful filtering and search capabilities in the Review Changes experience to quickly locate specific files and changes
+- **Email OTP Authentication Flow** - Added email OTP support in authentication for more reliable sign-in and account linking
+
+### Improved
+- **Review Changes and Session Browsing UX** - Improved parser, renderer, side panel, and timeline integration to better surface and navigate code changes
+- **Authentication Session Handling** - Improved auth refresh and user/device synchronization logic across extension companion services
+
+## [0.3.7] - 2026-02-12
+
+### Improved
+- **API Usage Tracking Reliability** - Refined usage counter, status indicator, and related service logic for more consistent quota and usage display
+- **Search and Database Services** - Improved SQLite/database service behavior for better stability and result handling
+
+## [0.3.6] - 2026-02-08
+
+### Added
+- **Codex Image Display** - Images in Codex chats are now rendered in the chat view (instead of showing raw content)
+
+### Improved
+- **API Usage Analytics UI** - Improved analytics display of API usage
+- **Codex Chat Rendering** - Better Codex chat display and formatting in the viewer
+- **Tool Result Rendering** - Richer rendering for tool outputs (no longer just `exec_command`)
+
+## [0.3.5] - 2026-02-02
+
+### Added
+- **API Usage Quota Tracking** - New Claude/Codex plan usage section in the analytics dashboard with live quota cards, burn-down chart, and weekly summary insights
+- **API Usage Status Bar Indicator** - Optional status bar quota indicator with a quick link to the dashboard and a refresh command
+- **Session Format Converter** - Convert sessions between Claude and Codex formats directly from the chat view, then resume in the target assistant
+
+
+
+## [0.3.4] - 2026-01-25
+
+### 🎉 Extension Renamed
+- **Claude Code and Codex Assist** - The extension has been renamed from "Claude Code Assist" to "Claude Code and Codex Assist" to reflect support for both AI assistants. All features now work seamlessly with both Claude Code and Codex sessions!
+
+### Added
+- **Syntax Highlighting in Diffs** - Review Changes view now includes syntax highlighting for code diffs, making it easier to read and understand file changes. Highlights are based on file extensions and use highlight.js
+- **Expand/Collapse Hidden Lines** - Added interactive expand/collapse buttons for hidden lines in diff views (both inline and side-by-side), giving you better control over viewing context
+- **File Change Statistics** - Sessions now display detailed file change metrics including number of files changed, total additions, and total deletions for better overview of session activity
+
+### Improved
+- **Undo Functionality** - Enhanced undo operations with content validation to ensure changes are applied correctly and safely
+- **Project Grouping** - Improved project grouping logic in the side panel for better session organization
+- **Session File Change Tracking** - More accurate tracking of file modifications with database-backed statistics and automatic UI synchronization
+
+## [0.3.3] - 2026-01-21
+
+### Added
+- **Codex Support** - The extension now works with both Claude and Codex conversations! Browse your Codex sessions right alongside your Claude chats. Visual badges help you quickly identify which AI assistant you were using
+- **Review Changes View** - New dedicated view that shows all file changes from a conversation in one organized place. Perfect for reviewing what changed before applying updates to your workspace
+- **Undo Changes** - Made a mistake? No problem! Easily undo any file changes with a single click
+- **Better Session Organization** - Sessions are now sorted more intelligently, making it easier to find what you're looking for
+
+### Improved
+- **File Change Tracking** - Enhanced tracking now works across both Claude and Codex sessions
+- **Search Experience** - Search results now include both Claude and Codex conversations for comprehensive history browsing
+
+## [0.3.2] - 2026-01-08
+
+### Added
+- **Useful Tips Section** - A new tips bar at the bottom of the chat view displays helpful usage tips. Click the refresh button to see different tips and learn shortcuts, features, and productivity tricks
+- **Tips Toggle in Settings** - Control whether the tips section is displayed via a new "Show Tips" option in extension settings
+- **Copy Resume Command** - New option to copy the full resume command (including `cd` to project directory) to clipboard for pasting in any terminal
+- **Web Dashboard Access** - Pro users can now open the online dashboard directly from the extension to view detailed analytics synced from the extension
+
+### Improved
+- **Streamlined Markdown Export** - Exporting sessions to Markdown now auto-saves to `~/[Project]/claude-chats/` folder and opens the file automatically. Only prompts for location if the file already exists
+- **Enhanced Error Handling** - More robust error handling across database operations and file handling with better recovery mechanisms
+
+## [0.3.1] - 2025-12-23
+
+### Fixed
+- Slow onboarding experience for first-time users - significantly improved initial loading performance when using the extension for the first time
+
+## [0.3.0] - 2025-12-22
+
+### Added
+- **Welcome Guide for New Users** - Interactive welcome screen appears when you first use the extension, showing you all the cool features you can use
+- **Advanced Search Option** - New search mode that works directly with your chat files for faster results and better privacy
+- **Richer Session Information** - Sessions now display more useful details when you search, making it easier to find what you're looking for
+
+### Improved
+- **Better File History View** - When viewing file changes over time, you now see clearer diffs and better formatting
+
+### Fixed
+- Sessions not loading properly on Windows computers
+- Errors when viewing certain search results
+
+## [0.2.98] - 2025-12-17
+
+### Added
+- **Session Pinning** - Pin important sessions to keep them at the top of your session list for quick access
+- **Custom Session Titles** - Rename sessions with custom titles to better organize your work
+- **Session Management Commands** - New commands to rename sessions, delete custom titles, and toggle pin status
+- **Enhanced Export Preferences** - More control over metadata inclusion when exporting sessions to Markdown
+- **Fork Session Enhancements** - Improved session forking with better summaries and automatic token count estimation
+
+
+### Improved
+- **Title Extraction** - Significantly improved automatic title generation by reading the last portion of JSONL files for recent summaries
+- **Session Loading** - Enhanced logic to automatically skip empty or broken sessions from the database
+
+
+### Fixed
+- Improved reliability when loading sessions with missing or corrupt data
+- Better handling of edge cases in JSONL file parsing
+- More graceful error recovery in database operations
+
+## [0.2.94] - 2025-12-13
+
+### Added
+- **Plan View** - Browse and manage your Claude Code plans directly in VS Code! View all plans from `~/.claude/plans/`, navigate between them, and access plan content with a dedicated interface
+- **Plan Export to Markdown** - Export individual plans to beautifully formatted Markdown files for easy sharing and documentation
+- **Plan Actions** - Copy plan content to clipboard, open plans in VS Code editor, or export them with one click
+- **Enhanced Demo Showcase** - Improved demo experience with video playback support and fullscreen viewing capabilities
 
 ## [0.2.92] - 2025-12-07
 
