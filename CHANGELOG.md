@@ -2,6 +2,75 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.5.0] - 2026-06-13
+
+
+### Added
+- **Session Archive (Pro)** - Claude and Codex automatically clean up old session transcripts over time. You can now archive sessions to keep a full-fidelity copy safe from that cleanup, with a dedicated **Archived** tab to browse them across all your projects. Archived sessions can still be resumed, forked, and copied as commands. Viewing and restoring archived sessions stays free, so you never lose access to your backups.
+- **Markdown Session Sync** - Export sessions to a portable Markdown format that you can commit to git and move between devices. Exported sessions can be imported back with their file changes and per-turn summaries intact, or resumed as a native Claude/Codex session — even when the original was created on another computer or operating system.
+- **Markdown Sessions Tab** - A new **MD** tab in the history list shows your exported Markdown sessions, viewable just like regular sessions.
+- **Bulk Session Actions (Pro)** - Select multiple sessions at once to export or delete them together, with a single confirmation.
+- **Per-Model Usage Tracking** - The status bar and dashboard now break down your weekly API usage by model (Sonnet and Opus), giving you a clearer picture of where your quota is going.
+- **In-App Help** - Added help buttons and explanations for the new Markdown and Archived session features so it's clear how each one works.
+
+
+### Improved
+- **History List Quick Actions** - Session rows now show hover quick-actions (pin, resume, delete) and full keyboard navigation — use the arrow keys, Home/End, Enter to open, and Delete to remove. Long titles show tooltips, and each tab has its own helpful empty state.
+- **Conversation View Polish** - Code blocks now have a floating copy button on hover, you can expand or collapse all sections at once, and assistant messages reveal their timestamp and model on hover. Search matches use your theme's highlight colors.
+- **Consistent Cost Display** - Costs are now formatted consistently everywhere ($X.XX, with <$0.01 for sub-cent amounts) across the history list, group headers, totals, and search results.
+- **Better Accessibility** - Improved keyboard navigation and screen-reader support for context menus and buttons throughout the history view.
+- **Faster History Loading** - Session history loads and refreshes more quickly, with large lists staying responsive and background updates applied in place without losing your scroll position.
+- **Configurable Export Location** - Exported sessions now land in a configurable folder, with smarter handling of nested directories.
+
+### Fixed
+- **Usage Charts Across Windows** - Fixed the dashboard usage burn-down charts so they stay consistent when you have multiple VS Code windows open at the same time.
+
+## [0.4.81] - 2026-06-07
+
+### Added
+- **Date Format Setting** - A new setting lets you choose how dates and times appear throughout the extension: region-neutral ISO (e.g. 2026-06-05 14:30) or your system's own regional format.
+- **Resume Destination Preferences** - You can now choose where sessions resume by default — terminal, desktop app, or VS Code extension — set separately for Claude and Codex, along with a per-CLI option to skip permission prompts.
+
+### Improved
+- **Consistent Date & Time Display** - Dates and times are now shown consistently across history, session analytics, exports, and the dashboard.
+- **Complete Workflow File Changes** - File edits made inside multi-agent workflows are now rolled up into the conversation turn that started them, so workflow file-change summaries are complete.
+
+## [0.4.80] - 2026-05-31
+
+### Added
+- **Multi-Agent Workflow View** - Conversations that run multi-agent workflows now show them clearly, with an execution timeline, individual agent cards, and final outputs so you can follow complex runs step by step.
+- **Question Prompts in Chat** - Conversations now display the questions asked during a session along with the available options, recommendations, and the answer that was chosen.
+- **Workflow Stats in Session Analytics** - Session analytics now include a workflow summary showing how many workflows ran, how many agents they spawned, tool activity, and token usage.
+- **Cache Efficiency in Session Analytics** - Session analytics now flag cache misses caused by idle gaps, showing how many tokens had to be re-created and the estimated extra cost.
+- **Day-by-Day Usage Breakdown** - The dashboard now includes a day-by-day usage breakdown that fills in automatically in the background, with quick options to recalculate recent days or run a full rebuild.
+
+### Improved
+- **Cleaner History List** - The Claude/Codex/OpenCode source badges in the history list are now smaller and more subtle, making session lists easier to scan.
+- **Native Session Fork** - The Fork button now uses Claude's built-in fork, creating a true fork of your session that leaves the original untouched.
+- **More Accurate Sub-Agent File Changes** - File edits made by sub-agents are now correctly credited to the conversation turn that triggered them in file-change summaries.
+- **Faster Conversation Loading** - Long workflow and agent transcripts now load on demand, so opening busy conversations feels snappier.
+- **Latest Model Support** - Added usage and cost tracking for the newest Claude Opus model.
+
+### Fixed
+- **Resume Command on Windows** - Fixed the copied resume command on Windows so it runs correctly whether you paste it into Command Prompt, PowerShell 5.1, or PowerShell 7.
+- **More Reliable Diff Reconstruction** - Fixed a case where rebuilding file changes that contained repeated text could behave unpredictably.
+
+## [0.4.72] - 2026-05-21
+
+### Added
+- **Resume in Claude/Codex Desktop Apps** - You can now resume supported sessions directly in Claude Desktop or Codex Desktop or thier VSCode Extension, in addition to terminal-based resume options.
+- **Session Deletion from History** - You can now delete sessions directly from the history view and move their files to the system Trash.
+- **Right-Click Session Menu** - Session rows now support a context menu for common actions like resume, copy command, rename, pin, copy session ID, and delete.
+- **Live Session Indicators** - Active sessions are now easier to spot in history with live indicators for supported sources.
+
+### Improved
+- **Faster Pin and Session Actions** - Pinning, unpinning, renaming, and similar session actions now update more quickly without forcing heavier history reloads.
+- **OpenCode and Branding Coverage** - More parts of the extension now consistently reflect OpenCode support and naming.
+
+### Fixed
+- **Error Handling and Suppression** - Fixed several noisy or non-actionable errors so they are handled more gracefully and reported less aggressively.
+- **Session Action Reliability** - Fixed edge cases where history actions could resolve the wrong session file or behave inconsistently when another chat was open.
+
 ## [0.4.71] - 2026-05-11
 
 ### Fixed
