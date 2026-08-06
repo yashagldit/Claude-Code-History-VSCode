@@ -2,6 +2,148 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.6.4] - 2026-08-04
+
+### NEW ccassist MCP
+- **Local MCP Server** - ccassist can expose your local chat history to supported AI clients so they can search sessions, pull context, inspect changes, and continue work from past sessions. Off until you turn it on.
+- **Guided MCP Setup** - The MCP page introduces itself on first visit and walks you through turning the server on, registering your CLIs, and installing the skill in one step. Reopen the walkthrough any time from the "?" button.
+
+### Added
+- **Cursor CLI Session Support** - Browse Cursor CLI sessions alongside Claude, Codex, OpenCode, Grok, and Copilot, including diffs, search, agents view, analytics, source filters, and live refresh.
+- **Session Tags and Notes** - Add tags and notes to sessions, filter history by tags, search with `tag:`, and optionally include tags/notes in Markdown exports.
+- **Session Read State** - History activity badges now remember which sessions you have opened, including across VS Code windows.
+
+### Improved
+- **Cleaner Long Conversations** - Completed work can collapse behind a concise “Worked for” summary, making large sessions easier to scan.
+- **Staged Project Session Reveal** - Large project groups now reveal sessions progressively with clearer show-more controls, keeping the history list more responsive.
+- **Better Session Conversion and Resume Registration** - Converted sessions are handled more reliably when moving between supported assistant formats.
+- **Improved Message Rendering** - Conversation text, colors, and dynamic message details render more consistently.
+
+### Fixed
+
+- **Unread Activity Accuracy** - Read/unread indicators are more consistent when sessions update or are opened from another window.
+
+## [0.6.3] - 2026-07-28
+
+### Added
+- **LaTeX Math Rendering** - Conversations now render LaTeX math with KaTeX. Copying rendered math gives you the TeX source back.
+- **Hide Individual Sessions** - Hide single sessions from the history list, not just entire projects; unhide them anytime from the Hidden tab.
+
+### Fixed
+- **Sub-Agent Ordering** - Sub-agents in the agent thread rail now appear in the order they actually started.
+
+## [0.6.2] - 2026-07-27
+
+### Improved
+- **Worktree-Aware Project Grouping** - Sessions from linked worktrees are now grouped more intelligently with their main project, making related work easier to find in the history list.
+- **Branch and Worktree Labels** - History rows and conversation views can now show branch and worktree context so you can tell which checkout a session came from.
+
+### Fixed
+- **Project Matching Edge Cases** - Fixed cases where the same project could appear as separate groups because of different encoded paths or worktree locations.
+
+## [0.6.1] - 2026-07-27
+
+### Added
+- **Skills Tab** - Browse installed agent skills from the side panel, search them, include or hide plugin skills, open bundled files, and copy the slash command for a skill.
+- **Agent Memories Tab** - View saved agent memories from the side panel so reusable project and personal context is easier to find.
+- **Mermaid Diagram Rendering** - Conversations can now render Mermaid diagrams with zoom and export support.
+- **Large Session Partial Loading** - Very large sessions can now open by loading their most recent messages first, with clear warnings when earlier messages were skipped.
+- **Search Operators** - History search now supports boolean operators (`AND`, `OR`, `NOT`), literal phrases with `exact:`, and regular expressions with `re:pattern` or `/pattern/`. Plain searches behave exactly as before.
+- **Search By Author** - `me:` searches only your prompts and `ai:` only the assistant's replies, on their own or combined with any other operator.
+- **Search Options Dropdown** - A dropdown at the left of the search bar picks the scope (all / your messages / assistant replies) and match mode (exact phrase / regex) without typing any syntax; the placeholder changes to describe what the current selection searches. `AND`, `OR`, and `NOT` can also be inserted from it. The typed operators still work for anyone who prefers them.
+
+### Improved
+- **Better Settings Organization** - Extension settings are now grouped into clearer sections, making configuration easier to scan.
+- **Clearer Tool Output in Conversations** - Tool activity in conversations is easier to scan, making long assistant sessions more readable.
+- **Sharper History Search Results** - Search matching now handles multi-term queries more consistently and highlights advanced operators more clearly.
+- **Better Source Filtering** - History source filters are clearer and more reliable when switching between assistant sources and new side-panel collections.
+- **Windows Live Status Support** - Live status support now works better on Windows instead of being hidden behind platform checks.
+
+### Fixed
+- **Deep Search Result Limits** - Deep search limits now apply by session count instead of raw match count, so one noisy session is less likely to crowd out other relevant sessions.
+- **Search Box Typing Stability** - Fixed the history search box occasionally replacing what you typed with a stale, lowercased copy while results refreshed.
+
+## [0.6.0] - 2026-07-21
+
+### Added
+- **Live Session Status** - A new real-time status mode can show when supported Claude, Codex, and Grok sessions are working, waiting for permission, or finished without waiting for the history list to refresh.
+- **Live Hooks Controls** - You can now enable or disable live status from extension commands or the history view, with clear setup states for each supported assistant.
+- **Live Status Trial and Pro Access** - Live status includes a free trial flow, clearer locked states, and upgrade messaging when the trial ends.
+
+### Improved
+- **Faster History Loading** - Session lists now appear faster with quicker indexing, lighter session reads, and better handling of large histories.
+- **Smoother Session Activity Indicators** - New activity and live-state indicators are easier to notice and keep session rows more accurate while work is happening.
+- **Cleaner Search Onboarding** - Search setup and indexing preferences are easier to understand, especially when choosing between faster startup and fuller search.
+- **More Polished Conversation Scrolling** - Chat and conversation views now land in the expected position more consistently when opened.
+
+### Fixed
+- **Premium Center and Upgrade Flow Clarity** - Account, upgrade, and trial-related messages now behave more consistently across entry points.
+
+## [0.5.7] - 2026-07-14
+
+### Fixed
+- **Codex Quota Display Accuracy** - Fixed cases where Codex quota windows could appear in the wrong slot when usage data included newer window details.
+
+## [0.5.6] - 2026-07-11
+
+### Added
+- **Grok Usage Tracking** - Grok activity now appears in usage views, model breakdowns, quota charts, and status indicators alongside your other assistants.
+- **Session Drilldowns in Usage Analytics** - Usage analytics now make it easier to drill into the sessions behind your activity so you can understand where time, tokens, and cost came from.
+
+### Improved
+- **Better Grok History and Search** - Grok sessions are parsed more completely, show richer session details, and work more reliably in history, search, conversation views, and file-change summaries.
+- **More Reliable Copilot and Grok File Changes** - Copilot and Grok sessions now produce cleaner file-change information across session views and diffs.
+- **More Useful Dashboard Views** - Usage charts, plan-window views, hourly/session rollups, and source filters are clearer and more consistent across supported assistants.
+- **Broader Localization Coverage** - More dashboard, webview, and extension text is now localized consistently for supported languages.
+- **Smoother Account and Pro Flows** - Device linking, subscription checks, upgrade prompts, and related error messages are more reliable and easier to understand.
+- **Lightweight Local Search Storage** - Conversation message bodies are no longer saved to the extension's local SQLite search index.
+
+### Fixed
+- **Session Time Accuracy** - Usage analytics now handle session timing more consistently when building daily, hourly, and session-level summaries.
+- **Search and Indexing Reliability** - Fixed edge cases that could make lightweight search or indexed search less consistent for newer session sources.
+- **Safer Session Deletion** - If VS Code cannot move an explicitly deleted session to the system Trash, the operation now stops and leaves the original file untouched instead of falling back to permanent deletion.
+
+## [0.5.5] - 2026-07-02
+
+### Added
+- **GitHub Copilot Session Support** - You can now browse and open GitHub Copilot sessions alongside Claude, Codex, OpenCode, and Grok history.
+- **Fable Usage Tracking** - Claude API usage tracking now includes Fable usage and limits where available, including status bar and dashboard visibility.
+- **Weekly Reset History** - The dashboard now shows a weekly reset history table so you can see when quota windows reset and how much quota was used or left unused.
+
+### Improved
+- **Faster Multi-Assistant History** - Session discovery, parsing, searching, and status bar updates are faster across Claude, Codex, OpenCode, Grok, and Copilot histories.
+- **More Consistent Source Filtering** - Search and history filtering now apply source filters more reliably across supported assistants.
+- **Cleaner Multi-Source Internals** - Shared source handling has been simplified, making resume, discovery, watching, and metadata behavior more consistent across assistants.
+
+### Fixed
+- **Search Source Filter Accuracy** - Fixed cases where session search could ignore the selected assistant/source filter.
+- **Live Session Indicators** - Live indicators now handle Copilot sessions more consistently.
+
+## [0.5.4] - 2026-06-23
+
+### Improved
+- **Faster History and Side Panel Rendering** - The side panel now caches more of its repeated UI work, helping history views feel snappier and more responsive.
+- **Better Project Path Caching** - Project and session lookup work has been reduced in the side panel, improving performance when browsing larger histories.
+
+
+## [0.5.2] - 2026-06-22
+
+### Added
+- **Grok Session Support** - You can now browse and work with Grok sessions alongside Claude, Codex, and OpenCode history across the extension.
+- **Model Filter in History** - The history view now lets you filter sessions by the models they used, making large histories easier to narrow down.
+- **Pinned Projects** - Projects can now be pinned so the workspaces you care about most stay easier to find in the history view.
+- **Project Context Menu** - Project headers in the history view now have their own context menu for actions like pinning, hiding, revealing in your file manager, and opening in a new window.
+
+### Improved
+- **More Modern History List** - The history view has been refreshed with a cleaner, more minimal look while keeping project grouping and quick actions easy to scan.
+- **Source Logos and Visuals** - Claude, Codex, OpenCode, and Grok sessions now have clearer source logos and badges across history, search results, and conversation views.
+- **Localized Status and Dashboard UI** - More of the extension, especially status bar indicators and dashboard text, now adapts to the user’s language.
+- **Markdown Sync and Restore Flow** - Markdown-based session sync and restore workflows are clearer and better integrated into the history UI.
+
+### Fixed
+- **History Filtering Reliability** - Fixed several source and model filtering edge cases so history and search results stay more consistent.
+
+
 ## [0.5.0] - 2026-06-13
 
 
@@ -17,7 +159,6 @@ All notable changes to the Claude Code and Codex Assist extension will be docume
 ### Improved
 - **History List Quick Actions** - Session rows now show hover quick-actions (pin, resume, delete) and full keyboard navigation — use the arrow keys, Home/End, Enter to open, and Delete to remove. Long titles show tooltips, and each tab has its own helpful empty state.
 - **Conversation View Polish** - Code blocks now have a floating copy button on hover, you can expand or collapse all sections at once, and assistant messages reveal their timestamp and model on hover. Search matches use your theme's highlight colors.
-- **Consistent Cost Display** - Costs are now formatted consistently everywhere ($X.XX, with <$0.01 for sub-cent amounts) across the history list, group headers, totals, and search results.
 - **Better Accessibility** - Improved keyboard navigation and screen-reader support for context menus and buttons throughout the history view.
 - **Faster History Loading** - Session history loads and refreshes more quickly, with large lists staying responsive and background updates applied in place without losing your scroll position.
 - **Configurable Export Location** - Exported sessions now land in a configurable folder, with smarter handling of nested directories.
