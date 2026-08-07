@@ -2,6 +2,20 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.6.6] - 2026-08-08
+
+### Added
+
+- **Session File Sizes** - Session file size is now stored, backfilled for existing history, shown in the history list, and available as a sort option.
+- **Smarter Project Session Loading** - Project groups can load more sessions on demand, with clearer progress when a project has more history than is currently shown.
+
+### Improved
+- **Faster Large Histories** - History loading, project grouping, search results, and session pagination are more efficient for users with many sessions.
+- **Better Search Pagination** - Search and history results now report loaded vs. total sessions more clearly and load additional results more predictably.
+- **More Reliable Project Search** - Project-filtered search and file timelines now match project paths more consistently, including paths with dots or encoded workspace names.
+- **Smoother Conversation Scrolling** - Long conversation views scroll more predictably, with fewer jumps and less header flicker while reading.
+- **More Stable OpenCode Refresh** - OpenCode session refresh and related parser behavior are more reliable during live updates.
+
 ## [0.6.4] - 2026-08-04
 
 ### NEW ccassist MCP

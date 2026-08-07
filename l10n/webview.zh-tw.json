@@ -206,6 +206,7 @@
   "history.sessionCountLoaded": "已載入 {total} 個中的 {loaded} 個",
   "history.sessionsOpenInEditor": "工作階段在編輯器標籤中開啟",
   "history.sessionsOpenInSidePanel": "工作階段在側邊面板中開啟",
+  "history.loadingProjectSessions": "正在載入工作階段...",
   "history.showAllProjects": "顯示所有專案",
   "history.showCurrentOnly": "僅顯示目前",
   "history.showLess": "收合",

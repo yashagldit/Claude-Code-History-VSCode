@@ -212,6 +212,7 @@
   "history.sessionCountLoaded": "{loaded} of {total} loaded",
   "history.sessionsOpenInEditor": "Sessions open in editor tab",
   "history.sessionsOpenInSidePanel": "Sessions open in side panel",
+  "history.loadingProjectSessions": "Loading sessions...",
   "history.showAllProjects": "Show All Projects",
   "history.showCurrentOnly": "Show Current Only",
   "history.showLess": "Show less",

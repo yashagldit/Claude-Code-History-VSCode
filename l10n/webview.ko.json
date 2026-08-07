@@ -206,6 +206,7 @@
   "history.sessionCountLoaded": "{total}개 중 {loaded}개 불러옴",
   "history.sessionsOpenInEditor": "세션이 편집기 탭에서 열립니다",
   "history.sessionsOpenInSidePanel": "세션이 사이드 패널에서 열립니다",
+  "history.loadingProjectSessions": "세션을 불러오는 중...",
   "history.showAllProjects": "모든 프로젝트 표시",
   "history.showCurrentOnly": "현재만 표시",
   "history.showLess": "덜 보기",

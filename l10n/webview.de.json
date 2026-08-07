@@ -206,6 +206,7 @@
   "history.sessionCountLoaded": "{loaded} von {total} geladen",
   "history.sessionsOpenInEditor": "Sitzungen werden im Editor-Tab geoeffnet",
   "history.sessionsOpenInSidePanel": "Sitzungen werden in der Seitenleiste geoeffnet",
+  "history.loadingProjectSessions": "Sitzungen werden geladen...",
   "history.showAllProjects": "Alle Projekte anzeigen",
   "history.showCurrentOnly": "Nur aktuelles anzeigen",
   "history.showLess": "Weniger anzeigen",

@@ -206,6 +206,7 @@
   "history.sessionCountLoaded": "已加载 {total} 个中的 {loaded} 个",
   "history.sessionsOpenInEditor": "会话在编辑器标签中打开",
   "history.sessionsOpenInSidePanel": "会话在侧边面板中打开",
+  "history.loadingProjectSessions": "正在加载会话...",
   "history.showAllProjects": "显示所有项目",
   "history.showCurrentOnly": "仅显示当前",
   "history.showLess": "收起",

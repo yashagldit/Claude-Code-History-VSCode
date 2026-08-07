@@ -206,6 +206,7 @@
   "history.sessionCountLoaded": "{loaded} sur {total} chargées",
   "history.sessionsOpenInEditor": "Les sessions s'ouvrent dans un onglet editeur",
   "history.sessionsOpenInSidePanel": "Les sessions s'ouvrent dans le panneau lateral",
+  "history.loadingProjectSessions": "Chargement des sessions...",
   "history.showAllProjects": "Afficher tous les projets",
   "history.showCurrentOnly": "Afficher seulement l'actuel",
   "history.showLess": "Afficher moins",

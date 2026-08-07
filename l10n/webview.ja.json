@@ -206,6 +206,7 @@
   "history.sessionCountLoaded": "{total} 件中 {loaded} 件読み込み済み",
   "history.sessionsOpenInEditor": "セッションはエディタータブで開きます",
   "history.sessionsOpenInSidePanel": "セッションはサイドパネルで開きます",
+  "history.loadingProjectSessions": "セッションを読み込み中...",
   "history.showAllProjects": "すべてのプロジェクトを表示",
   "history.showCurrentOnly": "現在のみ表示",
   "history.showLess": "表示を減らす",

@@ -206,6 +206,7 @@
   "history.sessionCountLoaded": "{loaded} de {total} cargadas",
   "history.sessionsOpenInEditor": "Las sesiones se abren en una pestana del editor",
   "history.sessionsOpenInSidePanel": "Las sesiones se abren en el panel lateral",
+  "history.loadingProjectSessions": "Cargando sesiones...",
   "history.showAllProjects": "Mostrar todos los proyectos",
   "history.showCurrentOnly": "Mostrar solo actual",
   "history.showLess": "Mostrar menos",
