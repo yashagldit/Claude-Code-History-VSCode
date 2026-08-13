@@ -2,6 +2,22 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.6.7] - 2026-08-13
+
+### Added
+
+- **Advanced Deep Search Options** - Deep search now has a clearer Advanced panel with labeled options for author scope, match mode, tool output, and subagent transcripts.
+- **Tool Output and Subagent Search** - Deep search can now include tool inputs/results and subagent transcripts when you need to find details that are not in the main chat messages.
+- **Priority Section Control** - You can now hide the Priority section from the history list.
+
+### Improved
+- **Clearer Deep Search Feedback** - Search results now show how many files were scanned and surface scan failures instead of looking like a clean “no results” response.
+- **Better Priority Session Updates** - Sessions that appear in both Priority and date sections now keep active, unread, title, and live-status indicators in sync across both rows.
+
+### Fixed
+- **Deep Search Fallback Reliability** - Fixed deep search on machines where the search index directory falls back to an alternate location, including Windows setups where searches could incorrectly return zero results.
+- **Deep Search Provider Resilience** - If one assistant source cannot be scanned, deep search now continues with the remaining available sources instead of failing the whole scan silently.
+
 ## [0.6.6] - 2026-08-08
 
 ### Added
