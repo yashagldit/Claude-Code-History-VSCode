@@ -2,6 +2,17 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.6.8] - 2026-08-16
+
+
+### Improved
+- **More Reliable History Search** - History search now consistently searches the actual session files, so fresh installs and rebuilt indexes no longer miss message results.
+- **Cleaner Onboarding Experience** - The welcome flow is simpler, more native to VS Code, localized, and works better when no sessions are found yet.
+
+### Fixed
+- **Search Box Consistency** - Fixed cases where clicking a recent search or searching immediately after typing could jump back to an older query.
+- **Claude Session Discovery** - Fixed searches on machines where the writable index folder is separate from the real Claude history folder.
+
 ## [0.6.7] - 2026-08-13
 
 ### Added
