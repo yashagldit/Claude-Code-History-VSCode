@@ -739,5 +739,19 @@
   "Continue": "继续",
   "Set up ccassist": "设置 ccassist",
   "ccassist setup finished — see the summary document": "ccassist 设置完成 — 请查看摘要文档",
-  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist 将在 {url} 启动本地 MCP 服务器，将其注册到 Claude Code、Codex、Grok、OpenCode 和 Cursor，并安装 ccassist 技能。会先备份现有配置。"
+  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist 将在 {url} 启动本地 MCP 服务器，将其注册到 Claude Code、Codex、Grok、OpenCode 和 Cursor，并安装 ccassist 技能。会先备份现有配置。",
+  "Could not activate: {0}": "无法激活：{0}",
+  "Device info copied. Paste it on ccassist.dev → Dashboard → Devices to get an activation code.": "已复制设备信息。请在 ccassist.dev → 仪表板 → 设备中粘贴以获取激活码。",
+  "Invalid activation code.": "激活码无效。",
+  "Invalid activation link.": "激活链接无效。",
+  "Paste an activation code first.": "请先粘贴激活码。",
+  "Premium activated on this device. Offline license valid until {0}.": "已在此设备上激活 Premium。离线许可证有效期至 {0}。",
+  "Premium activated on this device.": "已在此设备上激活 Premium。",
+  "Verifying activation code...": "正在验证激活码...",
+  "Remove the offline license from this device? Premium will stop working here until you activate again or sign in.": "从此设备移除离线许可证？在重新激活或登录之前，Premium 将在此设备上停止工作。",
+  "Remove Offline License": "移除离线许可证",
+  "Refreshing offline license...": "正在刷新离线许可证...",
+  "Couldn't reach ccassist.dev from this editor. Generate a new activation code in your browser instead.": "无法从此编辑器连接 ccassist.dev。请改在浏览器中生成新的激活码。",
+  "This device is no longer linked to a Premium account.": "此设备已不再关联到 Premium 账户。",
+  "Your account does not have an active Premium plan.": "你的账户没有有效的 Premium 套餐。"
 }

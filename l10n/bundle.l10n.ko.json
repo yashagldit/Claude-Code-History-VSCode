@@ -739,5 +739,19 @@
   "Continue": "계속",
   "Set up ccassist": "ccassist 설정",
   "ccassist setup finished — see the summary document": "ccassist 설정 완료 — 요약 문서를 확인하세요",
-  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist는 {url}에서 로컬 MCP 서버를 시작하고 Claude Code, Codex, Grok, OpenCode, Cursor에 등록한 후 ccassist 스킬을 설치합니다. 기존 구성 파일은 먼저 백업됩니다."
+  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist는 {url}에서 로컬 MCP 서버를 시작하고 Claude Code, Codex, Grok, OpenCode, Cursor에 등록한 후 ccassist 스킬을 설치합니다. 기존 구성 파일은 먼저 백업됩니다.",
+  "Could not activate: {0}": "활성화할 수 없습니다: {0}",
+  "Device info copied. Paste it on ccassist.dev → Dashboard → Devices to get an activation code.": "기기 정보를 복사했습니다. ccassist.dev → 대시보드 → 기기에 붙여넣어 활성화 코드를 받으세요.",
+  "Invalid activation code.": "활성화 코드가 올바르지 않습니다.",
+  "Invalid activation link.": "활성화 링크가 올바르지 않습니다.",
+  "Paste an activation code first.": "먼저 활성화 코드를 붙여넣으세요.",
+  "Premium activated on this device. Offline license valid until {0}.": "이 기기에서 Premium이 활성화되었습니다. 오프라인 라이선스는 {0}까지 유효합니다.",
+  "Premium activated on this device.": "이 기기에서 Premium이 활성화되었습니다.",
+  "Verifying activation code...": "활성화 코드를 확인하는 중...",
+  "Remove the offline license from this device? Premium will stop working here until you activate again or sign in.": "이 기기에서 오프라인 라이선스를 제거할까요? 다시 활성화하거나 로그인할 때까지 여기서는 Premium이 작동하지 않습니다.",
+  "Remove Offline License": "오프라인 라이선스 제거",
+  "Refreshing offline license...": "오프라인 라이선스를 새로 고치는 중...",
+  "Couldn't reach ccassist.dev from this editor. Generate a new activation code in your browser instead.": "이 편집기에서 ccassist.dev에 연결할 수 없습니다. 대신 브라우저에서 새 활성화 코드를 생성하세요.",
+  "This device is no longer linked to a Premium account.": "이 기기는 더 이상 Premium 계정에 연결되어 있지 않습니다.",
+  "Your account does not have an active Premium plan.": "계정에 활성 Premium 요금제가 없습니다."
 }

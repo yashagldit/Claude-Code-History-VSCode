@@ -739,5 +739,19 @@
   "Continue": "繼續",
   "Set up ccassist": "設定 ccassist",
   "ccassist setup finished — see the summary document": "ccassist 設定完成 — 請查看摘要文件",
-  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist 會在 {url} 啟動本機 MCP 伺服器，並將其註冊到 Claude Code、Codex、Grok、OpenCode 與 Cursor，同時安裝 ccassist 技能。會先備份現有設定檔。"
+  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist 會在 {url} 啟動本機 MCP 伺服器，並將其註冊到 Claude Code、Codex、Grok、OpenCode 與 Cursor，同時安裝 ccassist 技能。會先備份現有設定檔。",
+  "Could not activate: {0}": "無法啟用：{0}",
+  "Device info copied. Paste it on ccassist.dev → Dashboard → Devices to get an activation code.": "已複製裝置資訊。請在 ccassist.dev → 儀表板 → 裝置中貼上以取得啟用碼。",
+  "Invalid activation code.": "啟用碼無效。",
+  "Invalid activation link.": "啟用連結無效。",
+  "Paste an activation code first.": "請先貼上啟用碼。",
+  "Premium activated on this device. Offline license valid until {0}.": "已在此裝置啟用 Premium。離線授權有效期至 {0}。",
+  "Premium activated on this device.": "已在此裝置啟用 Premium。",
+  "Verifying activation code...": "正在驗證啟用碼...",
+  "Remove the offline license from this device? Premium will stop working here until you activate again or sign in.": "要從此裝置移除離線授權嗎？在重新啟用或登入之前，Premium 將在此裝置上停止運作。",
+  "Remove Offline License": "移除離線授權",
+  "Refreshing offline license...": "正在重新整理離線授權...",
+  "Couldn't reach ccassist.dev from this editor. Generate a new activation code in your browser instead.": "無法從此編輯器連線 ccassist.dev。請改在瀏覽器中產生新的啟用碼。",
+  "This device is no longer linked to a Premium account.": "此裝置已不再連結到 Premium 帳戶。",
+  "Your account does not have an active Premium plan.": "你的帳戶沒有有效的 Premium 方案。"
 }

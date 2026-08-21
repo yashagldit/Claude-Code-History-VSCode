@@ -739,5 +739,19 @@
   "Continue": "続行",
   "Set up ccassist": "ccassist をセットアップ",
   "ccassist setup finished — see the summary document": "ccassist のセットアップが完了しました — 概要ドキュメントを参照",
-  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist はローカル MCP サーバーを {url} で起動し、Claude Code、Codex、Grok、OpenCode、Cursor に登録し、ccassist スキルをインストールします。既存の設定ファイルは先にバックアップされます。"
+  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist はローカル MCP サーバーを {url} で起動し、Claude Code、Codex、Grok、OpenCode、Cursor に登録し、ccassist スキルをインストールします。既存の設定ファイルは先にバックアップされます。",
+  "Could not activate: {0}": "アクティベートできませんでした: {0}",
+  "Device info copied. Paste it on ccassist.dev → Dashboard → Devices to get an activation code.": "デバイス情報をコピーしました。ccassist.dev → ダッシュボード → デバイスに貼り付けてアクティベーションコードを取得してください。",
+  "Invalid activation code.": "アクティベーションコードが無効です。",
+  "Invalid activation link.": "アクティベーションリンクが無効です。",
+  "Paste an activation code first.": "先にアクティベーションコードを貼り付けてください。",
+  "Premium activated on this device. Offline license valid until {0}.": "このデバイスで Premium が有効になりました。オフラインライセンスの有効期限は {0} です。",
+  "Premium activated on this device.": "このデバイスで Premium が有効になりました。",
+  "Verifying activation code...": "アクティベーションコードを確認しています...",
+  "Remove the offline license from this device? Premium will stop working here until you activate again or sign in.": "このデバイスからオフラインライセンスを削除しますか？再度有効化するかサインインするまで、Premium はここで使えなくなります。",
+  "Remove Offline License": "オフラインライセンスを削除",
+  "Refreshing offline license...": "オフラインライセンスを更新しています...",
+  "Couldn't reach ccassist.dev from this editor. Generate a new activation code in your browser instead.": "このエディターから ccassist.dev に接続できませんでした。代わりにブラウザーで新しいアクティベーションコードを生成してください。",
+  "This device is no longer linked to a Premium account.": "このデバイスは Premium アカウントにリンクされていません。",
+  "Your account does not have an active Premium plan.": "お使いのアカウントに有効な Premium プランがありません。"
 }

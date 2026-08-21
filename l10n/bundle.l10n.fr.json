@@ -739,5 +739,19 @@
   "Continue": "Continuer",
   "Set up ccassist": "Configurer ccassist",
   "ccassist setup finished — see the summary document": "Configuration ccassist terminée — voir le document récapitulatif",
-  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist démarrera le serveur MCP local sur {url}, l'enregistrera auprès de Claude Code, Codex, Grok, OpenCode et Cursor, et installera la compétence ccassist. Les fichiers de config existants sont d'abord sauvegardés."
+  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist démarrera le serveur MCP local sur {url}, l'enregistrera auprès de Claude Code, Codex, Grok, OpenCode et Cursor, et installera la compétence ccassist. Les fichiers de config existants sont d'abord sauvegardés.",
+  "Could not activate: {0}": "Activation impossible : {0}",
+  "Device info copied. Paste it on ccassist.dev → Dashboard → Devices to get an activation code.": "Informations de l'appareil copiées. Collez-les sur ccassist.dev → Tableau de bord → Appareils pour obtenir un code d'activation.",
+  "Invalid activation code.": "Code d'activation non valide.",
+  "Invalid activation link.": "Lien d'activation non valide.",
+  "Paste an activation code first.": "Collez d'abord un code d'activation.",
+  "Premium activated on this device. Offline license valid until {0}.": "Premium activé sur cet appareil. Licence hors ligne valable jusqu'au {0}.",
+  "Premium activated on this device.": "Premium activé sur cet appareil.",
+  "Verifying activation code...": "Vérification du code d'activation...",
+  "Remove the offline license from this device? Premium will stop working here until you activate again or sign in.": "Supprimer la licence hors ligne de cet appareil ? Premium cessera de fonctionner ici jusqu'à une nouvelle activation ou connexion.",
+  "Remove Offline License": "Supprimer la licence hors ligne",
+  "Refreshing offline license...": "Actualisation de la licence hors ligne...",
+  "Couldn't reach ccassist.dev from this editor. Generate a new activation code in your browser instead.": "Impossible de joindre ccassist.dev depuis cet éditeur. Générez plutôt un nouveau code d’activation dans votre navigateur.",
+  "This device is no longer linked to a Premium account.": "Cet appareil n’est plus lié à un compte Premium.",
+  "Your account does not have an active Premium plan.": "Votre compte n’a pas de forfait Premium actif."
 }
