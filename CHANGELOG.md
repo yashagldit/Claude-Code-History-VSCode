@@ -2,6 +2,18 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.6.9] - 2026-08-21
+
+### Added
+
+- **Offline Premium Activation** - Premium can now be activated with a code from ccassist.dev, so firewalled or restricted editor environments can unlock Premium without the editor reaching the server.
+
+### Improved
+- **Faster Large History Scans** - Search and file-change discovery now do less unnecessary parsing, making large histories and shell-heavy sessions faster to process.
+- **Lower Memory Use on Big Histories** - Session caches are now kept bounded so long-running use and very large histories stay more responsive.
+- **Shell Edit File Cards** - File cards now better explain changes made by shell commands, including clearer badges, notes, and command context when an exact diff cannot be reconstructed.
+- **More Accurate Shell-Generated Diffs** - More shell-based file writes and edits are detected and shown in the conversation instead of being hidden as plain terminal output.
+
 ## [0.6.8] - 2026-08-16
 
 
