@@ -2,6 +2,29 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.7.0] - 2026-08-31
+
+### Added
+
+- **Revamped Side Panel** - The side panel has been redesigned with tab-based navigation, making it faster and cleaner to switch between history, account insights, settings, hooks, MCP, skills, memories, plans, and experiments.
+- **Account Tab** - Check plan usage, quota burn-down, recent activity, daily usage, account status, and device details directly from the side panel.
+- **Real-Time Hooks Tab** - Set up and manage live session status for Claude, Codex, and Grok, so the history list can show when an agent is working, waiting for permission, or finished.
+- **Experiments Tab** - Try upcoming features and vote on whether they should stay, including a customizable quota health bar, hidden session tags, and quicker Account access from the status bar.
+- **Activity in Other Projects** - When viewing one project, a banner now alerts you to active or unread sessions elsewhere and takes you back to the full list.
+- **Per-Model Usage Breakdown** - Expand each day in the analytics dashboard to see usage and cost totals for individual models.
+
+### Improved
+
+- **More Complete File Change History** - File changes made through shell commands, PowerShell, loops, glob patterns, and subagents are detected more reliably across supported assistants.
+- **Faster File Change Views** - Large sessions and large file changes now open with less processing and memory use, while unchanged sessions reuse previously loaded results.
+- **Cleaner History Controls** - Project, source, model, sorting, grouping, and display controls are more compact and easier to navigate, with project actions available even when viewing a single project.
+- **Cleaner Conversation Copying** - Copied messages keep useful formatting without carrying VS Code theme colors or backgrounds into other apps.
+
+### Fixed
+
+- **File Change Accuracy** - Reduced duplicate, incorrectly attributed, and missing file changes, including Windows paths, failed shell commands, and overlapping agent activity.
+- **Codex Quota Cards** - Codex usage cards now adapt to the windows available on the current plan instead of showing empty statistics.
+
 ## [0.6.9] - 2026-08-21
 
 ### Added
