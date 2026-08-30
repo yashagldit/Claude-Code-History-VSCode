@@ -464,7 +464,6 @@
   "conversation.shellEditUnresolved": "Este archivo fue modificado por un comando de shell. No se pudo reconstruir el cambio exacto, por lo que no hay diff disponible. El comando se muestra abajo.",
   "conversation.shellEditPartial": "Parte del cambio de este comando de shell no se pudo reconstruir; el diff de abajo puede estar incompleto.",
   "conversation.shellCommandFailed": "El comando de shell informó de un error después de que posiblemente ya hubiera modificado este archivo. Este cambio puede estar incompleto.",
-  "conversation.shellConcurrentNote": "Otra llamada de herramienta se estaba ejecutando en este espacio de trabajo al mismo tiempo, por lo que este cambio podría pertenecer a otro comando.",
   "conversation.showTurnDiff": "Mostrar diferencia de giro",
   "conversation.undoTurnChanges": "Deshacer cambios de giro",
   "conversation.reapplyTurnChanges": "Volver a aplicar cambios de giro",

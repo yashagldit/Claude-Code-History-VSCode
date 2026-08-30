@@ -464,7 +464,6 @@
   "conversation.shellEditUnresolved": "Ce fichier a été modifié par une commande shell. La modification exacte n'a pas pu être reconstruite, aucun diff n'est donc disponible. La commande est affichée ci-dessous.",
   "conversation.shellEditPartial": "Une partie de la modification apportée par cette commande shell n'a pas pu être reconstruite — le diff ci-dessous peut être incomplet.",
   "conversation.shellCommandFailed": "La commande shell a signalé un échec après avoir peut-être déjà modifié ce fichier. Cette modification peut être partielle.",
-  "conversation.shellConcurrentNote": "Un autre appel d'outil s'exécutait en même temps dans cet espace de travail ; cette modification peut donc provenir d'une autre commande.",
   "conversation.showTurnDiff": "Afficher le diff de virage",
   "conversation.undoTurnChanges": "Annuler les modifications de virage",
   "conversation.reapplyTurnChanges": "Réappliquer les modifications de virage",

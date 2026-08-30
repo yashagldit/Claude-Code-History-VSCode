@@ -464,7 +464,6 @@
   "conversation.shellEditUnresolved": "이 파일은 셸 명령으로 변경되었습니다. 정확한 변경 내용을 복원할 수 없어 diff를 표시할 수 없습니다. 명령은 아래에 표시됩니다.",
   "conversation.shellEditPartial": "이 셸 명령의 변경 내용 일부를 복원할 수 없었습니다. 아래 diff는 불완전할 수 있습니다.",
   "conversation.shellCommandFailed": "셸 명령이 이 파일을 이미 변경했을 수 있는 상태에서 실패를 보고했습니다. 변경이 일부만 적용되었을 수 있습니다.",
-  "conversation.shellConcurrentNote": "동시에 이 작업 영역에서 다른 도구 호출이 실행 중이었으므로 이 변경은 다른 명령에 의한 것일 수 있습니다.",
   "conversation.showTurnDiff": "회전 차이 표시",
   "conversation.undoTurnChanges": "회전 변경 실행 취소",
   "conversation.reapplyTurnChanges": "회전 변경 다시 적용",

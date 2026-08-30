@@ -464,7 +464,6 @@
   "conversation.shellEditUnresolved": "Diese Datei wurde durch einen Shell-Befehl geändert. Die genaue Änderung konnte nicht rekonstruiert werden, daher ist kein Diff verfügbar. Der Befehl wird unten angezeigt.",
   "conversation.shellEditPartial": "Ein Teil der Änderung dieses Shell-Befehls an der Datei konnte nicht rekonstruiert werden – das Diff unten ist möglicherweise unvollständig.",
   "conversation.shellCommandFailed": "Der Shell-Befehl meldete einen Fehler, nachdem er diese Datei möglicherweise bereits geändert hatte. Diese Änderung kann unvollständig sein.",
-  "conversation.shellConcurrentNote": "Gleichzeitig lief ein weiterer Tool-Aufruf in diesem Workspace, daher stammt diese Änderung möglicherweise von einem anderen Befehl.",
   "conversation.showTurnDiff": "Blinkerdifferenz anzeigen",
   "conversation.undoTurnChanges": "Turn-Änderungen rückgängig machen",
   "conversation.reapplyTurnChanges": "Turn-Änderungen erneut anwenden",

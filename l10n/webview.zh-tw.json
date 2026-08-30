@@ -464,7 +464,6 @@
   "conversation.shellEditUnresolved": "此檔案由 Shell 命令修改。無法還原確切的變更，因此沒有可用的差異。命令如下所示。",
   "conversation.shellEditPartial": "此 Shell 命令對檔案的部分變更無法還原——下方的差異可能不完整。",
   "conversation.shellCommandFailed": "Shell 命令在可能已經變更此檔案後回報失敗。此變更可能只完成了一部分。",
-  "conversation.shellConcurrentNote": "同一時間此工作區中還有另一個工具呼叫在執行，因此此變更可能來自其他命令。",
   "conversation.showTurnDiff": "顯示轉彎差異",
   "conversation.undoTurnChanges": "撤銷回合更改",
   "conversation.reapplyTurnChanges": "重新套用回合更改",

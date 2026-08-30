@@ -471,7 +471,6 @@
   "conversation.shellEditUnresolved": "This file was changed by a shell command. The exact edit could not be reconstructed, so no diff is available. The command is shown below.",
   "conversation.shellEditPartial": "Part of this shell command's change to the file could not be reconstructed — the diff below may be incomplete.",
   "conversation.shellCommandFailed": "The shell command reported a failure after it may already have changed this file. This change may be partial.",
-  "conversation.shellConcurrentNote": "Another tool call was running in this workspace at the same time, so this change may belong to a different command.",
   "conversation.showTurnDiff": "Show turn diff",
   "conversation.undoTurnChanges": "Undo turn changes",
   "conversation.reapplyTurnChanges": "Reapply turn changes",

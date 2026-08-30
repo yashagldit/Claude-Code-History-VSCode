@@ -464,7 +464,6 @@
   "conversation.shellEditUnresolved": "このファイルはシェルコマンドによって変更されました。正確な変更内容を復元できなかったため、差分は表示できません。コマンドを以下に示します。",
   "conversation.shellEditPartial": "このシェルコマンドによる変更の一部を復元できませんでした。以下の差分は不完全な場合があります。",
   "conversation.shellCommandFailed": "シェルコマンドは、このファイルを変更した可能性がある後に失敗を報告しました。この変更は部分的な場合があります。",
-  "conversation.shellConcurrentNote": "同時にこのワークスペースで別のツール呼び出しが実行されていたため、この変更は別のコマンドによるものである可能性があります。",
   "conversation.showTurnDiff": "ターンの差分を表示",
   "conversation.undoTurnChanges": "ターンの変更を元に戻す",
   "conversation.reapplyTurnChanges": "ターンの変更を再適用",
