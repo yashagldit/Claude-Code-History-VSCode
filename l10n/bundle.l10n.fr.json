@@ -327,6 +327,8 @@
   "Unsupported tool type for reapply": "Type d'outil non pris en charge pour la réapplication",
   "Failed to reapply change: {error}": "Échec de la réapplication de la modification :{error}",
   "Undo is limited to same-day file changes on the Free plan.": "L'annulation est limitée aux modifications de fichiers le jour même sur le forfait gratuit.",
+  "Undo is unavailable because this shell change has no observed before-state.": "L'annulation est indisponible car cette modification shell ne possède aucun état antérieur observé.",
+  "Undo is unavailable because this turn includes an inferred shell change with no observed before-state.": "L'annulation est indisponible car ce tour contient une modification shell déduite sans état antérieur observé.",
   "Unsupported tool type for undo": "Type d'outil non pris en charge pour l'annulation",
   "Failed to undo change: {error}": "Échec de l'annulation de la modification :{error}",
   "No file changes available": "Aucune modification de fichier disponible",
@@ -753,5 +755,8 @@
   "Refreshing offline license...": "Actualisation de la licence hors ligne...",
   "Couldn't reach ccassist.dev from this editor. Generate a new activation code in your browser instead.": "Impossible de joindre ccassist.dev depuis cet éditeur. Générez plutôt un nouveau code d’activation dans votre navigateur.",
   "This device is no longer linked to a Premium account.": "Cet appareil n’est plus lié à un compte Premium.",
-  "Your account does not have an active Premium plan.": "Votre compte n’a pas de forfait Premium actif."
+  "Your account does not have an active Premium plan.": "Votre compte n’a pas de forfait Premium actif.",
+  "Device ID copied to clipboard": "ID de l'appareil copié dans le presse-papiers",
+  "Reset": "Réinitialiser",
+  "Reset all CCAssist settings to their default values?": "Réinitialiser tous les paramètres CCAssist à leurs valeurs par défaut ?"
 }

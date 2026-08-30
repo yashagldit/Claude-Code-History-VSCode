@@ -326,6 +326,8 @@
   "Unsupported tool type for reapply": "不支持重新应用的工具类型",
   "Failed to reapply change: {error}": "无法重新应用更改：{error}",
   "Undo is limited to same-day file changes on the Free plan.": "在免费计划中，撤消仅限于当天的文件更改。",
+  "Undo is unavailable because this shell change has no observed before-state.": "此 Shell 更改没有已观察到的更改前状态，因此无法撤消。",
+  "Undo is unavailable because this turn includes an inferred shell change with no observed before-state.": "此轮包含没有已观察到更改前状态的推断 Shell 更改，因此无法撤消。",
   "Unsupported tool type for undo": "不支持的撤消工具类型",
   "Failed to undo change: {error}": "无法撤消更改：{error}",
   "No file changes available": "没有可用的文件更改",
@@ -753,5 +755,8 @@
   "Refreshing offline license...": "正在刷新离线许可证...",
   "Couldn't reach ccassist.dev from this editor. Generate a new activation code in your browser instead.": "无法从此编辑器连接 ccassist.dev。请改在浏览器中生成新的激活码。",
   "This device is no longer linked to a Premium account.": "此设备已不再关联到 Premium 账户。",
-  "Your account does not have an active Premium plan.": "你的账户没有有效的 Premium 套餐。"
+  "Your account does not have an active Premium plan.": "你的账户没有有效的 Premium 套餐。",
+  "Device ID copied to clipboard": "设备 ID 已复制到剪贴板",
+  "Reset": "重置",
+  "Reset all CCAssist settings to their default values?": "将所有 CCAssist 设置重置为默认值？"
 }

@@ -327,6 +327,8 @@
   "Unsupported tool type for reapply": "재적용이 지원되지 않는 도구 유형",
   "Failed to reapply change: {error}": "변경 사항을 다시 적용하지 못했습니다:{error}",
   "Undo is limited to same-day file changes on the Free plan.": "실행 취소는 무료 플랜에서 당일 파일 변경으로 제한됩니다.",
+  "Undo is unavailable because this shell change has no observed before-state.": "이 셸 변경에는 관찰된 변경 전 상태가 없어 실행 취소할 수 없습니다.",
+  "Undo is unavailable because this turn includes an inferred shell change with no observed before-state.": "이 턴에는 관찰된 변경 전 상태가 없는 추론된 셸 변경이 포함되어 있어 실행 취소할 수 없습니다.",
   "Unsupported tool type for undo": "실행 취소에 지원되지 않는 도구 유형",
   "Failed to undo change: {error}": "변경을 취소하지 못했습니다:{error}",
   "No file changes available": "사용 가능한 파일 변경 사항이 없습니다.",
@@ -753,5 +755,8 @@
   "Refreshing offline license...": "오프라인 라이선스를 새로 고치는 중...",
   "Couldn't reach ccassist.dev from this editor. Generate a new activation code in your browser instead.": "이 편집기에서 ccassist.dev에 연결할 수 없습니다. 대신 브라우저에서 새 활성화 코드를 생성하세요.",
   "This device is no longer linked to a Premium account.": "이 기기는 더 이상 Premium 계정에 연결되어 있지 않습니다.",
-  "Your account does not have an active Premium plan.": "계정에 활성 Premium 요금제가 없습니다."
+  "Your account does not have an active Premium plan.": "계정에 활성 Premium 요금제가 없습니다.",
+  "Device ID copied to clipboard": "기기 ID를 클립보드에 복사했습니다",
+  "Reset": "초기화",
+  "Reset all CCAssist settings to their default values?": "모든 CCAssist 설정을 기본값으로 초기화할까요?"
 }

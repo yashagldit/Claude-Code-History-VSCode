@@ -327,6 +327,8 @@
   "Unsupported tool type for reapply": "Tipo de herramienta no admitida para volver a aplicar",
   "Failed to reapply change: {error}": "No se pudo volver a aplicar el cambio:{error}",
   "Undo is limited to same-day file changes on the Free plan.": "Deshacer se limita a cambios de archivos el mismo día en el plan gratuito.",
+  "Undo is unavailable because this shell change has no observed before-state.": "No se puede deshacer porque este cambio de shell no tiene un estado anterior observado.",
+  "Undo is unavailable because this turn includes an inferred shell change with no observed before-state.": "No se puede deshacer porque este turno incluye un cambio de shell inferido sin un estado anterior observado.",
   "Unsupported tool type for undo": "Tipo de herramienta no admitida para deshacer",
   "Failed to undo change: {error}": "No se pudo deshacer el cambio:{error}",
   "No file changes available": "No hay cambios de archivos disponibles",
@@ -753,5 +755,8 @@
   "Refreshing offline license...": "Actualizando la licencia sin conexión...",
   "Couldn't reach ccassist.dev from this editor. Generate a new activation code in your browser instead.": "No se pudo conectar con ccassist.dev desde este editor. Genera un nuevo código de activación en el navegador.",
   "This device is no longer linked to a Premium account.": "Este dispositivo ya no está vinculado a una cuenta Premium.",
-  "Your account does not have an active Premium plan.": "Tu cuenta no tiene un plan Premium activo."
+  "Your account does not have an active Premium plan.": "Tu cuenta no tiene un plan Premium activo.",
+  "Device ID copied to clipboard": "ID del dispositivo copiado al portapapeles",
+  "Reset": "Restablecer",
+  "Reset all CCAssist settings to their default values?": "¿Restablecer todos los ajustes de CCAssist a sus valores predeterminados?"
 }

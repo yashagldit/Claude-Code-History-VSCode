@@ -326,6 +326,8 @@
   "Unsupported tool type for reapply": "再適用がサポートされていないツール タイプです",
   "Failed to reapply change: {error}": "変更の再適用に失敗しました:{error}",
   "Undo is limited to same-day file changes on the Free plan.": "無料プランでは、元に戻すことができるのは同日のファイル変更に限られます。",
+  "Undo is unavailable because this shell change has no observed before-state.": "このシェル変更には観測された変更前の状態がないため、元に戻せません。",
+  "Undo is unavailable because this turn includes an inferred shell change with no observed before-state.": "このターンには観測された変更前の状態がない推定シェル変更が含まれるため、元に戻せません。",
   "Unsupported tool type for undo": "元に戻すためのツールの種類がサポートされていません",
   "Failed to undo change: {error}": "変更を元に戻すことができませんでした:{error}",
   "No file changes available": "利用可能なファイル変更はありません",
@@ -753,5 +755,8 @@
   "Refreshing offline license...": "オフラインライセンスを更新しています...",
   "Couldn't reach ccassist.dev from this editor. Generate a new activation code in your browser instead.": "このエディターから ccassist.dev に接続できませんでした。代わりにブラウザーで新しいアクティベーションコードを生成してください。",
   "This device is no longer linked to a Premium account.": "このデバイスは Premium アカウントにリンクされていません。",
-  "Your account does not have an active Premium plan.": "お使いのアカウントに有効な Premium プランがありません。"
+  "Your account does not have an active Premium plan.": "お使いのアカウントに有効な Premium プランがありません。",
+  "Device ID copied to clipboard": "デバイス ID をクリップボードにコピーしました",
+  "Reset": "リセット",
+  "Reset all CCAssist settings to their default values?": "すべての CCAssist 設定を既定値にリセットしますか？"
 }
