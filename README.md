@@ -1,3 +1,5 @@
+
+
 # Claude Code and Codex Assist — History, Diff & Usage Analytics for VS Code, Cursor & more
 
 > **Note**: This is an unofficial extension and is not made by or affiliated with Anthropic, OpenAI, SST/OpenCode, xAI/Grok, or GitHub.
@@ -126,7 +128,7 @@ Click any session to see the conversation and its file changes, use **File Chang
 
 ## ⌨️ Commands & Shortcuts
 
-Open the Command Palette (`Ctrl+Shift+P`) and search for **CCAssist** — refresh sessions, open the dashboard, refresh API usage quota, open the side panel, and more.
+Open the Command Palette (`Ctrl/Cmd+Shift+P`) and search for **CCAssist** — refresh sessions, open the dashboard, refresh API usage quota, open the side panel, and more.
 
 | Shortcut | Action |
 |----------|--------|
