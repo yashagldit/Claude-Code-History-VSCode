@@ -758,5 +758,18 @@
   "Your account does not have an active Premium plan.": "계정에 활성 Premium 요금제가 없습니다.",
   "Device ID copied to clipboard": "기기 ID를 클립보드에 복사했습니다",
   "Reset": "초기화",
-  "Reset all CCAssist settings to their default values?": "모든 CCAssist 설정을 기본값으로 초기화할까요?"
+  "Reset all CCAssist settings to their default values?": "모든 CCAssist 설정을 기본값으로 초기화할까요?",
+  "Reload Window": "창 다시 로드",
+  "Reload the window to finish updating Claude Code and Codex Assist — experiment settings can't be saved until then.": "창을 다시 로드하여 Claude Code and Codex Assist 업데이트를 완료하세요 — 그 전까지는 실험 설정을 저장할 수 없습니다.",
+  "Your last 7 days: {0} sessions across {1} active days with your AI coding tools.": "최근 7일: AI 코딩 도구로 {1}일 동안 {0}개 세션.",
+  "See the details": "자세히 보기",
+  "Could not build the share image.": "공유용 이미지를 만들지 못했습니다.",
+  "Could not save the share image: {error}": "공유용 이미지를 저장하지 못했습니다: {error}",
+  "Show Image": "이미지 보기",
+  "Card saved to {path}": "카드를 {path}에 저장했습니다",
+  "This session is already running in terminal \"{name}\" — focused it.": "이 세션은 이미 터미널 \"{name}\"에서 실행 중입니다. 해당 터미널에 초점을 맞췄습니다.",
+  "This session is already running in another VS Code window — focused it there.": "이 세션은 이미 다른 VS Code 창에서 실행 중입니다. 해당 창에 초점을 맞췄습니다.",
+  "Focused the terminal \"{name}\" already opened for this session.": "이 세션을 위해 이미 열려 있는 터미널 \"{name}\"에 초점을 맞췄습니다.",
+  "Resume anyway": "그래도 재개",
+  "Fork": "포크"
 }

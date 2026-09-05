@@ -17,30 +17,50 @@ Sessions from all five appear in one unified list with badges and logos that tel
 
 ## 🎬 Feature Demos
 
-### 📊 Usage Analytics
-Track subscription quota, model usage, weekly reset history, and token trends across Claude Code, Codex, OpenCode, Grok, and Copilot in a single dashboard.
+### 🔍 Full-Text Search
+Search every prompt and reply across thousands of sessions. Results are grouped by session with the matching message, project, and cost. The Advanced panel lets you pick who to search (all, you, or the assistant), how to match (any words, exact phrase, or regex), and whether to include tool output and subagent transcripts.
 
-![Usage Analytics](./assets/usage-analytics.gif)
+![Full-Text Search](./assets/text-search.gif)
 
-### 📚 Chat History & Diff Viewer
-Browse sessions with GitHub-style diffs and one-click file changes.
+### ✅ Session Changes & Review
+Every turn shows the files it touched with +/- counts, diff, undo, and reapply. Open **Review Changes** to see all file changes from a conversation in one place.
 
-![Chat History & Diff Viewer](./assets/session-browser.gif)
+![Session Changes and Review Changes](./assets/session-changes.gif)
 
 ### ⏱️ File History Timeline
 **git blame, but for AI conversations.** Open any file and the timeline shows every session that edited it — expand a session to see the exact prompt and its diff, across Claude Code, Codex, OpenCode, Grok, and Copilot.
 
 ![File History Timeline](./assets/timeline-demo.gif)
 
-### 🔍 Full-Text Search
-Search across all conversations with instant, session-grouped results — including boolean operators (`AND` `OR` `NOT`), `exact:` phrases, `re:` regex queries, and `me:`/`ai:` scopes to search only your prompts or only the AI's replies.
+### 💬 Conversation View
+Rendered transcript with per-turn **Turn changes** cards, a context-window graph, cache hit rate, and cost. Resume in the terminal, the desktop app, or the Codex VS Code extension, or export to Markdown.
 
-![Full-Text Search](./assets/search-demo.gif)
+<img src="./assets/conversation-view.png" alt="Conversation view with per-turn file changes and resume targets" width="420">
 
-### ✅ Review Changes
-See every file change from a conversation in one place.
+### 📊 Quota Burn-Down & Activity
+Live 5-hour and weekly quota cards for Claude, Codex, Fable, and Grok, burn-down charts that project when each window exhausts, an activity heatmap, and a day-by-day cost table.
 
-![Review Changes](./assets/review-changes.gif)
+<img src="./assets/account-quota.png" alt="Account tab with quota cards, burn-down chart, and activity heatmap" width="420">
+
+### 📅 Weekly Digest
+A rolling 7-day summary of sessions, tokens, cost, edits, and active days versus last week, split by tool and by project.
+
+<img src="./assets/weekly-digest.png" alt="Weekly digest with totals, day-by-day tokens, and top projects" width="420">
+
+### 📚 Unified Session Browser
+Claude Code, Codex, Grok, OpenCode, Copilot, and Cursor sessions in one list, grouped by project, with per-model filters and cost per folder.
+
+<img src="./assets/chat-history.png" alt="Sessions tab grouped by project with the model filter open" width="420">
+
+### 🔌 ccassist MCP Server
+A local MCP server lets Claude Code, Codex, Grok, OpenCode, and Cursor read your session history and continue each other's work.
+
+<img src="./assets/history-mcp.png" alt="MCP tab listing the ccassist tools available to CLI agents" width="420">
+
+### 📍 Quota in the Status Bar
+Claude, Fable, Codex, and Grok percentages are always visible; hover to see every window with its reset time.
+
+<img src="./assets/usage-quota-statusbar.png" alt="Status bar quota indicator with hover popup" width="555">
 
 
 ## 🌟 Features
@@ -72,8 +92,9 @@ See every file change from a conversation in one place.
 - **File history timeline** — git blame for AI conversations: the timeline auto-follows the active editor and lists every session that edited the file, then drill into any session to read the exact prompt and open its diff (or right-click a file to open the timeline)
 
 ### Search
-- **Indexed or direct search** — choose speed (SQLite full-text) or privacy (search files directly, nothing stored separately)
-- **Search operators** — combine terms with `AND` / `OR` / `NOT`, match literal phrases with `exact:`, use regular expressions with `re:pattern`, or scope a search to just your prompts (`me:`) or just the assistant's replies (`ai:`). Pick a scope or match mode from the dropdown at the left of the search bar instead of typing anything — the placeholder tells you what the current selection searches
+- **Direct file search** — every search scans your session files directly; nothing is copied into a separate index, and results show how many files were scanned
+- **Advanced panel** — one click next to the search bar opens selectable options: search everyone, only your prompts, or only the assistant's replies; match any words, an exact phrase, or a regular expression
+- **Tool output and subagent search** — toggle in tool inputs/results and subagent transcripts to find details that never appear in the main chat messages
 - **Session-grouped results** with cost, token, and message counts, plus highlighted matches
 
 ### ccassist MCP Server — share context between assistants

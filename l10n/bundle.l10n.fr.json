@@ -758,5 +758,18 @@
   "Your account does not have an active Premium plan.": "Votre compte n’a pas de forfait Premium actif.",
   "Device ID copied to clipboard": "ID de l'appareil copié dans le presse-papiers",
   "Reset": "Réinitialiser",
-  "Reset all CCAssist settings to their default values?": "Réinitialiser tous les paramètres CCAssist à leurs valeurs par défaut ?"
+  "Reset all CCAssist settings to their default values?": "Réinitialiser tous les paramètres CCAssist à leurs valeurs par défaut ?",
+  "Reload Window": "Recharger la fenêtre",
+  "Reload the window to finish updating Claude Code and Codex Assist — experiment settings can't be saved until then.": "Rechargez la fenêtre pour terminer la mise à jour de Claude Code and Codex Assist — les paramètres des expérimentations ne peuvent pas être enregistrés d'ici là.",
+  "Your last 7 days: {0} sessions across {1} active days with your AI coding tools.": "Vos 7 derniers jours : {0} sessions sur {1} jours d'activité avec vos outils de codage IA.",
+  "See the details": "Voir les détails",
+  "Could not build the share image.": "Impossible de créer l'image à partager.",
+  "Could not save the share image: {error}": "Impossible d'enregistrer l'image à partager : {error}",
+  "Show Image": "Afficher l'image",
+  "Card saved to {path}": "Carte enregistrée dans {path}",
+  "This session is already running in terminal \"{name}\" — focused it.": "Cette session est déjà en cours d’exécution dans le terminal « {name} » ; celui-ci a été mis au premier plan.",
+  "This session is already running in another VS Code window — focused it there.": "Cette session est déjà en cours d’exécution dans une autre fenêtre VS Code ; celle-ci a été mise au premier plan.",
+  "Focused the terminal \"{name}\" already opened for this session.": "Le terminal « {name} » déjà ouvert pour cette session a été mis au premier plan.",
+  "Resume anyway": "Reprendre quand même",
+  "Fork": "Créer une branche"
 }

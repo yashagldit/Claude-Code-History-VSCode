@@ -758,5 +758,18 @@
   "Your account does not have an active Premium plan.": "お使いのアカウントに有効な Premium プランがありません。",
   "Device ID copied to clipboard": "デバイス ID をクリップボードにコピーしました",
   "Reset": "リセット",
-  "Reset all CCAssist settings to their default values?": "すべての CCAssist 設定を既定値にリセットしますか？"
+  "Reset all CCAssist settings to their default values?": "すべての CCAssist 設定を既定値にリセットしますか？",
+  "Reload Window": "ウィンドウを再読み込み",
+  "Reload the window to finish updating Claude Code and Codex Assist — experiment settings can't be saved until then.": "ウィンドウを再読み込みして Claude Code and Codex Assist の更新を完了してください — それまで実験設定は保存できません。",
+  "Your last 7 days: {0} sessions across {1} active days with your AI coding tools.": "直近 7 日間: AI コーディングツールで {1} 日間に {0} セッション。",
+  "See the details": "詳細を見る",
+  "Could not build the share image.": "シェア用の画像を作成できませんでした。",
+  "Could not save the share image: {error}": "シェア用の画像を保存できませんでした: {error}",
+  "Show Image": "画像を表示",
+  "Card saved to {path}": "カードを {path} に保存しました",
+  "This session is already running in terminal \"{name}\" — focused it.": "このセッションはすでにターミナル「{name}」で実行中です。そちらにフォーカスしました。",
+  "This session is already running in another VS Code window — focused it there.": "このセッションはすでに別のVS Codeウィンドウで実行中です。そちらにフォーカスしました。",
+  "Focused the terminal \"{name}\" already opened for this session.": "このセッション用にすでに開いているターミナル「{name}」にフォーカスしました。",
+  "Resume anyway": "とにかく再開",
+  "Fork": "フォーク"
 }

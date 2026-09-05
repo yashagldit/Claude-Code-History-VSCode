@@ -758,5 +758,18 @@
   "Your account does not have an active Premium plan.": "Tu cuenta no tiene un plan Premium activo.",
   "Device ID copied to clipboard": "ID del dispositivo copiado al portapapeles",
   "Reset": "Restablecer",
-  "Reset all CCAssist settings to their default values?": "¿Restablecer todos los ajustes de CCAssist a sus valores predeterminados?"
+  "Reset all CCAssist settings to their default values?": "¿Restablecer todos los ajustes de CCAssist a sus valores predeterminados?",
+  "Reload Window": "Recargar ventana",
+  "Reload the window to finish updating Claude Code and Codex Assist — experiment settings can't be saved until then.": "Recarga la ventana para terminar de actualizar Claude Code and Codex Assist — los ajustes de experimentos no se pueden guardar hasta entonces.",
+  "Your last 7 days: {0} sessions across {1} active days with your AI coding tools.": "Tus últimos 7 días: {0} sesiones en {1} días activos con tus herramientas de programación con IA.",
+  "See the details": "Ver los detalles",
+  "Could not build the share image.": "No se pudo crear la imagen para compartir.",
+  "Could not save the share image: {error}": "No se pudo guardar la imagen para compartir: {error}",
+  "Show Image": "Mostrar imagen",
+  "Card saved to {path}": "Tarjeta guardada en {path}",
+  "This session is already running in terminal \"{name}\" — focused it.": "Esta sesión ya se está ejecutando en la terminal \"{name}\"; se ha enfocado.",
+  "This session is already running in another VS Code window — focused it there.": "Esta sesión ya se está ejecutando en otra ventana de VS Code; se ha enfocado allí.",
+  "Focused the terminal \"{name}\" already opened for this session.": "Se enfocó la terminal \"{name}\" ya abierta para esta sesión.",
+  "Resume anyway": "Reanudar de todos modos",
+  "Fork": "Bifurcar"
 }

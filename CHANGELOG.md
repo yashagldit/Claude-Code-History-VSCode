@@ -2,6 +2,31 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.7.1] - 2026-09-05
+
+### Added
+
+- **Weekly Digest Tab** - A new side panel tab summarizes your last 7 days of AI coding: sessions, tokens, cost, active days, a day-by-day chart, and your top tools and projects, compared against the week before. Step back through earlier calendar weeks, and get a once-a-week reminder when a fresh digest is ready.
+- **Share Card** - Turn today's, this week's, this month's, or a single project's usage into a shareable image you can copy or save. Everything is rendered locally from your own history; nothing is uploaded.
+- **Branch and Worktree Filter** - Narrow the history list to sessions from a specific git branch or worktree, alongside the existing source and model filters.
+- **Activity Summary per Turn** - Conversations now show what each turn did at a glance: commands run, files read, searches, and tools used, with collapsible detail rows and expand/collapse-all controls.
+- **Reasoning Effort in Analytics** - Session analytics and the day-by-day dashboard breakdown now split usage by model and reasoning effort, including thinking tokens, for Claude and Codex sessions.
+- **Inline Local Images** - Images referenced by local path in transcripts now render inline in the conversation view.
+
+
+### Improved
+
+- **Faster Startup and Sidebar** - The extension starts faster with a compiled code cache, the sidebar re-renders less and reuses more of its UI, redundant file watchers were removed, and live polling pauses while the window is unfocused.
+- **Session Notices When Resuming** - Resuming a session that is already running in a terminal now tells you so and offers to fork instead.
+- **Clearer System Events** - Conversation system events now offer a "show result" link, and task notifications are handled more consistently.
+
+### Fixed
+
+- **Streamed Message Token Totals** - Token usage for streamed assistant messages is no longer counted twice in conversation and analytics views.
+- **Stale File Changes in Live Sessions** - Live session refreshes now keep previously loaded file changes instead of briefly dropping them.
+- **Effort Grouping** - Reasoning effort values that differ only by case no longer split into separate rows in usage tables.
+- **Experiment Toggles After Updates** - Turning an experiment on or off right after an in-place extension update now prompts for a window reload instead of failing silently.
+
 ## [0.7.0] - 2026-08-31
 
 ### Added

@@ -758,5 +758,18 @@
   "Your account does not have an active Premium plan.": "你的帳戶沒有有效的 Premium 方案。",
   "Device ID copied to clipboard": "裝置 ID 已複製到剪貼簿",
   "Reset": "重設",
-  "Reset all CCAssist settings to their default values?": "將所有 CCAssist 設定重設為預設值？"
+  "Reset all CCAssist settings to their default values?": "將所有 CCAssist 設定重設為預設值？",
+  "Reload Window": "重新載入視窗",
+  "Reload the window to finish updating Claude Code and Codex Assist — experiment settings can't be saved until then.": "請重新載入視窗以完成 Claude Code and Codex Assist 的更新 — 在此之前實驗設定無法儲存。",
+  "Your last 7 days: {0} sessions across {1} active days with your AI coding tools.": "你的最近 7 天：使用 AI 編程工具，{1} 天內共 {0} 個工作階段。",
+  "See the details": "查看詳細資料",
+  "Could not build the share image.": "無法產生用於分享的圖片。",
+  "Could not save the share image: {error}": "無法儲存用於分享的圖片：{error}",
+  "Show Image": "顯示圖片",
+  "Card saved to {path}": "卡片已儲存到 {path}",
+  "This session is already running in terminal \"{name}\" — focused it.": "此工作階段已在終端機「{name}」中執行，已將其聚焦。",
+  "This session is already running in another VS Code window — focused it there.": "此工作階段已在另一個 VS Code 視窗中執行，已將其聚焦。",
+  "Focused the terminal \"{name}\" already opened for this session.": "已聚焦為此工作階段開啟的終端機「{name}」。",
+  "Resume anyway": "仍然繼續",
+  "Fork": "分支"
 }
