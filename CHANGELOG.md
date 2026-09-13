@@ -2,6 +2,25 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.7.2] - 2026-09-13
+
+### Added
+
+- **Resume OpenCode Sessions in OpenChamber** - OpenCode sessions can now open directly in the OpenChamber VS Code extension, with a new default resume preference and safe project-window switching when needed.
+
+### Improved
+
+- **Smarter ccassist Context Transfer** - Choose how many recent turns to include when continuing a session, with better preservation of long messages and clear notices when content is shortened.
+- **Faster Analytics and Share Cards** - Usage views now read only the session details needed for the selected period and reuse project data while rendering.
+- **More Reliable Live Session Updates** - Newly created and updated sessions stay visible during background scans, and live status continues updating even when the search index is unavailable.
+- **More Accurate Codex and Grok Sessions** - Improved child-agent discovery, tool display, message counts, token totals, task updates, and session duration reporting.
+- **Clearer Device Management** - Linked devices now show more descriptive editor names, making similar installations easier to identify.
+
+### Fixed
+
+- **Worktree Project Grouping** - Project headers, session rows, and “show more” results now stay together for removed or unusually located worktrees.
+- **Quota Burn-Down Forecasts** - Idle time is now included in burn-rate calculations, preventing overly pessimistic quota exhaustion estimates.
+
 ## [0.7.1] - 2026-09-05
 
 ### Added

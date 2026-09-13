@@ -771,5 +771,7 @@
   "This session is already running in another VS Code window — focused it there.": "此工作階段已在另一個 VS Code 視窗中執行，已將其聚焦。",
   "Focused the terminal \"{name}\" already opened for this session.": "已聚焦為此工作階段開啟的終端機「{name}」。",
   "Resume anyway": "仍然繼續",
-  "Fork": "分支"
+  "Fork": "分支",
+  "Please enter your work email.": "請填寫你的工作電子郵件。",
+  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "已在獨立視窗中開啟 {project}。OpenChamber 會在視窗所屬的專案中執行工作階段，請在該視窗中繼續此工作階段。"
 }

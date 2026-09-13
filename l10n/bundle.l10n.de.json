@@ -771,5 +771,7 @@
   "This session is already running in another VS Code window — focused it there.": "Diese Sitzung läuft bereits in einem anderen VS Code-Fenster – dorthin fokussiert.",
   "Focused the terminal \"{name}\" already opened for this session.": "Das für diese Sitzung bereits geöffnete Terminal „{name}\" wurde fokussiert.",
   "Resume anyway": "Trotzdem fortsetzen",
-  "Fork": "Abzweigen"
+  "Fork": "Abzweigen",
+  "Please enter your work email.": "Bitte geben Sie Ihre geschäftliche E-Mail-Adresse ein.",
+  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "{project} ist in einem eigenen Fenster geöffnet. OpenChamber führt Sitzungen im Projekt des Fensters aus. Setzen Sie diese Sitzung daher dort fort."
 }

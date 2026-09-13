@@ -771,5 +771,7 @@
   "This session is already running in another VS Code window — focused it there.": "このセッションはすでに別のVS Codeウィンドウで実行中です。そちらにフォーカスしました。",
   "Focused the terminal \"{name}\" already opened for this session.": "このセッション用にすでに開いているターミナル「{name}」にフォーカスしました。",
   "Resume anyway": "とにかく再開",
-  "Fork": "フォーク"
+  "Fork": "フォーク",
+  "Please enter your work email.": "仕事用のメールアドレスを入力してください。",
+  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "{project} を専用のウィンドウで開きました。OpenChamber はウィンドウのプロジェクトでセッションを実行するため、そのウィンドウからこのセッションを再開してください。"
 }
