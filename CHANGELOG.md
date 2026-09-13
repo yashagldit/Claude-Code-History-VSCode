@@ -2,6 +2,18 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.7.3] - 2026-09-14
+
+### Added
+
+- **Complete Support for Long Codex Sessions** - Long Codex threads that continue across multiple pages now appear as one complete session everywhere, including history, live updates, search, resume, fork, conversion, archive, export, and ccassist MCP.
+- **Inline Codex Visualizations** - Interactive visualizations created by Codex now render directly inside the conversation view, with a clear fallback when the original visualization is no longer available.
+
+### Improved
+
+- **More Accurate Codex Usage and Costs** - Usage analytics now avoid counting repeated token reports, include cache writes, and account for Fast-tier requests so totals more closely match actual Codex usage.
+
+
 ## [0.7.2] - 2026-09-13
 
 ### Added
