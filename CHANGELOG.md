@@ -2,6 +2,19 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.7.4] - 2026-09-22
+
+### Improved
+
+- **More Accurate Cursor Conversations** - Cursor sessions now reconstruct user prompts, dynamic and MCP tools, tool results, errors, background-task notifications, timestamps, and file changes more reliably and in the correct order.
+- **Smoother Live Conversation Following** - Conversation views now stay pinned to the newest live output while messages, diffs, images, and visualizations expand, without pulling you back down after you intentionally scroll away.
+- **Better Conversation Navigation** - Mouse back buttons now return from a conversation to history, while links to agents and activity reliably scroll to the requested content.
+
+### Fixed
+
+- **Codex Subagent Sessions** - Spawned Codex subagents no longer lose their own turns around compaction, and failed turns with no model request no longer inflate usage totals.
+- **Tool Results in Activity Summaries** - Tool results now remain attached to the correct activity even when a file-change card appears before the result arrives.
+
 ## [0.7.3] - 2026-09-14
 
 ### Added
