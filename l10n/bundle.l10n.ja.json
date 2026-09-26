@@ -773,5 +773,19 @@
   "Resume anyway": "とにかく再開",
   "Fork": "フォーク",
   "Please enter your work email.": "仕事用のメールアドレスを入力してください。",
-  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "{project} を専用のウィンドウで開きました。OpenChamber はウィンドウのプロジェクトでセッションを実行するため、そのウィンドウからこのセッションを再開してください。"
+  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "{project} を専用のウィンドウで開きました。OpenChamber はウィンドウのプロジェクトでセッションを実行するため、そのウィンドウからこのセッションを再開してください。",
+  "The checkpoint copy of {0} is no longer on disk. Claude Code deletes file history after cleanupPeriodDays.": "{0} のチェックポイントのコピーはディスク上にありません。Claude Code は cleanupPeriodDays 経過後にファイル履歴を削除します。",
+  "{0} (checkpoint ↔ current)": "{0} (チェックポイント ↔ 現在)",
+  "This version is older than the Free plan allows.": "このバージョンは Free プランで利用できる期間より古いです。",
+  "The saved copy of {0} is no longer available. Rescan to refresh the list.": "{0} の保存済みコピーは利用できなくなりました。再スキャンしてリストを更新してください。",
+  "{0} (saved {1} ↔ current)": "{0} (保存 {1} ↔ 現在)",
+  "Restore": "復元",
+  "Open File": "ファイルを開く",
+  "Overwrite {0} with the version saved {1}?": "{0} を {1} に保存されたバージョンで上書きしますか?",
+  "Recreate {0} from the version saved {1}?": "{1} に保存されたバージョンから {0} を再作成しますか?",
+  "From session: {0}": "セッション: {0}",
+  "Failed to restore {0}: {1}": "{0} を復元できませんでした: {1}",
+  "Restored {0}": "{0} を復元しました",
+  "Showing all projects (click for current project only)": "すべてのプロジェクトを表示中（クリックで現在のプロジェクトのみ）",
+  "Showing current project only (click for all projects)": "現在のプロジェクトのみ表示中（クリックですべてのプロジェクト）"
 }

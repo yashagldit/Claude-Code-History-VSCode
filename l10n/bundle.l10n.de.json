@@ -773,5 +773,19 @@
   "Resume anyway": "Trotzdem fortsetzen",
   "Fork": "Abzweigen",
   "Please enter your work email.": "Bitte geben Sie Ihre geschäftliche E-Mail-Adresse ein.",
-  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "{project} ist in einem eigenen Fenster geöffnet. OpenChamber führt Sitzungen im Projekt des Fensters aus. Setzen Sie diese Sitzung daher dort fort."
+  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "{project} ist in einem eigenen Fenster geöffnet. OpenChamber führt Sitzungen im Projekt des Fensters aus. Setzen Sie diese Sitzung daher dort fort.",
+  "The checkpoint copy of {0} is no longer on disk. Claude Code deletes file history after cleanupPeriodDays.": "Die Checkpoint-Kopie von {0} ist nicht mehr vorhanden. Claude Code löscht den Dateiverlauf nach cleanupPeriodDays.",
+  "{0} (checkpoint ↔ current)": "{0} (Checkpoint ↔ aktuell)",
+  "This version is older than the Free plan allows.": "Diese Version ist älter, als der Free-Plan erlaubt.",
+  "The saved copy of {0} is no longer available. Rescan to refresh the list.": "Die gespeicherte Kopie von {0} ist nicht mehr verfügbar. Scanne neu, um die Liste zu aktualisieren.",
+  "{0} (saved {1} ↔ current)": "{0} (gespeichert {1} ↔ aktuell)",
+  "Restore": "Wiederherstellen",
+  "Open File": "Datei öffnen",
+  "Overwrite {0} with the version saved {1}?": "{0} mit der Version von {1} überschreiben?",
+  "Recreate {0} from the version saved {1}?": "{0} aus der Version von {1} neu erstellen?",
+  "From session: {0}": "Aus Sitzung: {0}",
+  "Failed to restore {0}: {1}": "{0} konnte nicht wiederhergestellt werden: {1}",
+  "Restored {0}": "{0} wiederhergestellt",
+  "Showing all projects (click for current project only)": "Alle Projekte werden angezeigt (klicken für nur aktuelles Projekt)",
+  "Showing current project only (click for all projects)": "Nur aktuelles Projekt wird angezeigt (klicken für alle Projekte)"
 }

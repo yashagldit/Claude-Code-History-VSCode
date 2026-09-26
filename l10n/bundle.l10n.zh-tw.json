@@ -773,5 +773,19 @@
   "Resume anyway": "仍然繼續",
   "Fork": "分支",
   "Please enter your work email.": "請填寫你的工作電子郵件。",
-  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "已在獨立視窗中開啟 {project}。OpenChamber 會在視窗所屬的專案中執行工作階段，請在該視窗中繼續此工作階段。"
+  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "已在獨立視窗中開啟 {project}。OpenChamber 會在視窗所屬的專案中執行工作階段，請在該視窗中繼續此工作階段。",
+  "The checkpoint copy of {0} is no longer on disk. Claude Code deletes file history after cleanupPeriodDays.": "{0} 的檢查點副本已不在磁碟上。Claude Code 會在 cleanupPeriodDays 後刪除檔案歷史。",
+  "{0} (checkpoint ↔ current)": "{0}（檢查點 ↔ 目前）",
+  "This version is older than the Free plan allows.": "此版本早於 Free 方案允許的範圍。",
+  "The saved copy of {0} is no longer available. Rescan to refresh the list.": "{0} 的已儲存副本已無法使用。請重新掃描以重新整理清單。",
+  "{0} (saved {1} ↔ current)": "{0}（儲存於 {1} ↔ 目前）",
+  "Restore": "復原",
+  "Open File": "開啟檔案",
+  "Overwrite {0} with the version saved {1}?": "要用 {1} 儲存的版本覆寫 {0} 嗎？",
+  "Recreate {0} from the version saved {1}?": "要從 {1} 儲存的版本重新建立 {0} 嗎？",
+  "From session: {0}": "來自工作階段：{0}",
+  "Failed to restore {0}: {1}": "無法復原 {0}：{1}",
+  "Restored {0}": "已復原 {0}",
+  "Showing all projects (click for current project only)": "正在顯示所有專案（點擊僅顯示目前專案）",
+  "Showing current project only (click for all projects)": "僅顯示目前專案（點擊顯示所有專案）"
 }

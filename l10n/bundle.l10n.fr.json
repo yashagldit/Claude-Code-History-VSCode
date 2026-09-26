@@ -773,5 +773,19 @@
   "Resume anyway": "Reprendre quand même",
   "Fork": "Créer une branche",
   "Please enter your work email.": "Veuillez saisir votre e-mail professionnel.",
-  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "{project} est ouvert dans sa propre fenêtre. OpenChamber exécute les sessions dans le projet de la fenêtre : reprenez donc cette session depuis celle-ci."
+  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "{project} est ouvert dans sa propre fenêtre. OpenChamber exécute les sessions dans le projet de la fenêtre : reprenez donc cette session depuis celle-ci.",
+  "The checkpoint copy of {0} is no longer on disk. Claude Code deletes file history after cleanupPeriodDays.": "La copie du point de contrôle de {0} n'est plus sur le disque. Claude Code supprime l'historique des fichiers après cleanupPeriodDays.",
+  "{0} (checkpoint ↔ current)": "{0} (point de contrôle ↔ actuel)",
+  "This version is older than the Free plan allows.": "Cette version est plus ancienne que ce que permet le plan Free.",
+  "The saved copy of {0} is no longer available. Rescan to refresh the list.": "La copie enregistrée de {0} n'est plus disponible. Réanalysez pour actualiser la liste.",
+  "{0} (saved {1} ↔ current)": "{0} (enregistré {1} ↔ actuel)",
+  "Restore": "Restaurer",
+  "Open File": "Ouvrir le fichier",
+  "Overwrite {0} with the version saved {1}?": "Remplacer {0} par la version enregistrée {1} ?",
+  "Recreate {0} from the version saved {1}?": "Recréer {0} à partir de la version enregistrée {1} ?",
+  "From session: {0}": "Depuis la session : {0}",
+  "Failed to restore {0}: {1}": "Impossible de restaurer {0} : {1}",
+  "Restored {0}": "{0} restauré",
+  "Showing all projects (click for current project only)": "Affichage de tous les projets (cliquer pour le projet actuel uniquement)",
+  "Showing current project only (click for all projects)": "Affichage du projet actuel uniquement (cliquer pour tous les projets)"
 }

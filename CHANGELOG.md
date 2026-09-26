@@ -2,6 +2,20 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.7.5] - 2026-09-27
+
+### Added
+
+- **File Recovery** - A new Recovery tab finds saved copies of project files from Claude, Codex, and Grok sessions. Compare a copy with the current file or restore it, and filter by project, file status, or time. Today's copies are available on Free; Pro unlocks older copies.
+- **Conversation Checkpoints** - Claude and Grok conversations now show saved file states beside the prompts they belong to, so you can compare those files with their current versions.
+
+### Improved
+
+- **Clearer Conversation History** - Messages exchanged between Claude sessions now show who sent them, while queued messages appear in the right place. Temporary scratchpad files are tucked away so they do not inflate file-change totals.
+- **Easier History Browsing** - Session rows have clearer highlights, long titles are easier to read, and compact rows reveal more details on hover (switch this off in the Experiments tab).
+- **Better Skills and Memories Filters** - Narrow skills by source and memories by project directly from their tabs.
+- **More Accurate Cost Estimates** - Updated model prices now refresh older session costs, keeping history and usage totals current.
+
 ## [0.7.4] - 2026-09-22
 
 ### Improved

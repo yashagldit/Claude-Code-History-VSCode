@@ -773,5 +773,19 @@
   "Resume anyway": "Reanudar de todos modos",
   "Fork": "Bifurcar",
   "Please enter your work email.": "Introduce tu correo de trabajo.",
-  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "{project} está abierto en su propia ventana. OpenChamber ejecuta las sesiones en el proyecto de la ventana, así que reanuda esta sesión desde allí."
+  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "{project} está abierto en su propia ventana. OpenChamber ejecuta las sesiones en el proyecto de la ventana, así que reanuda esta sesión desde allí.",
+  "The checkpoint copy of {0} is no longer on disk. Claude Code deletes file history after cleanupPeriodDays.": "La copia del punto de control de {0} ya no está en el disco. Claude Code elimina el historial de archivos tras cleanupPeriodDays.",
+  "{0} (checkpoint ↔ current)": "{0} (punto de control ↔ actual)",
+  "This version is older than the Free plan allows.": "Esta versión es más antigua de lo que permite el plan Free.",
+  "The saved copy of {0} is no longer available. Rescan to refresh the list.": "La copia guardada de {0} ya no está disponible. Vuelve a escanear para actualizar la lista.",
+  "{0} (saved {1} ↔ current)": "{0} (guardado {1} ↔ actual)",
+  "Restore": "Restaurar",
+  "Open File": "Abrir archivo",
+  "Overwrite {0} with the version saved {1}?": "¿Sobrescribir {0} con la versión guardada {1}?",
+  "Recreate {0} from the version saved {1}?": "¿Recrear {0} a partir de la versión guardada {1}?",
+  "From session: {0}": "De la sesión: {0}",
+  "Failed to restore {0}: {1}": "No se pudo restaurar {0}: {1}",
+  "Restored {0}": "{0} restaurado",
+  "Showing all projects (click for current project only)": "Mostrando todos los proyectos (clic para solo el proyecto actual)",
+  "Showing current project only (click for all projects)": "Mostrando solo el proyecto actual (clic para todos los proyectos)"
 }

@@ -773,5 +773,19 @@
   "Resume anyway": "그래도 재개",
   "Fork": "포크",
   "Please enter your work email.": "회사 이메일을 입력해 주세요.",
-  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "{project}을(를) 별도 창에서 열었습니다. OpenChamber는 창의 프로젝트에서 세션을 실행하므로 해당 창에서 이 세션을 재개하세요."
+  "{project} is open in its own window. OpenChamber runs sessions in the window's project, so resume this session from there.": "{project}을(를) 별도 창에서 열었습니다. OpenChamber는 창의 프로젝트에서 세션을 실행하므로 해당 창에서 이 세션을 재개하세요.",
+  "The checkpoint copy of {0} is no longer on disk. Claude Code deletes file history after cleanupPeriodDays.": "{0}의 체크포인트 사본이 더 이상 디스크에 없습니다. Claude Code는 cleanupPeriodDays 이후 파일 기록을 삭제합니다.",
+  "{0} (checkpoint ↔ current)": "{0} (체크포인트 ↔ 현재)",
+  "This version is older than the Free plan allows.": "이 버전은 Free 플랜에서 허용하는 기간보다 오래되었습니다.",
+  "The saved copy of {0} is no longer available. Rescan to refresh the list.": "{0}의 저장된 사본을 더 이상 사용할 수 없습니다. 다시 스캔하여 목록을 새로 고치세요.",
+  "{0} (saved {1} ↔ current)": "{0} (저장 {1} ↔ 현재)",
+  "Restore": "복원",
+  "Open File": "파일 열기",
+  "Overwrite {0} with the version saved {1}?": "{0}을(를) {1}에 저장된 버전으로 덮어쓸까요?",
+  "Recreate {0} from the version saved {1}?": "{1}에 저장된 버전으로 {0}을(를) 다시 만들까요?",
+  "From session: {0}": "세션: {0}",
+  "Failed to restore {0}: {1}": "{0}을(를) 복원하지 못했습니다: {1}",
+  "Restored {0}": "{0} 복원됨",
+  "Showing all projects (click for current project only)": "모든 프로젝트 표시 중 (현재 프로젝트만 보려면 클릭)",
+  "Showing current project only (click for all projects)": "현재 프로젝트만 표시 중 (모든 프로젝트를 보려면 클릭)"
 }

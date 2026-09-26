@@ -2,6 +2,8 @@
 
 > **Note**: This is an unofficial extension and is not made by or affiliated with Anthropic, OpenAI, SST/OpenCode, xAI/Grok, or GitHub.
 
+![Claude Code and Codex Assist in 40 seconds: session history, resume, quota tracking, diffs, search, and cross-CLI context](./assets/ccassist-promo.gif)
+
 Browse your **Claude Code**, **Codex**, **OpenCode**, **Grok**, and **GitHub Copilot** chat history right inside VS Code — view file diffs, search across every conversation, track token usage and cost, and resume past sessions without leaving the editor. It doubles as a usage tracker: a single dashboard shows cost per model, quota burn-down, and weekly reset history across all your AI assistants. Ever wondered which AI conversation changed a file? The File Timeline is git blame for AI edits: pick a file, see every session and prompt that touched it, and open the exact diff.
 
 **🤖 Works with all five assistants:**
