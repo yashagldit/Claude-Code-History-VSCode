@@ -2,6 +2,25 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.7.6] - 2026-10-03
+
+### Added
+
+- **Cursor Plan Usage** - Your Cursor plan quota now appears in the status bar, the dashboard, and the sidebar Account tab alongside Claude, Codex, and Grok.
+- **Choose Which Agents You Use** - A new "agents I use" setting (`claude-history.enabledAgents`) controls which agents are shown and fetched. Change it from the dashboard header or the Settings tab.
+- **Sign In with Your Browser** - Signing in, linking a device, or checking out on ccassist.dev now signs the extension in too, with no code to copy back.
+
+### Improved
+
+- **Redesigned Dashboard** - The dashboard is now three focused tabs: Plan usage, Usage, and Activity. Activity breaks sessions down by model, and the dashboard opens faster and uses less memory.
+- **Cleaner Status Bar** - Quota is shown as plain text that follows the dashboard's Used/Remaining switch (Remaining by default) and changes background colour when quota runs low. The tooltip is a single aligned table with links to the dashboard and refresh.
+- **More Accurate Context Window Usage** - Context usage for Claude sessions now uses the right window size for each model, including 1M-context models, in conversation, session analytics, and dashboard views.
+- **Clearer Account Center** - Free and expired accounts are no longer shown as paid, expired accounts see the Upgrade tab, and your account email is prefilled at checkout and sign-in.
+
+### Fixed
+
+- **Repeated Full Usage Rescans** - Ordinary syncs now only look at recently changed sessions instead of re-scanning your whole history, and usage data is no longer dropped when the search index is briefly incomplete.
+
 ## [0.7.5] - 2026-09-27
 
 ### Added
