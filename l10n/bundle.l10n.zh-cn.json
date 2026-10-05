@@ -808,5 +808,6 @@
   "Open Account Center": "Open Account Center",
   "Remove \"{device}\" from the leaderboard? Its uploaded usage is deleted and it stops sharing.": "Remove \"{device}\" from the leaderboard? Its uploaded usage is deleted and it stops sharing.",
   "Remove": "Remove",
-  "This account has reached its device limit. Remove a device in the Account Center, then sign in again here.": "This account has reached its device limit. Remove a device in the Account Center, then sign in again here."
+  "This account has reached its device limit. Remove a device in the Account Center, then sign in again here.": "This account has reached its device limit. Remove a device in the Account Center, then sign in again here.",
+  "This setting needs a window reload to finish updating the extension.": "此设置需要重新加载窗口以完成扩展更新。"
 }

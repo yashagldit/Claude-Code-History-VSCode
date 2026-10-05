@@ -2,6 +2,17 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.7.7] - 2026-10-05
+
+### Added
+
+- **Projects & Sessions Dashboard Tab** - A new dashboard tab breaks your usage down by project and session. Search by title, project, or session ID, click a bar, day, model, or agent to filter everything below, switch between bar and calendar views, and open any session straight from the list.
+- **Detailed Usage Tables and CSV Copy** - The Usage tab adds a Detailed table view with input, output, and cache token columns, weekly and monthly totals, and an All time period. Pro users can copy days, projects, or sessions as CSV.
+
+### Fixed
+
+- **Locked Sessions That No Longer Exist** - Clicking an older locked session whose transcript has already been deleted from disk now removes it from the list instead of showing an upgrade prompt.
+
 ## [0.7.6] - 2026-10-03
 
 ### Added
