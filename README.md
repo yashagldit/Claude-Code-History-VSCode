@@ -143,7 +143,7 @@ What is sent by default: an anonymized device ID, OS/extension version, and aggr
 
 1. Install from the VS Code Extensions marketplace
 2. The extension auto-detects your Claude, Codex, OpenCode, Grok, and Copilot history
-3. Click the CCAssist icon in the Activity Bar to start browsing, or press `Ctrl+Shift+Q` to open the side panel
+3. Click the CCAssist icon in the Activity Bar to start browsing
 
 Click any session to see the conversation and its file changes, use **File Changes** for a commit-style diff summary, and open the **Dashboard** tab for cost and quota analytics.
 
@@ -153,9 +153,6 @@ Open the Command Palette (`Ctrl+Shift+P`) and search for **CCAssist** — refres
 
 | Shortcut | Action |
 |----------|--------|
-| `Ctrl/Cmd+Shift+]` | Next file change |
-| `Ctrl/Cmd+Shift+[` | Previous file change |
-| `Ctrl/Cmd+Shift+Q` | Open side panel |
 | `Ctrl+Alt+;` | Recent file changes (quick pick) |
 
 Additional actions (show diff, apply changes, open file, view file changes, show in timeline) are available via right-click context menus.

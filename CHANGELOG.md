@@ -2,6 +2,28 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.7.8] - 2026-10-14
+
+### Added
+
+- **Switch Claude and Codex Accounts** - Keep several Claude and Codex logins and switch between them from the sidebar Account tab, the dashboard Plan tab, or the new Switch Claude / Codex Account command. Each account's plan usage is tracked separately, so quota history never mixes accounts.
+- **Rewound Conversation Branches** - When you rewind a Claude Code conversation or replace an interrupted prompt, the discarded turns are now marked as a rewound branch instead of reading as part of the conversation Claude still sees.
+- **Jump to a Prompt's First Edit** - File Timeline prompt rows have a button that opens the chat scrolled to that prompt's first edit of the file.
+- **Compressed Codex Sessions** - Codex sessions that Codex compresses after a week of inactivity (`.jsonl.zst`) now open, search, and count toward usage like any other session.
+
+### Improved
+
+- **Single File-Changes Status Bar Item** - The three file-navigation items are now one, with a tooltip listing every changed file and its added and removed lines. Click a file to open its diff, or use the Previous, Next, Open chat, and All changes links.
+- **Search History by Project Name** - Typing a project's name in the history filter now keeps that project's sessions in view.
+- **Faster File Timeline** - The File Timeline loads from the search index on startup and only re-reads transcripts that changed when you refresh.
+- **Codex Monthly Allowances** - Codex Free and Go plans now show their allowance as a monthly window instead of a 5-hour one.
+- **Offline Activation When the Server Is Unreachable** - If the license server cannot be reached, the Premium Center now says so and points Premium users to offline activation.
+
+### Fixed
+
+- **Math Rendering in Chat** - Shell variables, escaped brackets, and stray `$$` in ordinary text are no longer rendered as math, and very large pastes no longer slow the conversation view down.
+- **Codex Sessions Missing from the File Timeline** - Codex sessions that edited files by relative path, or through spawned child agents, now appear in the file's timeline.
+
 ## [0.7.7] - 2026-10-05
 
 ### Added
