@@ -1,10 +1,12 @@
 # Claude Code and Codex Assist — History, Diff & Usage Analytics for VS Code, Cursor & more
 
+**English** | [简体中文](./README.zh-CN.md) | [繁體中文](./README.zh-TW.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md) | [Deutsch](./README.de.md) | [Français](./README.fr.md) | [Español](./README.es.md)
+
 > **Note**: This is an unofficial extension and is not made by or affiliated with Anthropic, OpenAI, SST/OpenCode, xAI/Grok, or GitHub.
 
 ![Claude Code and Codex Assist in 40 seconds: session history, resume, quota tracking, diffs, search, and cross-CLI context](./assets/ccassist-promo.gif)
 
-Browse your **Claude Code**, **Codex**, **OpenCode**, **Grok**, and **GitHub Copilot** chat history right inside VS Code — view file diffs, search across every conversation, track token usage and cost, and resume past sessions without leaving the editor. It doubles as a usage tracker: a single dashboard shows cost per model, quota burn-down, and weekly reset history across all your AI assistants. Ever wondered which AI conversation changed a file? The File Timeline is git blame for AI edits: pick a file, see every session and prompt that touched it, and open the exact diff.
+Browse your **Claude Code**, **Codex**, **OpenCode**, **Grok**, and **GitHub Copilot** chat history right inside VS Code — view file diffs, search across every conversation, track token usage and cost, and resume past sessions without leaving the editor. It doubles as a usage tracker: a single dashboard shows cost per model, quota burn-down, and weekly reset history across all your AI assistants, and if you use more than one Claude or Codex login, it switches between them in one click. Ever wondered which AI conversation changed a file? The File Timeline is git blame for AI edits: pick a file, see every session and prompt that touched it, and open the exact diff.
 
 **🤖 Works with all five assistants:**
 - **Claude Code** — `~/.claude/projects/`
@@ -39,8 +41,8 @@ Rendered transcript with per-turn **Turn changes** cards, a context-window graph
 
 <img src="./assets/conversation-view.png" alt="Conversation view with per-turn file changes and resume targets" width="420">
 
-### 📊 Quota Burn-Down & Activity
-Live 5-hour and weekly quota cards for Claude, Codex, Fable, and Grok, burn-down charts that project when each window exhausts, an activity heatmap, and a day-by-day cost table.
+### 📊 Quota Burn-Down & Account Switching
+Live 5-hour and weekly quota cards for Claude, Codex, Fable, and Grok, burn-down charts that project when each window exhausts, an activity heatmap, and a day-by-day cost table. Keep several Claude and Codex logins and switch between them from the Account tab, the dashboard Plan tab, or the **Switch Claude / Codex Account** command; each account's plan usage is tracked separately, so quota history never mixes accounts.
 
 <img src="./assets/account-quota.png" alt="Account tab with quota cards, burn-down chart, and activity heatmap" width="420">
 
@@ -109,6 +111,7 @@ Claude, Fable, Codex, and Grok percentages are always visible; hover to see ever
 ### Analytics & Cost Tracking
 - **Dashboard** with usage statistics, activity timelines, and cost trends
 - **Quota tracking** — live Claude/Codex quota cards, burn-down chart, weekly reset history, and weekly summary, with per-model breakdowns including Sonnet, Opus, and Fable where available
+- **Multiple Claude and Codex accounts** — save each login once, switch the active account from the side panel, dashboard, or Command Palette, and see plan usage per account
 - **Model usage charts** to show which models are driving your activity and cost over time
 - **Detailed cost analysis** across all supported Claude, OpenAI, OpenCode, Grok, and Copilot models, including cache-token insights
 - **Per-session analytics** — context window usage over time (how full the context got, turn by turn), compaction events marked on the timeline, peak context vs. the model's limit, and cache-miss turns
@@ -149,7 +152,7 @@ Click any session to see the conversation and its file changes, use **File Chang
 
 ## ⌨️ Commands & Shortcuts
 
-Open the Command Palette (`Ctrl+Shift+P`) and search for **CCAssist** — refresh sessions, open the dashboard, refresh API usage quota, open the side panel, and more.
+Open the Command Palette (`Ctrl+Shift+P`) and search for **CCAssist** — refresh sessions, open the dashboard, refresh API usage quota, open the side panel, switch Claude / Codex account, and more.
 
 | Shortcut | Action |
 |----------|--------|

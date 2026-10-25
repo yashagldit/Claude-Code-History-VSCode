@@ -2,6 +2,27 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.7.9] - 2026-10-25
+
+### Added
+
+- **Search Your Own Prompts** - Typing in the history search box now matches the prompts you typed across your whole history, not just the sessions already loaded. Matching rows expand to show the prompt, session ID, or changed file that matched, and clicking a prompt opens the chat at that message. Press Enter to also search replies and tool output.
+- **Automated Sessions Collection** - Sessions nobody typed into, such as Agent SDK scripts and Codex threads started by Claude Code's Codex plugin, now live under a new Automated collection instead of filling your history list.
+- **Priority View Across All Projects** - A bell next to the branch chip shows only your Priority sessions, from every project, in one list.
+- **Request Details for Claude Code Turns** - Assistant turns from Claude Code 2.1.300 and later have a new button that shows the model, effort, how the context splits between system prompt, tools, prompts, tool results, and replies, cache usage, and what changed since the previous request.
+- **Browse Past Plan Usage Windows** - The dashboard's Plan usage tab steps back through past Claude 5-hour and weekly windows with the arrow buttons or keys, each with its own chart, peak, and sessions. Under the chart, a new strip shows the window's tokens, API-price value, per-model split, and what a full window is worth.
+
+### Improved
+
+- **Smarter ccassist MCP Search** - `search_sessions` ranks matches from your typed prompts first, leaves out Automated sessions, honours the timeframe, and can continue a long search where it left off. Installed ccassist skills now update themselves to the latest version.
+- **Real Project Folders** - Project headers now show each project's real folder instead of Claude's encoded folder names, one folder no longer splits into several groups, and Codex sessions are no longer filed under unrelated Claude projects. Header tooltips show the full folder path.
+
+### Fixed
+
+- **Duplicate File Changes from Claude Code 2.1.300+** - Edits copied into Claude Code's new request log records no longer show up as extra file changes with no time or message.
+- **Search Results Opening at the Wrong Message** - Opening a search result now scrolls to the matching message even while a long chat is still laying out, and in-chat search keeps your place when the chat refreshes.
+- **Untitled Sessions** - Sessions without a title now read "Untitled" instead of showing an encoded folder name.
+
 ## [0.7.8] - 2026-10-14
 
 ### Added
