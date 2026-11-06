@@ -2,6 +2,25 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.8.0] - 2026-11-05
+
+### Added
+
+- **CCAssist for Mac** - On macOS 15 or later, a card in the history list and the dashboard introduces CCAssist for Mac, the native companion app with a built-in terminal, per-line authorship, menu bar quota, and ⌘K search. Lifetime Pro owners get the app free. The card goes away once you dismiss it or install the app.
+- **ZCode Support** - Sessions from ZCode, Z.ai's coding agent, now appear in history with their own filter and badge. You can open, search, and resume them, see live status, and track usage and cost, including Z.ai GLM model pricing. ZCode sessions are also available through ccassist MCP.
+
+
+### Improved
+
+- **Newer Claude Code Conversations** - Scheduled wakeups show as events that start a new turn, denied tool calls say who or what denied them, follow-ups from a coordinator to its sub-agents are labelled, API errors show as a quiet error line, and messages Claude Code writes only for the model no longer appear as your prompts.
+- **Accurate File Changes Across Parallel Sessions** - When two Claude sessions run at the same time in one project, a file change is credited to the session that made it, not to every session whose command happened to be running. This applies to the File Timeline and ccassist MCP.
+- **Live Status for OpenCode Sessions** - OpenCode history rows now show whether a session is still working, like Claude and Codex sessions.
+
+### Fixed
+
+- **Agent SDK Chat Apps** - Sessions from chat apps built on the Agent SDK are no longer hidden under Automated. Only script-run sessions go there.
+- **Shell Edit Detection** - File edits made through shell commands in recent Claude Code versions are now resolved against the folder the command actually ran in.
+
 ## [0.7.9] - 2026-10-25
 
 ### Added
