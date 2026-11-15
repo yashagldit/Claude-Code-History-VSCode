@@ -21,6 +21,11 @@ Sessions from all five appear in one unified list with badges and logos that tel
 
 ## 🎬 Feature Demos
 
+### 📈 Usage Dashboard
+Claude, Codex, and Grok plan limits on one screen: 5-hour and weekly windows with reset countdowns, a projection of where each window lands at reset (or when it runs out), and the sessions eating your quota, with their token count and API-equivalent cost. The Usage, Activity, and Projects tabs break spend down by model, project, and day.
+
+![Usage dashboard with Claude, Codex, and Grok plan limits, a weekly burn-down projection, and the sessions using the quota](./assets/dashboard.png)
+
 ### 🔍 Full-Text Search
 Search every prompt and reply across thousands of sessions. Results are grouped by session with the matching message, project, and cost. The Advanced panel lets you pick who to search (all, you, or the assistant), how to match (any words, exact phrase, or regex), and whether to include tool output and subagent transcripts.
 

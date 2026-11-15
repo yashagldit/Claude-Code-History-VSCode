@@ -503,10 +503,8 @@
   "Successfully deleted {fileName}": "成功删除{fileName}",
   "Failed to delete {fileName}: {error}": "无法删除{fileName}:{error}",
   "Failed to undo Write: {error}": "无法撤消写入：{error}",
-  "Partially undid changes to {fileName} ({applied} hunks applied, {failed} failed)": "部分撤销对{fileName}的更改（应用{applied}区块，{failed}失败）",
   "Successfully undid changes to {fileName}": "成功撤消对{fileName}的更改",
   "Failed to undo Codex patch: {error}": "无法撤消 Codex 补丁：{error}",
-  "Partially reapplied changes to {fileName} ({applied} hunks applied, {failed} failed)": "部分重新应用了对{fileName}的更改（应用了{applied}区块，{failed}失败）",
   "Successfully reapplied changes to {fileName}": "已成功重新应用对{fileName}的更改",
   "Failed to reapply Codex patch: {error}": "无法重新应用 Codex 补丁：{error}",
   "Successfully wrote content to {fileName}": "成功将内容写入{fileName}",
@@ -894,5 +892,15 @@
   "This activation code could not be read. Mint a new one from ccassist.dev.": "无法读取此激活码。请在 ccassist.dev 生成一个新的激活码。",
   "This activation code was issued for a different device.": "此激活码是为另一台设备签发的。",
   "This activation code has expired. Mint a new one from ccassist.dev.": "此激活码已过期。请在 ccassist.dev 生成一个新的激活码。",
-  "This activation code appears to be from the future — check your system clock.": "此激活码的签发时间似乎在未来，请检查系统时钟。"
+  "This activation code appears to be from the future — check your system clock.": "此激活码的签发时间似乎在未来，请检查系统时钟。",
+  "Cannot undo {fileName}: {error}. No changes were made.": "无法撤销 {fileName}：{error}。未做任何更改。",
+  "Cannot reapply {fileName}: {error}. No changes were made.": "无法重新应用 {fileName}：{error}。未做任何更改。",
+  "it includes a change that cannot be undone": "其中包含无法撤销的更改",
+  "some of its hunks no longer match the file": "其中部分修改块已与文件不匹配",
+  "the content before this Write was not recorded": "未记录此次 Write 之前的内容",
+  "the file has changed since this Write": "自此次 Write 之后文件已被更改",
+  "the file has changed since this session": "自此会话之后文件已被更改",
+  "the file was recreated during the session": "文件在会话期间被重新创建",
+  "this change has no recorded edit to reverse": "此更改没有可撤销的编辑记录",
+  "this edit cannot be located exactly in the file": "无法在文件中准确定位此编辑"
 }

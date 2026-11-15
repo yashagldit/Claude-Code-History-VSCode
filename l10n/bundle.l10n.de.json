@@ -363,10 +363,8 @@
   "Successfully deleted {fileName}": "{fileName} erfolgreich gelöscht",
   "Failed to delete {fileName}: {error}": "{fileName} konnte nicht gelöscht werden: {error}",
   "Failed to undo Write: {error}": "Schreibvorgang konnte nicht rückgängig gemacht werden: {error}",
-  "Partially undid changes to {fileName} ({applied} hunks applied, {failed} failed)": "Änderungen an {fileName} teilweise rückgängig gemacht ({applied} Abschnitte angewendet, {failed} fehlgeschlagen)",
   "Successfully undid changes to {fileName}": "Änderungen an {fileName} erfolgreich rückgängig gemacht",
   "Failed to undo Codex patch: {error}": "Codex-Patch konnte nicht rückgängig gemacht werden: {error}",
-  "Partially reapplied changes to {fileName} ({applied} hunks applied, {failed} failed)": "Änderungen an {fileName} teilweise erneut angewendet ({applied} Abschnitte angewendet, {failed} fehlgeschlagen)",
   "Successfully reapplied changes to {fileName}": "Änderungen an {fileName} erfolgreich erneut angewendet",
   "Failed to reapply Codex patch: {error}": "Codex-Patch konnte nicht erneut angewendet werden: {error}",
   "Successfully wrote content to {fileName}": "Inhalt erfolgreich in {fileName} geschrieben",
@@ -894,5 +892,15 @@
   "This activation code could not be read. Mint a new one from ccassist.dev.": "Dieser Aktivierungscode konnte nicht gelesen werden. Erzeugen Sie auf ccassist.dev einen neuen.",
   "This activation code was issued for a different device.": "Dieser Aktivierungscode wurde für ein anderes Gerät ausgestellt.",
   "This activation code has expired. Mint a new one from ccassist.dev.": "Dieser Aktivierungscode ist abgelaufen. Erzeugen Sie auf ccassist.dev einen neuen.",
-  "This activation code appears to be from the future — check your system clock.": "Dieser Aktivierungscode scheint aus der Zukunft zu stammen – prüfen Sie Ihre Systemuhr."
+  "This activation code appears to be from the future — check your system clock.": "Dieser Aktivierungscode scheint aus der Zukunft zu stammen – prüfen Sie Ihre Systemuhr.",
+  "Cannot undo {fileName}: {error}. No changes were made.": "{fileName} kann nicht rückgängig gemacht werden: {error}. Es wurden keine Änderungen vorgenommen.",
+  "Cannot reapply {fileName}: {error}. No changes were made.": "{fileName} kann nicht erneut angewendet werden: {error}. Es wurden keine Änderungen vorgenommen.",
+  "it includes a change that cannot be undone": "sie enthält eine Änderung, die nicht rückgängig gemacht werden kann",
+  "some of its hunks no longer match the file": "einige Abschnitte passen nicht mehr zur Datei",
+  "the content before this Write was not recorded": "der Inhalt vor diesem Write wurde nicht aufgezeichnet",
+  "the file has changed since this Write": "die Datei wurde seit diesem Write geändert",
+  "the file has changed since this session": "die Datei wurde seit dieser Sitzung geändert",
+  "the file was recreated during the session": "die Datei wurde während der Sitzung neu erstellt",
+  "this change has no recorded edit to reverse": "für diese Änderung ist keine umkehrbare Bearbeitung aufgezeichnet",
+  "this edit cannot be located exactly in the file": "diese Bearbeitung lässt sich in der Datei nicht eindeutig finden"
 }

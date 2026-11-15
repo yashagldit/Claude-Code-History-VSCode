@@ -504,10 +504,8 @@
   "Successfully deleted {fileName}": "Eliminado exitosamente{fileName}",
   "Failed to delete {fileName}: {error}": "No se pudo eliminar{fileName}:{error}",
   "Failed to undo Write: {error}": "No se pudo deshacer Escritura:{error}",
-  "Partially undid changes to {fileName} ({applied} hunks applied, {failed} failed)": "Cambios parcialmente deshechos en{fileName}(se aplicaron{applied}bloques,{failed}falló)",
   "Successfully undid changes to {fileName}": "Se deshicieron con éxito los cambios en{fileName}",
   "Failed to undo Codex patch: {error}": "No se pudo deshacer el parche del Codex:{error}",
-  "Partially reapplied changes to {fileName} ({applied} hunks applied, {failed} failed)": "Cambios reaplicados parcialmente en{fileName}(se aplicaron{applied}bloques,{failed}falló)",
   "Successfully reapplied changes to {fileName}": "Los cambios se volvieron a aplicar correctamente en{fileName}",
   "Failed to reapply Codex patch: {error}": "No se pudo volver a aplicar el parche del Codex:{error}",
   "Successfully wrote content to {fileName}": "Contenido escrito correctamente en{fileName}",
@@ -894,5 +892,15 @@
   "This activation code could not be read. Mint a new one from ccassist.dev.": "No se pudo leer este código de activación. Genera uno nuevo en ccassist.dev.",
   "This activation code was issued for a different device.": "Este código de activación se emitió para otro dispositivo.",
   "This activation code has expired. Mint a new one from ccassist.dev.": "Este código de activación ha vencido. Genera uno nuevo en ccassist.dev.",
-  "This activation code appears to be from the future — check your system clock.": "Este código de activación parece ser del futuro: revisa el reloj del sistema."
+  "This activation code appears to be from the future — check your system clock.": "Este código de activación parece ser del futuro: revisa el reloj del sistema.",
+  "Cannot undo {fileName}: {error}. No changes were made.": "No se puede deshacer {fileName}: {error}. No se realizó ningún cambio.",
+  "Cannot reapply {fileName}: {error}. No changes were made.": "No se puede volver a aplicar {fileName}: {error}. No se realizó ningún cambio.",
+  "it includes a change that cannot be undone": "incluye un cambio que no se puede deshacer",
+  "some of its hunks no longer match the file": "algunos de sus bloques ya no coinciden con el archivo",
+  "the content before this Write was not recorded": "no se registró el contenido anterior a este Write",
+  "the file has changed since this Write": "el archivo ha cambiado desde este Write",
+  "the file has changed since this session": "el archivo ha cambiado desde esta sesión",
+  "the file was recreated during the session": "el archivo se volvió a crear durante la sesión",
+  "this change has no recorded edit to reverse": "este cambio no tiene ninguna edición registrada que revertir",
+  "this edit cannot be located exactly in the file": "no se puede localizar esta edición con exactitud en el archivo"
 }

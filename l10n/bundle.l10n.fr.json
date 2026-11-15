@@ -504,10 +504,8 @@
   "Successfully deleted {fileName}": "{fileName}supprimé avec succès",
   "Failed to delete {fileName}: {error}": "Échec de la suppression de{fileName}:{error}",
   "Failed to undo Write: {error}": "Échec de l'annulation de l'écriture :{error}",
-  "Partially undid changes to {fileName} ({applied} hunks applied, {failed} failed)": "Modifications partiellement annulées apportées à{fileName}(les morceaux{applied}ont été appliqués,{failed}a échoué)",
   "Successfully undid changes to {fileName}": "Les modifications apportées à{fileName}ont été annulées avec succès.",
   "Failed to undo Codex patch: {error}": "Échec de l'annulation du correctif Codex :{error}",
-  "Partially reapplied changes to {fileName} ({applied} hunks applied, {failed} failed)": "Modifications partiellement réappliquées à{fileName}(les morceaux{applied}appliqués,{failed}a échoué)",
   "Successfully reapplied changes to {fileName}": "Modifications réappliquées avec succès à{fileName}",
   "Failed to reapply Codex patch: {error}": "Échec de la réapplication du correctif Codex :{error}",
   "Successfully wrote content to {fileName}": "Le contenu a été écrit avec succès dans{fileName}",
@@ -894,5 +892,15 @@
   "This activation code could not be read. Mint a new one from ccassist.dev.": "Ce code d'activation est illisible. Générez-en un nouveau sur ccassist.dev.",
   "This activation code was issued for a different device.": "Ce code d'activation a été émis pour un autre appareil.",
   "This activation code has expired. Mint a new one from ccassist.dev.": "Ce code d'activation a expiré. Générez-en un nouveau sur ccassist.dev.",
-  "This activation code appears to be from the future — check your system clock.": "Ce code d'activation semble venir du futur — vérifiez l'horloge de votre système."
+  "This activation code appears to be from the future — check your system clock.": "Ce code d'activation semble venir du futur — vérifiez l'horloge de votre système.",
+  "Cannot undo {fileName}: {error}. No changes were made.": "Impossible d’annuler {fileName} : {error}. Aucune modification n’a été effectuée.",
+  "Cannot reapply {fileName}: {error}. No changes were made.": "Impossible de réappliquer {fileName} : {error}. Aucune modification n’a été effectuée.",
+  "it includes a change that cannot be undone": "elle contient une modification qui ne peut pas être annulée",
+  "some of its hunks no longer match the file": "certains de ses blocs ne correspondent plus au fichier",
+  "the content before this Write was not recorded": "le contenu antérieur à ce Write n’a pas été enregistré",
+  "the file has changed since this Write": "le fichier a changé depuis ce Write",
+  "the file has changed since this session": "le fichier a changé depuis cette session",
+  "the file was recreated during the session": "le fichier a été recréé pendant la session",
+  "this change has no recorded edit to reverse": "cette modification n’a aucune édition enregistrée à inverser",
+  "this edit cannot be located exactly in the file": "cette modification ne peut pas être localisée précisément dans le fichier"
 }

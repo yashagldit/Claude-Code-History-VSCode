@@ -2,6 +2,26 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.8.1] - 2026-11-16
+
+### Added
+
+- **New Getting-Started Guide** - First run is now a short three-step guide. It shows which AI tools have sessions on your machine, gives a quick tour, and lets you connect ccassist MCP and live-status hooks to every tool it finds in one click each. When you finish, your usage dashboard opens with the last 7 days ready.
+- **Claude Desktop Cowork Sessions** - Cowork tasks that run on your computer in the Claude desktop app now appear in history and search automatically, including new tasks as they start. Cloud Cowork sessions leave no local transcript, so they remain unavailable.
+- **Changed Files as a Folder Tree** - A turn's changed-files card now groups files into collapsible folders with file counts and added/removed lines per folder, plus a button to expand or collapse every folder.
+
+### Improved
+
+- **Exact Matches First in Quick Search** - Multi-word searches now list sessions containing your exact phrase first, under an "Exact matches" section, instead of burying them under prompts that only contain the same short words.
+- **Smarter ccassist MCP Context** - `get_context` now leads with the passages that matched your agent's search, fits more turns into the same space, and lists the files the session changed. `get_session` can return a single turn, and deep searches run faster.
+- **T3 Code Sessions** - Prompts typed in T3 Code are now found by quick search, and T3 Code's task reports show as background-task banners instead of user prompts.
+- **Updated Model Pricing** - Added rates for Claude Fable 5.2, Claude Mythos 5.2, GPT-6.1 Terra, and Grok 4.7.
+
+### Fixed
+
+- **Missing File Change Details** - About 15% of recent edits lost their before-and-after details, and failed or rejected edits were counted as file changes. Both are fixed.
+- **Links in Conversations** - Links in transcripts that would run commands or scripts are no longer clickable.
+
 ## [0.8.0] - 2026-11-05
 
 ### Added
