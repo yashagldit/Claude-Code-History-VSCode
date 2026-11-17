@@ -1,0 +1,90 @@
+name: Request support for another CLI or agent
+description: Ask for a coding agent we don't support yet. Your own agent prepares a masked sample of its session files for us.
+title: "Support: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        To support a new tool we need to see how it stores its sessions on disk. You don't have to work that out yourself: a coding agent on your machine can prepare a small, masked sample in about five minutes.
+
+        1. Copy the prompt below and replace `[TOOL NAME]` with the name of the tool.
+        2. Paste it into a coding agent on the machine where you use that tool (Claude Code, Codex, or the tool itself).
+        3. The agent makes a zip holding up to five of your recent sessions and a short notes file. All text in the sessions is masked: letters become `x` and digits become `0`, so only the structure is left.
+        4. Open one of the files in the zip to check that nothing private is left, then attach the zip below.
+
+        ```text
+        # Request: support for [TOOL NAME] in Claude Code and Codex Assist
+
+        I want to request support for **[TOOL NAME]** in the VS Code extension "Claude Code and Codex Assist", which shows coding-agent chat history, file diffs, token usage and sub-agents. To write a parser, its developer needs real session files from [TOOL NAME] with the private content masked and the structure left exactly as it is. Make that sample for me: a folder `sample/` and a short `notes.md`, zipped so I can attach it to a GitHub issue.
+
+        Don't analyse the format or write a report; the developer will do that from the sample. This should take about five minutes.
+
+        ## Rules
+        - **Read-only.** Never change the tool's files. Work on copies in a new folder. Copy a SQLite database with its `-wal`/`-shm` files before opening it.
+        - Nothing private may end up in the output: no prompts, replies, code, command output, file or project names, usernames, hostnames, emails, account or plan details, tokens or keys.
+
+        ## Steps
+        1. **Locate.** Find the tool's version and where it stores sessions. Note the file types, and whether files are plain, compressed (decompress the copies) or unreadable. If the files are encrypted or unreadable, stop and tell me.
+        2. **Pick up to 5 sessions.** With one script, list the record types and tool names in each of the 50 newest sessions, then choose the newest session plus the ones that together cover the most record types and tool names. Prefer sessions between 100 KB and 5 MB. If the tool has sub-agents or forks, include one parent together with its child files.
+        3. **Mask them with one script** and write the results to `sample/`, keeping file names' shape, record order and every key:
+           - numbers, booleans, nulls and timestamps stay
+           - short values the tool itself defines stay: record types, roles, statuses, kinds, labels and categories (also when they sit in a list), tool names, model ids, version strings. To decide, print the distinct short values of each key: identifiers that repeat across sessions (`snake_case`, `dotted.names`, `CamelCase`) are the tool's and stay.
+           - ids (UUIDs, call ids, hashes) become fake ids in the same format, and the same id gets the same fake everywhere, including in file names
+           - paths become placeholders of the same shape that keep the file extension (`/Users/<user>/<project>/src/<file>.ts`)
+           - a string that contains JSON is parsed, masked the same way, and written back as a string
+           - base64 and encrypted blobs become `<blob, N chars>`
+           - all other text is masked character by character: every letter becomes `x` and every digit `0`, while punctuation, spaces and line breaks stay. Diffs, patches and program code keep their shape this way. A letter straight after a backslash stays, so escapes such as `\n` and `\t` survive. Paths inside text become placeholders too.
+           - short values that hold my data (titles, branch names, nicknames, URLs, database names) are masked the same way
+           - MCP servers I installed, and their tools, become numbered placeholders (`mcp__<server1>__<tool1>`), the same name getting the same placeholder everywhere. The tool's built-in tool names stay.
+        4. **Restore the tool's own words.** Masking hides fixed text the tool writes inside messages and outputs, which the parser needs. Have a script list the lines and leading words that repeat across at least 3 sessions, and pick only the ones the tool itself writes:
+           - tags such as `<environment_context>`
+           - output headers such as `Exit code:`
+           - patch markers such as `*** Update File:`
+           - the names of tools called inside program code, such as `tools.apply_patch(`
+
+           Never restore my text, file names or instruction-file content. Re-run the masking with that keep-list, and apply it everywhere: in messages, tool outputs, program code, patches embedded in program strings, and JSON stored as a string. Then open one masked patch and one masked program and confirm the markers and tool names are readable.
+        5. **If sessions live in a database,** export only the rows of the chosen sessions as one JSONL file per table, masked the same way, and add the `CREATE TABLE` statements to `notes.md`.
+        6. **Check for leaks.** Search `sample/` and `notes.md` for my username, home folder, hostname, project folder names, email addresses and key-like strings. Fix anything found.
+        7. **Write `notes.md`** (about 20 lines):
+           - tool version and OS
+           - the storage root, and the setting that moves it
+           - a redacted folder tree, and the file naming pattern
+           - which files in `sample/` belong together (parent and child, pages of one session)
+           - schemas of any index databases beside the transcripts (`CREATE TABLE` only, no rows)
+           - the command to resume a session by id
+           - the keep-list you restored
+
+        Zip `sample/` and `notes.md` as `[TOOL NAME]-sample.zip` and tell me its path and size. Then remind me to open one of the masked files and check it myself before I attach the zip to the GitHub issue.
+        ```
+  - type: input
+    id: tool
+    attributes:
+      label: Tool name
+      placeholder: Gemini CLI
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Tool version
+      description: Optional. The agent also writes it into the notes file.
+  - type: textarea
+    id: sample
+    attributes:
+      label: Masked sample
+      description: Drag the zip the agent made into this box.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: For example, what you most want to see for this tool (history, diffs, usage). If you can't share session files, even masked, say so here.
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: Before you submit
+      options:
+        - label: I opened a file from the zip and checked that nothing private is left in it.
+          required: true
