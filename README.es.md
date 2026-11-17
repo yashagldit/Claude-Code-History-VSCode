@@ -138,7 +138,7 @@ Consulta [ccassist.dev](https://ccassist.dev) para ver los precios actuales y la
 
 El contenido de tus chats no sale de tu equipo: la extensión lee las carpetas de historial locales de los asistentes compatibles y lo guarda todo en una base de datos SQLite local. Puedes comprobarlo con cualquier proxy de red: nunca se envía texto de chats, contenido de archivos ni diffs.
 
-Lo que se envía por defecto: un ID de dispositivo anonimizado, la versión del sistema operativo y de la extensión, y contadores de uso agregados (p. ej., «sesión abierta», «búsqueda ejecutada»). Los informes de errores incluyen mensajes de error y trazas de pila, nunca contenido de chats. Ambos se pueden desactivar en los ajustes de la extensión (`enableErrorReporting`, `enableUsageStatsSharing`).
+Lo que se envía: una comprobación periódica que mantiene al día tu licencia, la prueba y los precios de los modelos, con un ID de dispositivo, el nombre del equipo y la versión del sistema operativo y de la extensión. Los contadores de uso agregados (p. ej., «sesión abierta», «búsqueda ejecutada») y los informes de errores (nunca contenido de chats) se incluyen salvo que los desactives (`enableUsageStatsSharing`, `enableErrorReporting`).
 
 ## 🚀 Primeros pasos
 

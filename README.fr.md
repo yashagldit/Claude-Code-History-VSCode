@@ -138,7 +138,7 @@ Consultez [ccassist.dev](https://ccassist.dev) pour les tarifs actuels et la pol
 
 Le contenu de vos chats reste sur votre machine : l’extension lit les dossiers d’historique locaux des assistants pris en charge et stocke tout dans une base SQLite locale. Vous pouvez le vérifier avec n’importe quel proxy réseau : aucun texte de chat, contenu de fichier ni diff n’est jamais envoyé.
 
-Ce qui est envoyé par défaut : un identifiant d’appareil anonymisé, la version de l’OS et de l’extension, et des compteurs d’utilisation agrégés (par exemple « session ouverte », « recherche lancée »). Les rapports d’erreur contiennent les messages d’erreur et les traces d’appels, jamais le contenu des chats. Les deux peuvent être désactivés dans les paramètres de l’extension (`enableErrorReporting`, `enableUsageStatsSharing`).
+Ce qui est envoyé : une vérification périodique qui tient à jour votre licence, votre essai et les prix des modèles, avec un identifiant d’appareil, le nom de l’ordinateur et la version de l’OS et de l’extension. Des compteurs d’utilisation agrégés (par exemple « session ouverte », « recherche lancée ») et les rapports d’erreur (jamais le contenu des chats) sont inclus sauf si vous les désactivez (`enableUsageStatsSharing`, `enableErrorReporting`).
 
 ## 🚀 Premiers pas
 

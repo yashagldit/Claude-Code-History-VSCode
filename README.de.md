@@ -138,7 +138,7 @@ Aktuelle Preise und die Rückerstattungsrichtlinie findest du auf [ccassist.dev]
 
 Chat-Inhalte bleiben auf deinem Rechner. Die Extension liest die lokalen Verlaufsordner der unterstützten Assistenten und speichert alles in einer lokalen SQLite-Datenbank. Du kannst das mit jedem Netzwerk-Proxy überprüfen: Chat-Texte, Dateiinhalte oder Diffs werden nie gesendet.
 
-Standardmäßig gesendet werden: eine anonymisierte Geräte-ID, Betriebssystem- und Extension-Version sowie aggregierte Nutzungszähler (z. B. „Sitzung geöffnet“, „Suche ausgeführt“). Fehlerberichte enthalten Fehlermeldungen und Stack-Traces, aber nie Chat-Inhalte. Beides lässt sich in den Einstellungen der Extension abschalten (`enableErrorReporting`, `enableUsageStatsSharing`).
+Was gesendet wird: ein regelmäßiger Check-in, der Lizenz, Testphase und Modellpreise aktuell hält, mit Geräte-ID, Computername, Betriebssystem- und Extension-Version. Aggregierte Nutzungszähler (z. B. „Sitzung geöffnet“, „Suche ausgeführt“) und Fehlerberichte (nie Chat-Inhalte) werden mitgesendet, solange Sie sie nicht abschalten (`enableUsageStatsSharing`, `enableErrorReporting`).
 
 ## 🚀 Erste Schritte
 

@@ -2,6 +2,18 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.8.2] - 2026-11-17
+
+### Security
+
+- **ccassist MCP Requires an Access Token** - The local ccassist MCP server now only answers requests that carry its access token, so other programs on your computer can no longer read your history through it. The extension adds the token to ccassist entries it registered in Claude Code, Codex, Cursor, OpenCode, and Grok automatically. Restart any open CLI sessions after updating. If you added ccassist to a tool by hand, copy the updated setup snippet from the MCP page.
+- **Private Config Files** - AI tool config files that ccassist setup writes to, and their backups, are now readable only by you.
+
+### Privacy
+
+- **Error Reports No Longer Include Your Paths** - Error reports now replace your user name, home folder, and project paths with placeholders, keeping only the last two parts of any file path.
+- **Detailed Stats Sync Removed** - The optional detailed usage stats sync (`cloudSync.enableDetailedStats`) has been removed, along with its setting.
+
 ## [0.8.1] - 2026-11-16
 
 ### Added

@@ -143,7 +143,7 @@ See [ccassist.dev](https://ccassist.dev) for current pricing and refund policy.
 
 Chat content stays on your machine — the extension reads supported local assistant history folders and stores everything in a local SQLite database. You can verify with any network proxy: no chat text, file content, or diffs are ever sent.
 
-What is sent by default: an anonymized device ID, OS/extension version, and aggregated usage counters (e.g. "session opened", "search ran"). Error reports include error messages and stack traces, never chat content. Both can be turned off in extension settings (`enableErrorReporting`, `enableUsageStatsSharing`).
+What is sent: a periodic check-in that keeps your license, trial and model pricing current, with a device ID, computer name, OS/extension version. Aggregated usage counters (e.g. "session opened", "search ran") and error reports (never chat content) are included unless you turn them off (`enableUsageStatsSharing`, `enableErrorReporting`).
 
 ## 🚀 Getting Started
 
