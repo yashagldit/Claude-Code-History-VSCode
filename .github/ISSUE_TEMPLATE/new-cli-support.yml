@@ -11,7 +11,8 @@ body:
         1. Copy the prompt below and replace `[TOOL NAME]` with the name of the tool.
         2. Paste it into a coding agent on the machine where you use that tool (Claude Code, Codex, or the tool itself).
         3. The agent makes a zip holding up to five of your recent sessions and a short notes file. All text in the sessions is masked: letters become `x` and digits become `0`, so only the structure is left.
-        4. Open one of the files in the zip to check that nothing private is left, then attach the zip below.
+        4. When it finishes, the agent opens this form again with the title and fields filled in, and shows you the zip.
+        5. Open one of the files in the zip to check that nothing private is left, then drag the zip into the form and submit.
 
         ```text
         # Request: support for [TOOL NAME] in Claude Code and Codex Assist
@@ -55,7 +56,19 @@ body:
            - the command to resume a session by id
            - the keep-list you restored
 
-        Zip `sample/` and `notes.md` as `[TOOL NAME]-sample.zip` and tell me its path and size. Then remind me to open one of the masked files and check it myself before I attach the zip to the GitHub issue.
+        Zip `sample/` and `notes.md` as `[TOOL NAME]-sample.zip` and tell me its path and size.
+
+        ## Finish
+        1. Show me the zip in my file manager (`open -R <zip>` on macOS, `explorer /select,<zip>` on Windows, `xdg-open <folder>` on Linux).
+        2. Open the issue form in my browser with its fields filled in. Build this link, URL-encoding each value, and open it (`open`, `start` or `xdg-open`); if you cannot open a browser, print it:
+
+           `https://github.com/yashagldit/Claude-Code-History-VSCode/issues/new?template=new-cli-support.yml&title=<title>&tool=<tool>&version=<version>&notes=<notes>`
+
+           - `title`: `Support: [TOOL NAME]`
+           - `tool`: the tool's name
+           - `version`: the tool's version
+           - `notes`: at most 300 characters taken from `notes.md`: the storage root (write my home folder as `~`), the file format, and how many sessions are in the sample. Nothing private.
+        3. Remind me to open one of the masked files and check it myself, then drag the zip into the form. Do not submit the issue for me.
         ```
   - type: input
     id: tool
