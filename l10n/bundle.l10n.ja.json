@@ -721,7 +721,7 @@
   "Agent Task": "エージェントタスク",
   "All": "すべて",
   "All sources": "すべてのソース",
-  "Show Claude, Codex, OpenCode, ZCode, Grok, Copilot, and Cursor sessions": "Claude、Codex、OpenCode、ZCode、Grok、Copilot、Cursor のセッションを表示",
+  "Show sessions from every source": "すべてのソースのセッションを表示",
   "Archived": "アーカイブ済み",
   "Show only archived sessions (saved backups)": "アーカイブ済みセッション（保存されたバックアップ）のみを表示",
   "MD": "MD",
@@ -747,7 +747,7 @@
   "Set up ccassist": "ccassist をセットアップ",
   "ccassist setup finished — see the summary document": "ccassist のセットアップが完了しました — 概要ドキュメントを参照",
   "The ccassist MCP server now requires an access token, and it was added to {clients}. Restart any CLI session that is already open so it loads the updated config.": "ccassist MCP サーバーにアクセストークンが必要になり、{clients} に追加しました。すでに開いている CLI セッションを再起動して、更新された設定を読み込んでください。",
-  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist はローカル MCP サーバーを {url} で起動し、Claude Code、Codex、Grok、OpenCode、Cursor に登録し、ccassist スキルをインストールします。既存の設定ファイルは先にバックアップされます。",
+  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, Cursor, and Antigravity, and install the ccassist skill. Existing config files are backed up first.": "ccassist はローカル MCP サーバーを {url} で起動し、Claude Code、Codex、Grok、OpenCode、Cursor、Antigravity に登録し、ccassist スキルをインストールします。既存の設定ファイルは先にバックアップされます。",
   "Could not activate: {0}": "アクティベートできませんでした: {0}",
   "Device info copied. Paste it on ccassist.dev → Dashboard → Devices to get an activation code.": "デバイス情報をコピーしました。ccassist.dev → ダッシュボード → デバイスに貼り付けてアクティベーションコードを取得してください。",
   "Invalid activation code.": "アクティベーションコードが無効です。",
@@ -890,5 +890,11 @@
   "the file has changed since this session": "このセッション以降にファイルが変更されています",
   "the file was recreated during the session": "セッション中にファイルが作り直されています",
   "this change has no recorded edit to reverse": "この変更には元に戻すための編集記録がありません",
-  "this edit cannot be located exactly in the file": "この編集の位置をファイル内で特定できません"
+  "this edit cannot be located exactly in the file": "この編集の位置をファイル内で特定できません",
+  "DeepSeek Harness Session": "DeepSeek Harness セッション",
+  "{0} sessions cannot be archived yet.": "{0} のセッションはまだアーカイブできません。",
+  "DeepSeek Harness sessions cannot be resumed from a terminal. Reopen them in the DeepSeek Harness app.": "DeepSeek Harness のセッションはターミナルから再開できません。DeepSeek Harness アプリで開き直してください。",
+  "Deleting {0} sessions is not supported yet.": "{0} のセッションの削除はまだサポートされていません。",
+  "Antigravity Session": "Antigravity セッション",
+  "Antigravity sessions cannot be resumed from a terminal. Reopen them in the Antigravity app.": "Antigravity のセッションはターミナルから再開できません。Antigravity アプリで開き直してください。"
 }

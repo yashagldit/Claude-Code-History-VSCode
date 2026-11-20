@@ -721,7 +721,7 @@
   "Agent Task": "代理任務",
   "All": "全部",
   "All sources": "所有來源",
-  "Show Claude, Codex, OpenCode, ZCode, Grok, Copilot, and Cursor sessions": "顯示 Claude、Codex、OpenCode、ZCode、Grok、Copilot 和 Cursor 工作階段",
+  "Show sessions from every source": "顯示所有來源的工作階段",
   "Archived": "已封存",
   "Show only archived sessions (saved backups)": "僅顯示已封存工作階段（已儲存的備份）",
   "MD": "MD",
@@ -747,7 +747,7 @@
   "Set up ccassist": "設定 ccassist",
   "ccassist setup finished — see the summary document": "ccassist 設定完成 — 請查看摘要文件",
   "The ccassist MCP server now requires an access token, and it was added to {clients}. Restart any CLI session that is already open so it loads the updated config.": "ccassist MCP 伺服器現在需要存取權杖，已加入 {clients}。請重新啟動已開啟的 CLI 工作階段，以載入更新後的設定。",
-  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist 會在 {url} 啟動本機 MCP 伺服器，並將其註冊到 Claude Code、Codex、Grok、OpenCode 與 Cursor，同時安裝 ccassist 技能。會先備份現有設定檔。",
+  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, Cursor, and Antigravity, and install the ccassist skill. Existing config files are backed up first.": "ccassist 會在 {url} 啟動本機 MCP 伺服器，並將其註冊到 Claude Code、Codex、Grok、OpenCode、Cursor 與 Antigravity，同時安裝 ccassist 技能。會先備份現有設定檔。",
   "Could not activate: {0}": "無法啟用：{0}",
   "Device info copied. Paste it on ccassist.dev → Dashboard → Devices to get an activation code.": "已複製裝置資訊。請在 ccassist.dev → 儀表板 → 裝置中貼上以取得啟用碼。",
   "Invalid activation code.": "啟用碼無效。",
@@ -890,5 +890,11 @@
   "the file has changed since this session": "自此工作階段之後檔案已被變更",
   "the file was recreated during the session": "檔案在工作階段期間被重新建立",
   "this change has no recorded edit to reverse": "此變更沒有可復原的編輯紀錄",
-  "this edit cannot be located exactly in the file": "無法在檔案中準確定位此編輯"
+  "this edit cannot be located exactly in the file": "無法在檔案中準確定位此編輯",
+  "DeepSeek Harness Session": "DeepSeek Harness 工作階段",
+  "{0} sessions cannot be archived yet.": "目前尚無法封存 {0} 工作階段。",
+  "DeepSeek Harness sessions cannot be resumed from a terminal. Reopen them in the DeepSeek Harness app.": "DeepSeek Harness 工作階段無法在終端機中繼續，請在 DeepSeek Harness 應用程式中重新開啟。",
+  "Deleting {0} sessions is not supported yet.": "目前尚不支援刪除 {0} 工作階段。",
+  "Antigravity Session": "Antigravity 工作階段",
+  "Antigravity sessions cannot be resumed from a terminal. Reopen them in the Antigravity app.": "Antigravity 工作階段無法從終端機繼續。請在 Antigravity 應用程式中重新開啟。"
 }

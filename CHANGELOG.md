@@ -2,6 +2,30 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.8.3] - 2026-11-21
+
+### Added
+
+- **Antigravity Support** - Conversations from Google's Antigravity (the desktop app, its VS Code extension, and the IDE build) now appear in history with their own filter and badge, including sub-agents, file changes, and usage. Resume opens the conversation in the Antigravity VS Code extension or brings up the desktop app (new setting `claude-history.resume.defaultTargetAntigravity`).
+- **DeepSeek Harness Support** - Sessions from DeepSeek Harness (`dsh`) now appear in history with their own filter and badge, including sub-agents, file changes, and usage. DeepSeek Harness has no resume command, so resume is not available for these sessions.
+- **Advisor Consults in Conversations** - Claude's advisor-mode consults now show in the conversation view as Advisor rows with their model and tokens.
+
+### Improved
+
+- **Antigravity and DeepSeek Harness Sessions in ccassist MCP** - ccassist MCP can now search and load Antigravity and DeepSeek Harness sessions. If you changed the MCP providers setting before, tick Antigravity and DeepSeek Harness there to include them.
+- **Faster Indexing** - Building the search index reads each sub-agent transcript once instead of several times, and compressed Codex sessions no longer need to be fully unpacked to be listed.
+- **Updated Model Pricing** - Added rates for Gemini 4 Neon, Carbon, Argon, and Hydrogen, Gemini 3.8 and 3.6 Flash, Gemini 3 Flash Preview, Gemini 3.5 and 3.1 Flash-Lite, Gemini 3.1 Pro, and DeepSeek Flash and V4 Pro.
+
+### Fixed
+
+- **Advisor Costs Missing from Usage** - Session cost, daily usage, plan windows, and the model breakdown now include what Claude's advisor-mode consults cost. Usage totals are rebuilt once after updating.
+- **Agent SDK Scripts Showing as Typed Sessions** - Sessions from Agent SDK scripts run with Claude Code 2.1.328 and later stay in the Automated collection instead of appearing as typed sessions with their temporary folders as projects.
+
+### Privacy
+
+- **Anonymous Device Name** - When VS Code telemetry is off, the background check-in now sends "Anonymous" instead of your computer's name, and replaces the name the server already has.
+- **Error Reports** - Error reports no longer include Claude Code or Cursor project folder names, excerpts of transcript lines that failed to parse, or file names from the file-changes status bar item.
+
 ## [0.8.2] - 2026-11-17
 
 ### Security

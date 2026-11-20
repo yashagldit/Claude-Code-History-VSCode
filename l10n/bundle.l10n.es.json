@@ -721,7 +721,7 @@
   "Agent Task": "Tarea del agente",
   "All": "Todas",
   "All sources": "Todas las fuentes",
-  "Show Claude, Codex, OpenCode, ZCode, Grok, Copilot, and Cursor sessions": "Mostrar sesiones de Claude, Codex, OpenCode, ZCode, Grok, Copilot y Cursor",
+  "Show sessions from every source": "Mostrar sesiones de todas las fuentes",
   "Archived": "Archivadas",
   "Show only archived sessions (saved backups)": "Mostrar solo sesiones archivadas (copias de seguridad guardadas)",
   "MD": "MD",
@@ -747,7 +747,7 @@
   "Set up ccassist": "Configurar ccassist",
   "ccassist setup finished — see the summary document": "Configuración de ccassist finalizada — consulta el documento resumen",
   "The ccassist MCP server now requires an access token, and it was added to {clients}. Restart any CLI session that is already open so it loads the updated config.": "El servidor MCP de ccassist ahora requiere un token de acceso, y se ha añadido a {clients}. Reinicia las sesiones de CLI que ya estén abiertas para que carguen la configuración actualizada.",
-  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist iniciará el servidor MCP local en {url}, lo registrará con Claude Code, Codex, Grok, OpenCode y Cursor, e instalará la skill ccassist. Primero se respaldan los archivos de configuración existentes.",
+  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, Cursor, and Antigravity, and install the ccassist skill. Existing config files are backed up first.": "ccassist iniciará el servidor MCP local en {url}, lo registrará con Claude Code, Codex, Grok, OpenCode, Cursor y Antigravity, e instalará la skill ccassist. Primero se respaldan los archivos de configuración existentes.",
   "Could not activate: {0}": "No se pudo activar: {0}",
   "Device info copied. Paste it on ccassist.dev → Dashboard → Devices to get an activation code.": "Información del dispositivo copiada. Pégala en ccassist.dev → Panel → Dispositivos para obtener un código de activación.",
   "Invalid activation code.": "Código de activación no válido.",
@@ -890,5 +890,11 @@
   "the file has changed since this session": "el archivo ha cambiado desde esta sesión",
   "the file was recreated during the session": "el archivo se volvió a crear durante la sesión",
   "this change has no recorded edit to reverse": "este cambio no tiene ninguna edición registrada que revertir",
-  "this edit cannot be located exactly in the file": "no se puede localizar esta edición con exactitud en el archivo"
+  "this edit cannot be located exactly in the file": "no se puede localizar esta edición con exactitud en el archivo",
+  "DeepSeek Harness Session": "Sesión de DeepSeek Harness",
+  "{0} sessions cannot be archived yet.": "Las sesiones de {0} aún no se pueden archivar.",
+  "DeepSeek Harness sessions cannot be resumed from a terminal. Reopen them in the DeepSeek Harness app.": "Las sesiones de DeepSeek Harness no se pueden reanudar desde una terminal. Vuelve a abrirlas en la app de DeepSeek Harness.",
+  "Deleting {0} sessions is not supported yet.": "Aún no se admite eliminar sesiones de {0}.",
+  "Antigravity Session": "Sesión de Antigravity",
+  "Antigravity sessions cannot be resumed from a terminal. Reopen them in the Antigravity app.": "Las sesiones de Antigravity no se pueden reanudar desde una terminal. Vuelve a abrirlas en la aplicación Antigravity."
 }

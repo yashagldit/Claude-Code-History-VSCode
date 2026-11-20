@@ -721,7 +721,7 @@
   "Agent Task": "代理任务",
   "All": "全部",
   "All sources": "所有来源",
-  "Show Claude, Codex, OpenCode, ZCode, Grok, Copilot, and Cursor sessions": "显示 Claude、Codex、OpenCode、ZCode、Grok、Copilot 和 Cursor 会话",
+  "Show sessions from every source": "显示所有来源的会话",
   "Archived": "已归档",
   "Show only archived sessions (saved backups)": "仅显示已归档会话（已保存的备份）",
   "MD": "MD",
@@ -747,7 +747,7 @@
   "Set up ccassist": "设置 ccassist",
   "ccassist setup finished — see the summary document": "ccassist 设置完成 — 请查看摘要文档",
   "The ccassist MCP server now requires an access token, and it was added to {clients}. Restart any CLI session that is already open so it loads the updated config.": "ccassist MCP 服务器现在需要访问令牌，已添加到 {clients}。请重启已打开的 CLI 会话，以加载更新后的配置。",
-  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist 将在 {url} 启动本地 MCP 服务器，将其注册到 Claude Code、Codex、Grok、OpenCode 和 Cursor，并安装 ccassist 技能。会先备份现有配置。",
+  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, Cursor, and Antigravity, and install the ccassist skill. Existing config files are backed up first.": "ccassist 将在 {url} 启动本地 MCP 服务器，将其注册到 Claude Code、Codex、Grok、OpenCode、Cursor 和 Antigravity，并安装 ccassist 技能。会先备份现有配置。",
   "Could not activate: {0}": "无法激活：{0}",
   "Device info copied. Paste it on ccassist.dev → Dashboard → Devices to get an activation code.": "已复制设备信息。请在 ccassist.dev → 仪表板 → 设备中粘贴以获取激活码。",
   "Invalid activation code.": "激活码无效。",
@@ -890,5 +890,11 @@
   "the file has changed since this session": "自此会话之后文件已被更改",
   "the file was recreated during the session": "文件在会话期间被重新创建",
   "this change has no recorded edit to reverse": "此更改没有可撤销的编辑记录",
-  "this edit cannot be located exactly in the file": "无法在文件中准确定位此编辑"
+  "this edit cannot be located exactly in the file": "无法在文件中准确定位此编辑",
+  "DeepSeek Harness Session": "DeepSeek Harness 会话",
+  "{0} sessions cannot be archived yet.": "暂不支持归档 {0} 会话。",
+  "DeepSeek Harness sessions cannot be resumed from a terminal. Reopen them in the DeepSeek Harness app.": "DeepSeek Harness 会话无法在终端中恢复，请在 DeepSeek Harness 应用中重新打开。",
+  "Deleting {0} sessions is not supported yet.": "暂不支持删除 {0} 会话。",
+  "Antigravity Session": "Antigravity 会话",
+  "Antigravity sessions cannot be resumed from a terminal. Reopen them in the Antigravity app.": "Antigravity 会话无法从终端恢复。请在 Antigravity 应用中重新打开。"
 }

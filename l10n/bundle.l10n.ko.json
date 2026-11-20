@@ -721,7 +721,7 @@
   "Agent Task": "에이전트 작업",
   "All": "전체",
   "All sources": "모든 소스",
-  "Show Claude, Codex, OpenCode, ZCode, Grok, Copilot, and Cursor sessions": "Claude, Codex, OpenCode, ZCode, Grok, Copilot, Cursor 세션 표시",
+  "Show sessions from every source": "모든 소스의 세션 표시",
   "Archived": "보관됨",
   "Show only archived sessions (saved backups)": "보관된 세션(저장된 백업)만 표시",
   "MD": "MD",
@@ -747,7 +747,7 @@
   "Set up ccassist": "ccassist 설정",
   "ccassist setup finished — see the summary document": "ccassist 설정 완료 — 요약 문서를 확인하세요",
   "The ccassist MCP server now requires an access token, and it was added to {clients}. Restart any CLI session that is already open so it loads the updated config.": "이제 ccassist MCP 서버에 액세스 토큰이 필요하며, {clients}에 추가했습니다. 이미 열려 있는 CLI 세션을 다시 시작해 업데이트된 설정을 불러오세요.",
-  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, and Cursor, and install the ccassist skill. Existing config files are backed up first.": "ccassist는 {url}에서 로컬 MCP 서버를 시작하고 Claude Code, Codex, Grok, OpenCode, Cursor에 등록한 후 ccassist 스킬을 설치합니다. 기존 구성 파일은 먼저 백업됩니다.",
+  "ccassist will start the local MCP server at {url}, register it with Claude Code, Codex, Grok, OpenCode, Cursor, and Antigravity, and install the ccassist skill. Existing config files are backed up first.": "ccassist는 {url}에서 로컬 MCP 서버를 시작하고 Claude Code, Codex, Grok, OpenCode, Cursor, Antigravity에 등록한 후 ccassist 스킬을 설치합니다. 기존 구성 파일은 먼저 백업됩니다.",
   "Could not activate: {0}": "활성화할 수 없습니다: {0}",
   "Device info copied. Paste it on ccassist.dev → Dashboard → Devices to get an activation code.": "기기 정보를 복사했습니다. ccassist.dev → 대시보드 → 기기에 붙여넣어 활성화 코드를 받으세요.",
   "Invalid activation code.": "활성화 코드가 올바르지 않습니다.",
@@ -890,5 +890,11 @@
   "the file has changed since this session": "이 세션 이후 파일이 변경되었습니다",
   "the file was recreated during the session": "세션 중에 파일이 다시 생성되었습니다",
   "this change has no recorded edit to reverse": "이 변경에는 되돌릴 편집 기록이 없습니다",
-  "this edit cannot be located exactly in the file": "이 편집의 위치를 파일에서 정확히 찾을 수 없습니다"
+  "this edit cannot be located exactly in the file": "이 편집의 위치를 파일에서 정확히 찾을 수 없습니다",
+  "DeepSeek Harness Session": "DeepSeek Harness 세션",
+  "{0} sessions cannot be archived yet.": "{0} 세션은 아직 보관할 수 없습니다.",
+  "DeepSeek Harness sessions cannot be resumed from a terminal. Reopen them in the DeepSeek Harness app.": "DeepSeek Harness 세션은 터미널에서 재개할 수 없습니다. DeepSeek Harness 앱에서 다시 여세요.",
+  "Deleting {0} sessions is not supported yet.": "{0} 세션 삭제는 아직 지원되지 않습니다.",
+  "Antigravity Session": "Antigravity 세션",
+  "Antigravity sessions cannot be resumed from a terminal. Reopen them in the Antigravity app.": "Antigravity 세션은 터미널에서 다시 시작할 수 없습니다. Antigravity 앱에서 다시 여세요."
 }
