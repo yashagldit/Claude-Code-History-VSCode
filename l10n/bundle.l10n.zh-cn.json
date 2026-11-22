@@ -321,6 +321,8 @@
   "Failed to reapply change: {error}": "无法重新应用更改：{error}",
   "Undo is limited to same-day file changes on the Free plan.": "在免费计划中，撤消仅限于当天的文件更改。",
   "Undo is unavailable because this shell change has no observed before-state.": "此 Shell 更改没有已观察到的更改前状态，因此无法撤消。",
+  "Undo is unavailable because this write may have replaced a file that existed before, and its earlier content was not recorded.": "此写入可能替换了之前已存在的文件，且其先前内容未被记录，因此无法撤消。",
+  "Left {fileNames} as they are: the agent may have replaced files that existed before, so undo does not delete them.": "已保留 {fileNames} 不变：代理可能替换了之前已存在的文件，因此撤消不会删除它们。",
   "Undo is unavailable because this turn includes an inferred shell change with no observed before-state.": "此轮包含没有已观察到更改前状态的推断 Shell 更改，因此无法撤消。",
   "Unsupported tool type for undo": "不支持的撤消工具类型",
   "Failed to undo change: {error}": "无法撤消更改：{error}",
@@ -674,6 +676,7 @@
   "Refresh": "刷新",
   "Agents": "智能体",
   "updates every 5 min": "每 5 分钟更新",
+  "Customise": "自定义",
   "#### Cursor{planSuffix}\n\n": "#### Cursor{planSuffix}\n\n",
   "**Cursor**{planSuffix}  \n": "**Cursor**{planSuffix}  \n",
   "Monthly": "每月",
@@ -896,5 +899,14 @@
   "DeepSeek Harness sessions cannot be resumed from a terminal. Reopen them in the DeepSeek Harness app.": "DeepSeek Harness 会话无法在终端中恢复，请在 DeepSeek Harness 应用中重新打开。",
   "Deleting {0} sessions is not supported yet.": "暂不支持删除 {0} 会话。",
   "Antigravity Session": "Antigravity 会话",
-  "Antigravity sessions cannot be resumed from a terminal. Reopen them in the Antigravity app.": "Antigravity 会话无法从终端恢复。请在 Antigravity 应用中重新打开。"
+  "Antigravity sessions cannot be resumed from a terminal. Reopen them in the Antigravity app.": "Antigravity 会话无法从终端恢复。请在 Antigravity 应用中重新打开。",
+  "| Antigravity | open the Antigravity app or its VS Code extension |\n": "| Antigravity | 打开 Antigravity 应用或其 VS Code 扩展 |\n",
+  "⚠️ _Antigravity is not running. Using last available data from {date}._\n\n": "⚠️ _Antigravity 未运行。正在使用 {date} 的最新可用数据。_\n\n",
+  "$(warning) _Cached · Antigravity not running_  \n": "$(warning) _已缓存 · Antigravity 未运行_  \n",
+  "#### Antigravity{planSuffix}\n\n": "#### Antigravity{planSuffix}\n\n",
+  "Gemini": "Gemini",
+  "Claude/GPT": "Claude/GPT",
+  "Cached": "缓存",
+  "last fetched {date}": "上次获取 {date}",
+  "Antigravity not running": "Antigravity 未运行"
 }

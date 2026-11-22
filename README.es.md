@@ -2,20 +2,24 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md) | [繁體中文](./README.zh-TW.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md) | [Deutsch](./README.de.md) | [Français](./README.fr.md) | **Español**
 
-> **Nota**: Esta es una extensión no oficial; no está creada por Anthropic, OpenAI, SST/OpenCode, xAI/Grok ni GitHub, ni tiene relación con ellos.
+> **Nota**: Esta es una extensión no oficial; no está creada por Anthropic, OpenAI, Google, DeepSeek, SST/OpenCode, xAI/Grok, Cursor, ZCode ni GitHub, ni tiene relación con ellos.
 
 ![Claude Code and Codex Assist en 40 segundos: historial de sesiones, reanudación, seguimiento de cuota, diffs, búsqueda y contexto entre CLI](./assets/ccassist-promo.gif)
 
-Explora tu historial de chat de **Claude Code**, **Codex**, **OpenCode**, **Grok** y **GitHub Copilot** directamente en VS Code: consulta los diffs de archivos, busca en todas las conversaciones, controla el uso de tokens y el coste, y reanuda sesiones anteriores sin salir del editor. También sirve para seguir tu uso: un único panel muestra el coste por modelo, el consumo de cuota y el historial de reinicios semanales de todos tus asistentes de IA, y si usas más de una cuenta de Claude o Codex, cambias entre ellas con un clic. ¿Alguna vez te has preguntado qué conversación con IA cambió un archivo? La línea de tiempo de archivos es un git blame para las ediciones de IA: elige un archivo, mira cada sesión y prompt que lo tocó y abre el diff exacto.
+Explora tu historial de chat de **Claude Code**, **Codex**, **Antigravity**, **Cursor**, **OpenCode**, **ZCode**, **Grok**, **DeepSeek Harness** y **GitHub Copilot** directamente en VS Code: consulta los diffs de archivos, busca en todas las conversaciones, controla el uso de tokens y el coste, y reanuda sesiones anteriores sin salir del editor. También sirve para seguir tu uso: un único panel muestra el coste por modelo, el consumo de cuota y el historial de reinicios semanales de todos tus asistentes de IA, y si usas más de una cuenta de Claude o Codex, cambias entre ellas con un clic. ¿Alguna vez te has preguntado qué conversación con IA cambió un archivo? La línea de tiempo de archivos es un git blame para las ediciones de IA: elige un archivo, mira cada sesión y prompt que lo tocó y abre el diff exacto.
 
-**🤖 Funciona con los cinco asistentes:**
+**🤖 Funciona con los nueve asistentes:**
 - **Claude Code** — `~/.claude/projects/`
 - **Codex** — `~/.codex/sessions/`
+- **Antigravity** — la app de Antigravity, su extensión de VS Code y la CLI `agy` (`~/.gemini/antigravity/`, `~/.gemini/antigravity-cli/`)
+- **Cursor** — chats de agente (`~/.cursor/projects/`, con los resultados de herramientas de la base de datos local de Cursor)
 - **OpenCode** — `~/.local/share/opencode/`
+- **ZCode** — `~/.zcode/cli/`
 - **Grok** — `~/.grok/`
+- **DeepSeek Harness** — `~/.dsh/`
 - **GitHub Copilot** — Copilot CLI y sesiones de chat de VS Code
 
-Las sesiones de los cinco aparecen en una única lista, con insignias y logotipos que las distinguen. Un **servidor MCP** integrado permite incluso que los asistentes compartan contexto entre sí: continúa tu última sesión de Codex desde Claude Code o pregúntale a Grok qué cambió una sesión anterior de Claude.
+Las sesiones de los nueve aparecen en una única lista, con insignias y logotipos que las distinguen. Un **servidor MCP** integrado permite incluso que los asistentes compartan contexto entre sí: continúa tu última sesión de Codex desde Claude Code o pregúntale a Grok qué cambió una sesión anterior de Claude.
 
 **🌐 Idiomas de la interfaz:** English | 简体中文 | 繁體中文 | 日本語 | 한국어 | Deutsch | Français | Español
 
@@ -32,7 +36,7 @@ Cada turno muestra los archivos que tocó con su recuento de +/-, diff, deshacer
 ![Cambios de la sesión y Revisar cambios](./assets/session-changes.gif)
 
 ### ⏱️ Línea de tiempo de archivos
-**git blame, pero para conversaciones con IA.** Abre cualquier archivo y la línea de tiempo muestra todas las sesiones que lo editaron; despliega una sesión para ver el prompt exacto y su diff, en Claude Code, Codex, OpenCode, Grok y Copilot.
+**git blame, pero para conversaciones con IA.** Abre cualquier archivo y la línea de tiempo muestra todas las sesiones que lo editaron; despliega una sesión para ver el prompt exacto y su diff, en Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness y Copilot.
 
 ![Línea de tiempo de archivos](./assets/timeline-demo.gif)
 
@@ -42,7 +46,7 @@ Transcripción renderizada con tarjetas de **cambios del turno**, un gráfico de
 <img src="./assets/conversation-view.png" alt="Vista de conversación con cambios de archivos por turno y destinos para reanudar" width="420">
 
 ### 📊 Consumo de cuota y cambio de cuenta
-Tarjetas de cuota en vivo de 5 horas y semanales para Claude, Codex, Fable y Grok, gráficos de consumo que proyectan cuándo se agotará cada ventana, un mapa de calor de actividad y una tabla de costes día a día. Guarda varias cuentas de Claude y Codex y cambia entre ellas desde la pestaña Cuenta, la pestaña Plan del panel o el comando **Cambiar cuenta de Claude / Codex**; el uso del plan de cada cuenta se registra por separado, así que el historial de cuota nunca mezcla cuentas.
+Tarjetas de cuota en vivo de 5 horas y semanales para Claude, Codex, Fable, Grok y Antigravity, gráficos de consumo que proyectan cuándo se agotará cada ventana, un mapa de calor de actividad y una tabla de costes día a día. Guarda varias cuentas de Claude y Codex y cambia entre ellas desde la pestaña Cuenta, la pestaña Plan del panel o el comando **Cambiar cuenta de Claude / Codex**; el uso del plan de cada cuenta se registra por separado, así que el historial de cuota nunca mezcla cuentas.
 
 <img src="./assets/account-quota.png" alt="Pestaña Cuenta con tarjetas de cuota, gráfico de consumo y mapa de calor de actividad" width="420">
 
@@ -52,17 +56,17 @@ Un resumen móvil de 7 días con sesiones, tokens, coste, ediciones y días acti
 <img src="./assets/weekly-digest.png" alt="Resumen semanal con totales, tokens por día y proyectos principales" width="420">
 
 ### 📚 Explorador de sesiones unificado
-Sesiones de Claude Code, Codex, Grok, OpenCode, Copilot y Cursor en una sola lista, agrupadas por proyecto, con filtros por modelo y el coste de cada carpeta.
+Sesiones de Claude Code, Codex, Antigravity, Cursor, Grok, OpenCode, ZCode, DeepSeek Harness y Copilot en una sola lista, agrupadas por proyecto, con filtros por modelo y el coste de cada carpeta.
 
 <img src="./assets/chat-history.png" alt="Pestaña Sesiones agrupada por proyecto con el filtro de modelos abierto" width="420">
 
 ### 🔌 Servidor MCP de ccassist
-Un servidor MCP local permite que Claude Code, Codex, Grok, OpenCode y Cursor lean tu historial de sesiones y continúen el trabajo de los demás.
+Un servidor MCP local permite que Claude Code, Codex, Antigravity, Grok, OpenCode y Cursor lean tu historial de sesiones y continúen el trabajo de los demás.
 
 <img src="./assets/history-mcp.png" alt="Pestaña MCP con las herramientas de ccassist disponibles para los agentes de CLI" width="420">
 
 ### 📍 Cuota en la barra de estado
-Los porcentajes de Claude, Fable, Codex y Grok siempre a la vista; pasa el cursor por encima para ver cada ventana con su hora de reinicio.
+Los porcentajes de Claude, Fable, Codex, Grok y Antigravity siempre a la vista; pasa el cursor por encima para ver cada ventana con su hora de reinicio.
 
 <img src="./assets/usage-quota-statusbar.png" alt="Indicador de cuota en la barra de estado con ventana emergente" width="555">
 
@@ -70,7 +74,7 @@ Los porcentajes de Claude, Fable, Codex y Grok siempre a la vista; pasa el curso
 ## 🌟 Funciones
 
 ### Sesiones e historial
-- **Historial unificado** de Claude Code, Codex, OpenCode, Grok y GitHub Copilot, organizado por proyecto y con detección del proyecto actual
+- **Historial unificado** de Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness y GitHub Copilot, organizado por proyecto y con detección del proyecto actual
 - **Acciones rápidas y navegación con teclado**: fija, reanuda o elimina desde la fila de una sesión; muévete con las flechas, abre con Intro y elimina con Supr
 - **Menú contextual del proyecto**: haz clic derecho en la cabecera de un proyecto para fijarlo, ocultarlo, mostrarlo en el gestor de archivos o abrirlo en una ventana nueva
 - **Oculta sesiones concretas**: despeja la lista sin borrar nada; las sesiones ocultas se reúnen en la pestaña Ocultas, agrupadas por proyecto, y puedes volver a mostrarlas con un clic u ocultar varias a la vez con la selección múltiple
@@ -102,7 +106,7 @@ Los porcentajes de Claude, Fable, Codex y Grok siempre a la vista; pasa el curso
 - **Resultados agrupados por sesión** con coste, tokens y número de mensajes, y las coincidencias resaltadas
 
 ### Servidor MCP de ccassist: contexto compartido entre asistentes
-- **Servidor MCP local**: la extensión puede alojar un servidor MCP local y ligero para que Claude Code, Codex, Grok, OpenCode y Cursor consulten tu historial de sesiones desde cualquiera de ellos (solo loopback, desactivado por defecto)
+- **Servidor MCP local**: la extensión puede alojar un servidor MCP local y ligero para que Claude Code, Codex, Antigravity, Grok, OpenCode y Cursor consulten tu historial de sesiones desde cualquiera de ellos (solo loopback, desactivado por defecto)
 - **Continúa el trabajo entre herramientas**: di *«continúa mi última sesión de Codex»* en Claude Code (o al revés) y el agente obtiene un resumen de traspaso condensado: los últimos turnos, un resumen de la sesión y lo que cambió
 - **Configuración en un clic**: ejecuta **Set up ccassist (MCP + Skill)** desde la página MCP del panel lateral o la paleta de comandos; registra el servidor en cada CLI e instala una skill `ccassist` que enseña a los agentes cuándo y cómo usarlo
 - **Siete herramientas**: `search_sessions`, `list_recent_sessions`, `get_context` y `get_session` para encontrar y cargar trabajo anterior, además de `grep_sessions` (búsqueda literal en transcripciones, incluida la salida de herramientas), `get_session_changes` (resúmenes por archivo o diffs reconstruidos) y `get_file_sessions` (qué sesiones tocaron un archivo) `Pro`
@@ -113,7 +117,7 @@ Los porcentajes de Claude, Fable, Codex y Grok siempre a la vista; pasa el curso
 - **Seguimiento de cuota**: tarjetas de cuota de Claude/Codex en vivo, gráfico de consumo, historial de reinicios semanales y resumen semanal, con desglose por modelo, incluidos Sonnet, Opus y Fable cuando están disponibles
 - **Varias cuentas de Claude y Codex**: guarda cada cuenta una vez, cambia la cuenta activa desde el panel lateral, el panel de analítica o la paleta de comandos, y consulta el uso del plan de cada cuenta
 - **Gráficos de uso por modelo** que muestran qué modelos impulsan tu actividad y tu coste a lo largo del tiempo
-- **Análisis de costes detallado** de todos los modelos compatibles de Claude, OpenAI, OpenCode, Grok y Copilot, con datos sobre los tokens de caché
+- **Análisis de costes detallado** de todos los modelos compatibles de Claude, OpenAI, Gemini, DeepSeek, GLM, OpenCode, Grok, Cursor y Copilot, con datos sobre los tokens de caché
 - **Analítica por sesión**: uso de la ventana de contexto a lo largo del tiempo (cuánto se llenó, turno a turno), eventos de compactación marcados en la línea de tiempo, pico de contexto frente al límite del modelo y turnos sin acierto de caché
 - **Indicador de cuota en la barra de estado** con acceso rápido al panel
 
@@ -142,10 +146,10 @@ Lo que se envía: una comprobación periódica que mantiene al día tu licencia,
 
 ## 🚀 Primeros pasos
 
-**Requisitos previos:** VS Code 1.80.0+ y un historial existente de Claude Code, Codex, OpenCode, Grok o GitHub Copilot.
+**Requisitos previos:** VS Code 1.80.0+ y un historial existente de Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness o GitHub Copilot.
 
 1. Instala la extensión desde el marketplace de extensiones de VS Code
-2. La extensión detecta automáticamente tu historial de Claude, Codex, OpenCode, Grok y Copilot
+2. La extensión detecta automáticamente tu historial de Claude, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness y Copilot
 3. Haz clic en el icono de CCAssist en la barra de actividad para empezar a explorar
 
 Haz clic en cualquier sesión para ver la conversación y sus cambios de archivos, usa **Cambios de archivos** para ver un resumen de diffs al estilo de un commit y abre la pestaña **Panel** para consultar la analítica de costes y cuota.
@@ -175,7 +179,7 @@ Accede desde **Ajustes → Extensiones → Claude Code Assist** o busca «Claude
 
 ## 🔧 Solución de problemas
 
-**«No Claude, Codex, OpenCode, Grok, or Copilot directory found»**: asegúrate de haber usado el asistente correspondiente al menos una vez y de que el directorio exista, o define una ruta personalizada en los ajustes.
+**«No Claude, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness, or Copilot directory found»**: asegúrate de haber usado el asistente correspondiente al menos una vez y de que el directorio exista, o define una ruta personalizada en los ajustes.
 
 **Las sesiones no cargan**: haz clic en **Actualizar sesiones** y comprueba las rutas de los directorios.
 
@@ -208,4 +212,4 @@ Propietaria: consulta [LICENSE](./LICENSE) para ver las condiciones. La extensi�
 
 ---
 
-**Mejora tu flujo de trabajo con un historial completo, seguimiento de cambios en archivos y gestión de sesiones en Claude Code, Codex, OpenCode, Grok y GitHub Copilot.**
+**Mejora tu flujo de trabajo con un historial completo, seguimiento de cambios en archivos y gestión de sesiones en Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness y GitHub Copilot.**

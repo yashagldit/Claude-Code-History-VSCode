@@ -2,20 +2,24 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md) | [繁體中文](./README.zh-TW.md) | **日本語** | [한국어](./README.ko.md) | [Deutsch](./README.de.md) | [Français](./README.fr.md) | [Español](./README.es.md)
 
-> **注意**: 本拡張機能は非公式のものであり、Anthropic、OpenAI、SST/OpenCode、xAI/Grok、GitHub が作成したものではなく、これらの企業とは一切関係ありません。
+> **注意**: 本拡張機能は非公式のものであり、Anthropic、OpenAI、Google、DeepSeek、SST/OpenCode、xAI/Grok、Cursor、ZCode、GitHub が作成したものではなく、これらの企業とは一切関係ありません。
 
 ![40 秒でわかる Claude Code and Codex Assist: セッション履歴、再開、クォータ追跡、差分、検索、CLI をまたぐコンテキスト共有](./assets/ccassist-promo.gif)
 
-**Claude Code**、**Codex**、**OpenCode**、**Grok**、**GitHub Copilot** のチャット履歴を VS Code の中でそのまま閲覧できます。ファイルの差分を確認し、すべての会話を横断検索し、トークン使用量とコストを追跡し、過去のセッションをエディターから離れずに再開できます。使用量トラッカーとしても使えます。ひとつのダッシュボードで、すべての AI アシスタントのモデル別コスト、クォータの消費推移、週次リセット履歴を確認でき、Claude や Codex のログインを複数使っている場合はワンクリックで切り替えられます。「このファイルを変更したのはどの AI との会話だったか」と思ったことはありませんか? ファイルタイムラインは、AI による編集のための git blame です。ファイルを選ぶと、そのファイルに触れたすべてのセッションとプロンプトが表示され、該当の差分をそのまま開けます。
+**Claude Code**、**Codex**、**Antigravity**、**Cursor**、**OpenCode**、**ZCode**、**Grok**、**DeepSeek Harness**、**GitHub Copilot** のチャット履歴を VS Code の中でそのまま閲覧できます。ファイルの差分を確認し、すべての会話を横断検索し、トークン使用量とコストを追跡し、過去のセッションをエディターから離れずに再開できます。使用量トラッカーとしても使えます。ひとつのダッシュボードで、すべての AI アシスタントのモデル別コスト、クォータの消費推移、週次リセット履歴を確認でき、Claude や Codex のログインを複数使っている場合はワンクリックで切り替えられます。「このファイルを変更したのはどの AI との会話だったか」と思ったことはありませんか? ファイルタイムラインは、AI による編集のための git blame です。ファイルを選ぶと、そのファイルに触れたすべてのセッションとプロンプトが表示され、該当の差分をそのまま開けます。
 
-**🤖 5 つのアシスタントすべてに対応:**
+**🤖 9 つのアシスタントすべてに対応:**
 - **Claude Code** — `~/.claude/projects/`
 - **Codex** — `~/.codex/sessions/`
+- **Antigravity** — Antigravity アプリ、その VS Code 拡張機能、`agy` CLI (`~/.gemini/antigravity/`、`~/.gemini/antigravity-cli/`)
+- **Cursor** — エージェントのチャット (`~/.cursor/projects/`、ツールの実行結果は Cursor のローカルデータベースから取得)
 - **OpenCode** — `~/.local/share/opencode/`
+- **ZCode** — `~/.zcode/cli/`
 - **Grok** — `~/.grok/`
+- **DeepSeek Harness** — `~/.dsh/`
 - **GitHub Copilot** — Copilot CLI と VS Code のチャットセッション
 
-5 つすべてのセッションがひとつの統合リストに表示され、バッジとロゴで見分けられます。組み込みの **MCP サーバー**を使えば、アシスタント同士でコンテキストを共有することもできます。Claude Code から前回の Codex セッションの続きを進めたり、過去の Claude セッションで何が変更されたかを Grok に尋ねたりできます。
+9 つすべてのセッションがひとつの統合リストに表示され、バッジとロゴで見分けられます。組み込みの **MCP サーバー**を使えば、アシスタント同士でコンテキストを共有することもできます。Claude Code から前回の Codex セッションの続きを進めたり、過去の Claude セッションで何が変更されたかを Grok に尋ねたりできます。
 
 **🌐 UI の対応言語:** English | 简体中文 | 繁體中文 | 日本語 | 한국어 | Deutsch | Français | Español
 
@@ -32,7 +36,7 @@
 ![セッションの変更と変更のレビュー](./assets/session-changes.gif)
 
 ### ⏱️ ファイル履歴タイムライン
-**AI との会話のための git blame。** ファイルを開くと、そのファイルを編集したすべてのセッションがタイムラインに表示されます。セッションを展開すれば、該当のプロンプトとその差分を確認できます。Claude Code、Codex、OpenCode、Grok、Copilot に対応しています。
+**AI との会話のための git blame。** ファイルを開くと、そのファイルを編集したすべてのセッションがタイムラインに表示されます。セッションを展開すれば、該当のプロンプトとその差分を確認できます。Claude Code、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness、Copilot に対応しています。
 
 ![ファイル履歴タイムライン](./assets/timeline-demo.gif)
 
@@ -42,7 +46,7 @@
 <img src="./assets/conversation-view.png" alt="ターンごとのファイル変更と再開先を表示した会話ビュー" width="420">
 
 ### 📊 クォータの消費推移とアカウント切り替え
-Claude、Codex、Fable、Grok の 5 時間・週間クォータをリアルタイムのカードで表示し、各枠をいつ使い切るかを予測する消費推移グラフ、アクティビティヒートマップ、日別のコスト表も備えています。Claude と Codex のログインを複数保存しておき、アカウントタブ、ダッシュボードのプラン使用状況タブ、または **Claude / Codex アカウントを切り替え** コマンドから切り替えられます。プラン使用状況はアカウントごとに個別に追跡されるため、クォータ履歴が複数のアカウントで混ざることはありません。
+Claude、Codex、Fable、Grok、Antigravity の 5 時間・週間クォータをリアルタイムのカードで表示し、各枠をいつ使い切るかを予測する消費推移グラフ、アクティビティヒートマップ、日別のコスト表も備えています。Claude と Codex のログインを複数保存しておき、アカウントタブ、ダッシュボードのプラン使用状況タブ、または **Claude / Codex アカウントを切り替え** コマンドから切り替えられます。プラン使用状況はアカウントごとに個別に追跡されるため、クォータ履歴が複数のアカウントで混ざることはありません。
 
 <img src="./assets/account-quota.png" alt="クォータカード、消費推移グラフ、アクティビティヒートマップを表示したアカウントタブ" width="420">
 
@@ -52,17 +56,17 @@ Claude、Codex、Fable、Grok の 5 時間・週間クォータをリアルタ�
 <img src="./assets/weekly-digest.png" alt="合計、日別トークン、上位プロジェクトを表示した週次サマリー" width="420">
 
 ### 📚 統合セッションブラウザー
-Claude Code、Codex、Grok、OpenCode、Copilot、Cursor のセッションをひとつのリストに表示し、プロジェクトごとにまとめ、モデル別フィルターとフォルダーごとのコストも確認できます。
+Claude Code、Codex、Antigravity、Cursor、Grok、OpenCode、ZCode、DeepSeek Harness、Copilot のセッションをひとつのリストに表示し、プロジェクトごとにまとめ、モデル別フィルターとフォルダーごとのコストも確認できます。
 
 <img src="./assets/chat-history.png" alt="モデルフィルターを開いた、プロジェクト別のセッションタブ" width="420">
 
 ### 🔌 ccassist MCP サーバー
-ローカルの MCP サーバーにより、Claude Code、Codex、Grok、OpenCode、Cursor があなたのセッション履歴を読み取り、互いの作業を引き継げます。
+ローカルの MCP サーバーにより、Claude Code、Codex、Antigravity、Grok、OpenCode、Cursor があなたのセッション履歴を読み取り、互いの作業を引き継げます。
 
 <img src="./assets/history-mcp.png" alt="CLI エージェントが利用できる ccassist ツールを一覧表示した MCP タブ" width="420">
 
 ### 📍 ステータスバーのクォータ表示
-Claude、Fable、Codex、Grok の使用率を常に表示します。ホバーすると、各枠とそのリセット時刻を確認できます。
+Claude、Fable、Codex、Grok、Antigravity の使用率を常に表示します。ホバーすると、各枠とそのリセット時刻を確認できます。
 
 <img src="./assets/usage-quota-statusbar.png" alt="ホバーポップアップ付きのステータスバーのクォータ表示" width="555">
 
@@ -70,7 +74,7 @@ Claude、Fable、Codex、Grok の使用率を常に表示します。ホバー�
 ## 🌟 機能
 
 ### セッションと履歴
-- **統合された履歴** — Claude Code、Codex、OpenCode、Grok、GitHub Copilot の履歴をプロジェクトごとに整理し、現在のプロジェクトを自動検出
+- **統合された履歴** — Claude Code、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness、GitHub Copilot の履歴をプロジェクトごとに整理し、現在のプロジェクトを自動検出
 - **クイックアクションとキーボード操作** — セッション行からピン留め、再開、削除。矢印キーで移動、Enter で開く、Delete で削除
 - **プロジェクトのコンテキストメニュー** — プロジェクトのヘッダーを右クリックして、ピン留め、非表示、ファイルマネージャーで表示、新しいウィンドウで開く
 - **個別セッションの非表示** — 何も削除せずにリストを整理。非表示にしたセッションは非表示タブにプロジェクトごとにまとめられ、ワンクリックで再表示、複数選択で一括非表示も可能
@@ -102,7 +106,7 @@ Claude、Fable、Codex、Grok の使用率を常に表示します。ホバー�
 - **セッションごとにまとめた結果** — コスト、トークン数、メッセージ数とともに、一致箇所をハイライト表示
 
 ### ccassist MCP サーバー — アシスタント間でコンテキストを共有
-- **ローカル MCP サーバー** — 拡張機能が軽量なローカル MCP サーバーをホストし、Claude Code、Codex、Grok、OpenCode、Cursor のどこからでもセッション履歴を照会できます (ループバック専用、既定でオフ)
+- **ローカル MCP サーバー** — 拡張機能が軽量なローカル MCP サーバーをホストし、Claude Code、Codex、Antigravity、Grok、OpenCode、Cursor のどこからでもセッション履歴を照会できます (ループバック専用、既定でオフ)
 - **ツールをまたいで作業を継続** — Claude Code で *「前回の Codex セッションの続きをやって」* と頼めば (逆も可)、エージェントが要点をまとめた引き継ぎブロックを取得します。直近のターン、セッションの要約、変更内容が含まれます
 - **ワンクリックでセットアップ** — サイドパネルの MCP ページまたはコマンドパレットから **Set up ccassist (MCP + Skill)** を実行すると、各 CLI にサーバーを登録し、エージェントにいつどのように使うかを教える `ccassist` スキルをインストールします
 - **7 つのツール** — 過去の作業を探して読み込むための `search_sessions`、`list_recent_sessions`、`get_context`、`get_session` に加え、`grep_sessions` (ツール出力を含むトランスクリプトの文字列スキャン)、`get_session_changes` (ファイルごとの要約または再構築した差分)、`get_file_sessions` (ファイルに触れたセッション) `Pro`
@@ -113,7 +117,7 @@ Claude、Fable、Codex、Grok の使用率を常に表示します。ホバー�
 - **クォータの追跡** — Claude/Codex のリアルタイムのクォータカード、消費推移グラフ、週次リセット履歴、週間サマリー。利用可能な場合は Sonnet、Opus、Fable などのモデル別内訳も表示
 - **複数の Claude・Codex アカウント** — 各ログインを一度保存すれば、サイドパネル、ダッシュボード、コマンドパレットからアクティブなアカウントを切り替えられ、アカウントごとのプラン使用状況を確認できます
 - **モデル使用量のグラフ** — どのモデルがアクティビティとコストを押し上げているかを時系列で表示
-- **詳細なコスト分析** — 対応するすべての Claude、OpenAI、OpenCode、Grok、Copilot モデルを対象に、キャッシュトークンの分析も含めて表示
+- **詳細なコスト分析** — 対応するすべての Claude、OpenAI、Gemini、DeepSeek、GLM、OpenCode、Grok、Cursor、Copilot モデルを対象に、キャッシュトークンの分析も含めて表示
 - **セッションごとの分析** — コンテキストウィンドウ使用量の推移 (ターンごとにコンテキストがどこまで埋まったか)、タイムライン上に示される圧縮イベント、モデルの上限に対するピークコンテキスト、キャッシュミスしたターン
 - **ステータスバーのクォータ表示** — ダッシュボードへすばやくアクセス
 
@@ -142,10 +146,10 @@ Claude、Fable、Codex、Grok の使用率を常に表示します。ホバー�
 
 ## 🚀 はじめに
 
-**前提条件:** VS Code 1.80.0 以降と、Claude Code、Codex、OpenCode、Grok、GitHub Copilot のいずれかの既存の履歴。
+**前提条件:** VS Code 1.80.0 以降と、Claude Code、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness、GitHub Copilot のいずれかの既存の履歴。
 
 1. VS Code の拡張機能マーケットプレイスからインストール
-2. 拡張機能が Claude、Codex、OpenCode、Grok、Copilot の履歴を自動検出
+2. 拡張機能が Claude、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness、Copilot の履歴を自動検出
 3. アクティビティバーの CCAssist アイコンをクリックして閲覧を開始
 
 セッションをクリックすると、会話とそのファイル変更が表示されます。**ファイル変更** でコミット形式の差分サマリーを確認し、**ダッシュボード** タブでコストとクォータの分析を確認できます。
@@ -175,7 +179,7 @@ Claude、Fable、Codex、Grok の使用率を常に表示します。ホバー�
 
 ## 🔧 トラブルシューティング
 
-**「No Claude, Codex, OpenCode, Grok, or Copilot directory found」** — 該当するアシスタントを少なくとも一度使用し、ディレクトリが存在することを確認するか、設定でカスタムパスを指定してください。
+**「No Claude, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness, or Copilot directory found」** — 該当するアシスタントを少なくとも一度使用し、ディレクトリが存在することを確認するか、設定でカスタムパスを指定してください。
 
 **セッションが読み込まれない** — **セッションを更新** をクリックし、ディレクトリのパスを確認してください。
 
@@ -208,4 +212,4 @@ Claude、Fable、Codex、Grok の使用率を常に表示します。ホバー�
 
 ---
 
-**Claude Code、Codex、OpenCode、Grok、GitHub Copilot をまたぐ充実した履歴、ファイル変更の追跡、セッション管理で、あなたのワークフローを強化しましょう。**
+**Claude Code、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness、GitHub Copilot をまたぐ充実した履歴、ファイル変更の追跡、セッション管理で、あなたのワークフローを強化しましょう。**

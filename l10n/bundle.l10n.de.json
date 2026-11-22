@@ -310,6 +310,8 @@
   "Failed to reapply change: {error}": "Änderung konnte nicht erneut angewendet werden: {error}",
   "Undo is limited to same-day file changes on the Free plan.": "Das Rückgängigmachen ist im kostenlosen Tarif auf Dateiänderungen am selben Tag beschränkt.",
   "Undo is unavailable because this shell change has no observed before-state.": "Rückgängigmachen ist nicht verfügbar, da für diese Shell-Änderung kein beobachteter Vorher-Zustand vorliegt.",
+  "Undo is unavailable because this write may have replaced a file that existed before, and its earlier content was not recorded.": "Rückgängigmachen ist nicht verfügbar, da dieser Schreibvorgang möglicherweise eine bereits vorhandene Datei ersetzt hat und deren früherer Inhalt nicht aufgezeichnet wurde.",
+  "Left {fileNames} as they are: the agent may have replaced files that existed before, so undo does not delete them.": "{fileNames} wurden unverändert gelassen: Der Agent hat möglicherweise bereits vorhandene Dateien ersetzt, daher werden sie beim Rückgängigmachen nicht gelöscht.",
   "Undo is unavailable because this turn includes an inferred shell change with no observed before-state.": "Rückgängigmachen ist nicht verfügbar, da dieser Durchlauf eine abgeleitete Shell-Änderung ohne beobachteten Vorher-Zustand enthält.",
   "Unsupported tool type for undo": "Nicht unterstützter Werkzeugtyp für Rückgängigmachen",
   "Failed to undo change: {error}": "Änderung konnte nicht rückgängig gemacht werden: {error}",
@@ -674,6 +676,7 @@
   "Refresh": "Aktualisieren",
   "Agents": "Agenten",
   "updates every 5 min": "aktualisiert alle 5 Min.",
+  "Customise": "Anpassen",
   "#### Cursor{planSuffix}\n\n": "#### Cursor{planSuffix}\n\n",
   "**Cursor**{planSuffix}  \n": "**Cursor**{planSuffix}  \n",
   "Monthly": "Monatlich",
@@ -896,5 +899,14 @@
   "DeepSeek Harness sessions cannot be resumed from a terminal. Reopen them in the DeepSeek Harness app.": "DeepSeek-Harness-Sitzungen können nicht im Terminal fortgesetzt werden. Öffnen Sie sie erneut in der DeepSeek-Harness-App.",
   "Deleting {0} sessions is not supported yet.": "Das Löschen von {0}-Sitzungen wird noch nicht unterstützt.",
   "Antigravity Session": "Antigravity-Sitzung",
-  "Antigravity sessions cannot be resumed from a terminal. Reopen them in the Antigravity app.": "Antigravity-Sitzungen können nicht im Terminal fortgesetzt werden. Öffnen Sie sie erneut in der Antigravity-App."
+  "Antigravity sessions cannot be resumed from a terminal. Reopen them in the Antigravity app.": "Antigravity-Sitzungen können nicht im Terminal fortgesetzt werden. Öffnen Sie sie erneut in der Antigravity-App.",
+  "| Antigravity | open the Antigravity app or its VS Code extension |\n": "| Antigravity | Antigravity-App oder ihre VS Code-Erweiterung öffnen |\n",
+  "⚠️ _Antigravity is not running. Using last available data from {date}._\n\n": "⚠️ _Antigravity läuft nicht. Letzte verfügbare Daten vom {date} werden verwendet._\n\n",
+  "$(warning) _Cached · Antigravity not running_  \n": "$(warning) _Zwischengespeichert · Antigravity läuft nicht_  \n",
+  "#### Antigravity{planSuffix}\n\n": "#### Antigravity{planSuffix}\n\n",
+  "Gemini": "Gemini",
+  "Claude/GPT": "Claude/GPT",
+  "Cached": "Gecacht",
+  "last fetched {date}": "zuletzt abgerufen {date}",
+  "Antigravity not running": "Antigravity läuft nicht"
 }

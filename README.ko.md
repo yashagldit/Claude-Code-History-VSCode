@@ -2,20 +2,24 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md) | [繁體中文](./README.zh-TW.md) | [日本語](./README.ja.md) | **한국어** | [Deutsch](./README.de.md) | [Français](./README.fr.md) | [Español](./README.es.md)
 
-> **참고**: 이 확장은 비공식 확장이며 Anthropic, OpenAI, SST/OpenCode, xAI/Grok, GitHub이 만들거나 이들과 제휴한 제품이 아닙니다.
+> **참고**: 이 확장은 비공식 확장이며 Anthropic, OpenAI, Google, DeepSeek, SST/OpenCode, xAI/Grok, Cursor, ZCode, GitHub이 만들거나 이들과 제휴한 제품이 아닙니다.
 
 ![40초로 보는 Claude Code and Codex Assist: 세션 기록, 재개, 할당량 추적, diff, 검색, CLI 간 컨텍스트 공유](./assets/ccassist-promo.gif)
 
-**Claude Code**, **Codex**, **OpenCode**, **Grok**, **GitHub Copilot**의 채팅 기록을 VS Code 안에서 바로 탐색하세요. 편집기를 떠나지 않고 파일 diff를 보고, 모든 대화를 검색하고, 토큰 사용량과 비용을 추적하고, 지난 세션을 재개할 수 있습니다. 사용량 추적기로도 쓸 수 있습니다. 대시보드 하나에서 모든 AI 어시스턴트의 모델별 비용, 할당량 소진 추이, 주간 리셋 기록을 보여 주며, Claude나 Codex 로그인을 여러 개 쓴다면 클릭 한 번으로 전환할 수 있습니다. 어떤 AI 대화가 이 파일을 바꿨는지 궁금했던 적이 있나요? 파일 타임라인은 AI 편집을 위한 git blame입니다. 파일을 고르면 그 파일을 건드린 모든 세션과 프롬프트가 표시되고, 정확한 diff를 바로 열 수 있습니다.
+**Claude Code**, **Codex**, **Antigravity**, **Cursor**, **OpenCode**, **ZCode**, **Grok**, **DeepSeek Harness**, **GitHub Copilot**의 채팅 기록을 VS Code 안에서 바로 탐색하세요. 편집기를 떠나지 않고 파일 diff를 보고, 모든 대화를 검색하고, 토큰 사용량과 비용을 추적하고, 지난 세션을 재개할 수 있습니다. 사용량 추적기로도 쓸 수 있습니다. 대시보드 하나에서 모든 AI 어시스턴트의 모델별 비용, 할당량 소진 추이, 주간 리셋 기록을 보여 주며, Claude나 Codex 로그인을 여러 개 쓴다면 클릭 한 번으로 전환할 수 있습니다. 어떤 AI 대화가 이 파일을 바꿨는지 궁금했던 적이 있나요? 파일 타임라인은 AI 편집을 위한 git blame입니다. 파일을 고르면 그 파일을 건드린 모든 세션과 프롬프트가 표시되고, 정확한 diff를 바로 열 수 있습니다.
 
-**🤖 다섯 가지 어시스턴트를 모두 지원합니다:**
+**🤖 아홉 가지 어시스턴트를 모두 지원합니다:**
 - **Claude Code** — `~/.claude/projects/`
 - **Codex** — `~/.codex/sessions/`
+- **Antigravity** — Antigravity 앱, 해당 VS Code 확장, `agy` CLI (`~/.gemini/antigravity/`, `~/.gemini/antigravity-cli/`)
+- **Cursor** — 에이전트 채팅 (`~/.cursor/projects/`, 도구 결과는 Cursor의 로컬 데이터베이스에서 가져옴)
 - **OpenCode** — `~/.local/share/opencode/`
+- **ZCode** — `~/.zcode/cli/`
 - **Grok** — `~/.grok/`
+- **DeepSeek Harness** — `~/.dsh/`
 - **GitHub Copilot** — Copilot CLI 및 VS Code 채팅 세션
 
-다섯 어시스턴트의 세션이 하나의 통합 목록에 표시되며, 배지와 로고로 서로 구분됩니다. 내장 **MCP 서버**를 통해 어시스턴트끼리 컨텍스트를 공유할 수도 있습니다. Claude Code에서 지난 Codex 세션을 이어서 하거나, 예전 Claude 세션이 무엇을 바꿨는지 Grok에게 물어보세요.
+아홉 어시스턴트의 세션이 하나의 통합 목록에 표시되며, 배지와 로고로 서로 구분됩니다. 내장 **MCP 서버**를 통해 어시스턴트끼리 컨텍스트를 공유할 수도 있습니다. Claude Code에서 지난 Codex 세션을 이어서 하거나, 예전 Claude 세션이 무엇을 바꿨는지 Grok에게 물어보세요.
 
 **🌐 UI 언어:** English | 简体中文 | 繁體中文 | 日本語 | 한국어 | Deutsch | Français | Español
 
@@ -32,7 +36,7 @@
 ![세션 변경 사항과 변경 사항 검토](./assets/session-changes.gif)
 
 ### ⏱️ 파일 기록 타임라인
-**AI 대화를 위한 git blame.** 파일을 열면 타임라인에 그 파일을 편집한 모든 세션이 표시됩니다. Claude Code, Codex, OpenCode, Grok, Copilot 구분 없이, 세션을 펼쳐 정확한 프롬프트와 diff를 확인하세요.
+**AI 대화를 위한 git blame.** 파일을 열면 타임라인에 그 파일을 편집한 모든 세션이 표시됩니다. Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness, Copilot 구분 없이, 세션을 펼쳐 정확한 프롬프트와 diff를 확인하세요.
 
 ![파일 기록 타임라인](./assets/timeline-demo.gif)
 
@@ -42,7 +46,7 @@
 <img src="./assets/conversation-view.png" alt="턴별 파일 변경 사항과 재개 대상이 표시된 대화 보기" width="420">
 
 ### 📊 할당량 소진 추이 및 계정 전환
-Claude, Codex, Fable, Grok의 5시간 및 주간 할당량을 보여 주는 실시간 카드, 각 구간이 언제 소진될지 예측하는 소진 추이 차트, 활동 히트맵, 일별 비용 표를 제공합니다. Claude와 Codex 로그인을 여러 개 저장해 두고 계정 탭, 대시보드의 플랜 사용량 탭, 또는 **Claude / Codex 계정 전환** 명령으로 전환하세요. 계정별 플랜 사용량이 따로 추적되므로 할당량 기록이 섞이지 않습니다.
+Claude, Codex, Fable, Grok, Antigravity의 5시간 및 주간 할당량을 보여 주는 실시간 카드, 각 구간이 언제 소진될지 예측하는 소진 추이 차트, 활동 히트맵, 일별 비용 표를 제공합니다. Claude와 Codex 로그인을 여러 개 저장해 두고 계정 탭, 대시보드의 플랜 사용량 탭, 또는 **Claude / Codex 계정 전환** 명령으로 전환하세요. 계정별 플랜 사용량이 따로 추적되므로 할당량 기록이 섞이지 않습니다.
 
 <img src="./assets/account-quota.png" alt="할당량 카드, 소진 추이 차트, 활동 히트맵이 있는 계정 탭" width="420">
 
@@ -52,17 +56,17 @@ Claude, Codex, Fable, Grok의 5시간 및 주간 할당량을 보여 주는 실�
 <img src="./assets/weekly-digest.png" alt="합계, 일별 토큰, 상위 프로젝트가 표시된 주간 요약" width="420">
 
 ### 📚 통합 세션 브라우저
-Claude Code, Codex, Grok, OpenCode, Copilot, Cursor 세션을 하나의 목록에서 프로젝트별로 묶어 보여 주며, 모델별 필터와 폴더별 비용을 제공합니다.
+Claude Code, Codex, Antigravity, Cursor, Grok, OpenCode, ZCode, DeepSeek Harness, Copilot 세션을 하나의 목록에서 프로젝트별로 묶어 보여 주며, 모델별 필터와 폴더별 비용을 제공합니다.
 
 <img src="./assets/chat-history.png" alt="모델 필터가 열린 상태로 프로젝트별로 묶인 세션 탭" width="420">
 
 ### 🔌 ccassist MCP 서버
-로컬 MCP 서버를 통해 Claude Code, Codex, Grok, OpenCode, Cursor가 세션 기록을 읽고 서로의 작업을 이어서 할 수 있습니다.
+로컬 MCP 서버를 통해 Claude Code, Codex, Antigravity, Grok, OpenCode, Cursor가 세션 기록을 읽고 서로의 작업을 이어서 할 수 있습니다.
 
 <img src="./assets/history-mcp.png" alt="CLI 에이전트가 사용할 수 있는 ccassist 도구 목록이 있는 MCP 탭" width="420">
 
 ### 📍 상태 표시줄의 할당량
-Claude, Fable, Codex, Grok의 사용률이 항상 표시됩니다. 마우스를 올리면 각 구간과 리셋 시간을 모두 볼 수 있습니다.
+Claude, Fable, Codex, Grok, Antigravity의 사용률이 항상 표시됩니다. 마우스를 올리면 각 구간과 리셋 시간을 모두 볼 수 있습니다.
 
 <img src="./assets/usage-quota-statusbar.png" alt="호버 팝업이 열린 상태 표시줄 할당량 표시기" width="555">
 
@@ -70,7 +74,7 @@ Claude, Fable, Codex, Grok의 사용률이 항상 표시됩니다. 마우스를 
 ## 🌟 기능
 
 ### 세션 및 기록
-- **통합 기록** — Claude Code, Codex, OpenCode, Grok, GitHub Copilot 기록을 프로젝트별로 정리하고 현재 프로젝트를 자동 감지
+- **통합 기록** — Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness, GitHub Copilot 기록을 프로젝트별로 정리하고 현재 프로젝트를 자동 감지
 - **빠른 작업 및 키보드 탐색** — 세션 행에서 고정, 재개, 삭제. 화살표 키로 이동, Enter로 열기, Delete로 제거
 - **프로젝트 컨텍스트 메뉴** — 프로젝트 헤더를 마우스 오른쪽 버튼으로 클릭해 고정, 숨기기, 파일 관리자에서 열기, 새 창에서 열기
 - **개별 세션 숨기기** — 아무것도 삭제하지 않고 목록을 정리. 숨긴 세션은 숨김 탭에 프로젝트별로 모이며, 원클릭으로 숨기기 해제하거나 다중 선택으로 한꺼번에 숨길 수 있음
@@ -102,7 +106,7 @@ Claude, Fable, Codex, Grok의 사용률이 항상 표시됩니다. 마우스를 
 - **세션별로 묶인 결과** — 비용, 토큰, 메시지 수와 일치 항목 강조 표시
 
 ### ccassist MCP 서버 — 어시스턴트 간 컨텍스트 공유
-- **로컬 MCP 서버** — 확장이 가벼운 로컬 MCP 서버를 호스팅해 Claude Code, Codex, Grok, OpenCode, Cursor 어디서든 세션 기록을 조회 가능(루프백 전용, 기본값은 꺼짐)
+- **로컬 MCP 서버** — 확장이 가벼운 로컬 MCP 서버를 호스팅해 Claude Code, Codex, Antigravity, Grok, OpenCode, Cursor 어디서든 세션 기록을 조회 가능(루프백 전용, 기본값은 꺼짐)
 - **도구를 넘나들며 작업 이어 가기** — Claude Code에 *"지난 Codex 세션 이어서 해 줘"* 하고 요청하면(반대도 가능) 에이전트가 최근 턴, 세션 요약, 변경 내용을 핵심만 추린 인계 블록을 가져옴
 - **원클릭 설정** — 사이드 패널의 MCP 페이지나 명령 팔레트에서 **Set up ccassist (MCP + Skill)** 명령을 실행하면 각 CLI에 서버를 등록하고, 에이전트에게 언제 어떻게 사용할지 알려 주는 `ccassist` 스킬을 설치
 - **7가지 도구** — 지난 작업을 찾고 불러오는 `search_sessions`, `list_recent_sessions`, `get_context`, `get_session`, 그리고 `grep_sessions`(도구 출력을 포함한 대화록 문자열 스캔), `get_session_changes`(파일별 요약 또는 재구성된 diff), `get_file_sessions`(파일을 건드린 세션) `Pro`
@@ -113,7 +117,7 @@ Claude, Fable, Codex, Grok의 사용률이 항상 표시됩니다. 마우스를 
 - **할당량 추적** — 실시간 Claude/Codex 할당량 카드, 소진 추이 차트, 주간 리셋 기록, 주간 요약, 가능한 경우 Sonnet, Opus, Fable 등 모델별 분석 포함
 - **여러 Claude 및 Codex 계정** — 로그인을 한 번만 저장하고 사이드 패널, 대시보드, 명령 팔레트에서 활성 계정을 전환하며, 계정별 플랜 사용량 확인
 - **모델 사용량 차트** — 시간에 따라 어떤 모델이 활동과 비용을 주도하는지 표시
-- **상세 비용 분석** — 지원하는 모든 Claude, OpenAI, OpenCode, Grok, Copilot 모델 대상, 캐시 토큰 인사이트 포함
+- **상세 비용 분석** — 지원하는 모든 Claude, OpenAI, Gemini, DeepSeek, GLM, OpenCode, Grok, Cursor, Copilot 모델 대상, 캐시 토큰 인사이트 포함
 - **세션별 분석** — 시간에 따른 컨텍스트 창 사용량(턴마다 컨텍스트가 얼마나 찼는지), 타임라인에 표시되는 압축 이벤트, 모델 한도 대비 최대 컨텍스트, 캐시 미스 턴
 - **상태 표시줄 할당량 표시기** — 대시보드로 빠르게 이동
 
@@ -142,10 +146,10 @@ Claude, Fable, Codex, Grok의 사용률이 항상 표시됩니다. 마우스를 
 
 ## 🚀 시작하기
 
-**사전 요구 사항:** VS Code 1.80.0 이상, 그리고 Claude Code, Codex, OpenCode, Grok, GitHub Copilot 중 하나 이상의 기존 기록.
+**사전 요구 사항:** VS Code 1.80.0 이상, 그리고 Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness, GitHub Copilot 중 하나 이상의 기존 기록.
 
 1. VS Code 확장 마켓플레이스에서 설치
-2. 확장이 Claude, Codex, OpenCode, Grok, Copilot 기록을 자동 감지
+2. 확장이 Claude, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness, Copilot 기록을 자동 감지
 3. 활동 표시줄의 CCAssist 아이콘을 클릭해 탐색 시작
 
 세션을 클릭하면 대화와 파일 변경 사항을 볼 수 있습니다. **파일 변경 사항**에서 커밋 스타일의 diff 요약을 확인하고, **대시보드** 탭에서 비용과 할당량 분석을 살펴보세요.
@@ -175,7 +179,7 @@ Claude, Fable, Codex, Grok의 사용률이 항상 표시됩니다. 마우스를 
 
 ## 🔧 문제 해결
 
-**"No Claude, Codex, OpenCode, Grok, or Copilot directory found"** — 해당 어시스턴트를 한 번 이상 사용해 디렉터리가 존재하는지 확인하거나, 설정에서 사용자 지정 경로를 지정하세요.
+**"No Claude, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness, or Copilot directory found"** — 해당 어시스턴트를 한 번 이상 사용해 디렉터리가 존재하는지 확인하거나, 설정에서 사용자 지정 경로를 지정하세요.
 
 **세션이 로드되지 않음** — **세션 새로 고침**을 클릭하고 디렉터리 경로를 확인하세요.
 
@@ -208,4 +212,4 @@ Claude, Fable, Codex, Grok의 사용률이 항상 표시됩니다. 마우스를 
 
 ---
 
-**Claude Code, Codex, OpenCode, Grok, GitHub Copilot 전반의 포괄적인 기록, 파일 변경 추적, 세션 관리로 워크플로를 한 단계 끌어올리세요.**
+**Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness, GitHub Copilot 전반의 포괄적인 기록, 파일 변경 추적, 세션 관리로 워크플로를 한 단계 끌어올리세요.**

@@ -2,20 +2,24 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md) | [繁體中文](./README.zh-TW.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md) | [Deutsch](./README.de.md) | **Français** | [Español](./README.es.md)
 
-> **Remarque** : cette extension n’est pas officielle. Elle n’est ni conçue par Anthropic, OpenAI, SST/OpenCode, xAI/Grok ou GitHub, ni affiliée à ces entreprises.
+> **Remarque** : cette extension n’est pas officielle. Elle n’est ni conçue par Anthropic, OpenAI, Google, DeepSeek, SST/OpenCode, xAI/Grok, Cursor, ZCode ou GitHub, ni affiliée à ces entreprises.
 
 ![Claude Code and Codex Assist en 40 secondes : historique des sessions, reprise, suivi du quota, diffs, recherche et contexte partagé entre CLI](./assets/ccassist-promo.gif)
 
-Parcourez votre historique de chat **Claude Code**, **Codex**, **OpenCode**, **Grok** et **GitHub Copilot** directement dans VS Code : consultez les diffs de fichiers, recherchez dans toutes vos conversations, suivez votre consommation de tokens et vos coûts, et reprenez d’anciennes sessions sans quitter l’éditeur. L’extension fait aussi office de suivi d’utilisation : un seul tableau de bord affiche le coût par modèle, la consommation du quota et l’historique des réinitialisations hebdomadaires pour tous vos assistants IA, et si vous utilisez plusieurs comptes Claude ou Codex, vous passez de l’un à l’autre en un clic. Vous vous êtes déjà demandé quelle conversation IA avait modifié un fichier ? La chronologie de fichier, c’est git blame pour les modifications faites par l’IA : choisissez un fichier, voyez chaque session et chaque prompt qui l’ont touché, et ouvrez le diff exact.
+Parcourez votre historique de chat **Claude Code**, **Codex**, **Antigravity**, **Cursor**, **OpenCode**, **ZCode**, **Grok**, **DeepSeek Harness** et **GitHub Copilot** directement dans VS Code : consultez les diffs de fichiers, recherchez dans toutes vos conversations, suivez votre consommation de tokens et vos coûts, et reprenez d’anciennes sessions sans quitter l’éditeur. L’extension fait aussi office de suivi d’utilisation : un seul tableau de bord affiche le coût par modèle, la consommation du quota et l’historique des réinitialisations hebdomadaires pour tous vos assistants IA, et si vous utilisez plusieurs comptes Claude ou Codex, vous passez de l’un à l’autre en un clic. Vous vous êtes déjà demandé quelle conversation IA avait modifié un fichier ? La chronologie de fichier, c’est git blame pour les modifications faites par l’IA : choisissez un fichier, voyez chaque session et chaque prompt qui l’ont touché, et ouvrez le diff exact.
 
-**🤖 Compatible avec les cinq assistants :**
+**🤖 Compatible avec les neuf assistants :**
 - **Claude Code** — `~/.claude/projects/`
 - **Codex** — `~/.codex/sessions/`
+- **Antigravity** — l’application Antigravity, son extension VS Code et la CLI `agy` (`~/.gemini/antigravity/`, `~/.gemini/antigravity-cli/`)
+- **Cursor** — chats d’agent (`~/.cursor/projects/`, avec les résultats d’outils tirés de la base locale de Cursor)
 - **OpenCode** — `~/.local/share/opencode/`
+- **ZCode** — `~/.zcode/cli/`
 - **Grok** — `~/.grok/`
+- **DeepSeek Harness** — `~/.dsh/`
 - **GitHub Copilot** — sessions Copilot CLI et chat VS Code
 
-Les sessions des cinq assistants apparaissent dans une seule liste, avec des badges et des logos pour les distinguer. Un **serveur MCP** intégré permet même aux assistants de partager leur contexte : reprenez votre dernière session Codex depuis Claude Code, ou demandez à Grok ce qu’une ancienne session Claude a modifié.
+Les sessions des neuf assistants apparaissent dans une seule liste, avec des badges et des logos pour les distinguer. Un **serveur MCP** intégré permet même aux assistants de partager leur contexte : reprenez votre dernière session Codex depuis Claude Code, ou demandez à Grok ce qu’une ancienne session Claude a modifié.
 
 **🌐 Langues de l’interface :** English | 简体中文 | 繁體中文 | 日本語 | 한국어 | Deutsch | Français | Español
 
@@ -32,7 +36,7 @@ Chaque tour affiche les fichiers modifiés avec le nombre de lignes +/-, le diff
 ![Modifications de session et vue Examiner les modifications](./assets/session-changes.gif)
 
 ### ⏱️ Chronologie de fichier
-**git blame, mais pour vos conversations IA.** Ouvrez n’importe quel fichier : la chronologie affiche toutes les sessions qui l’ont modifié. Dépliez une session pour voir le prompt exact et son diff, dans Claude Code, Codex, OpenCode, Grok et Copilot.
+**git blame, mais pour vos conversations IA.** Ouvrez n’importe quel fichier : la chronologie affiche toutes les sessions qui l’ont modifié. Dépliez une session pour voir le prompt exact et son diff, dans Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness et Copilot.
 
 ![Chronologie de fichier](./assets/timeline-demo.gif)
 
@@ -42,7 +46,7 @@ Transcription rendue avec une carte **Modifications du tour** pour chaque tour, 
 <img src="./assets/conversation-view.png" alt="Vue conversation avec les modifications de fichiers par tour et les cibles de reprise" width="420">
 
 ### 📊 Consommation du quota et changement de compte
-Cartes de quota 5 heures et hebdomadaire en direct pour Claude, Codex, Fable et Grok, graphiques de consommation qui prévoient quand chaque fenêtre sera épuisée, carte thermique d’activité et tableau des coûts jour par jour. Gardez plusieurs comptes Claude et Codex et passez de l’un à l’autre depuis l’onglet Compte, l’onglet Utilisation du plan du tableau de bord ou la commande **Changer de compte Claude / Codex** ; l’utilisation du plan est suivie séparément pour chaque compte, si bien que l’historique du quota ne mélange jamais les comptes.
+Cartes de quota 5 heures et hebdomadaire en direct pour Claude, Codex, Fable, Grok et Antigravity, graphiques de consommation qui prévoient quand chaque fenêtre sera épuisée, carte thermique d’activité et tableau des coûts jour par jour. Gardez plusieurs comptes Claude et Codex et passez de l’un à l’autre depuis l’onglet Compte, l’onglet Utilisation du plan du tableau de bord ou la commande **Changer de compte Claude / Codex** ; l’utilisation du plan est suivie séparément pour chaque compte, si bien que l’historique du quota ne mélange jamais les comptes.
 
 <img src="./assets/account-quota.png" alt="Onglet Compte avec les cartes de quota, le graphique de consommation et la carte thermique d’activité" width="420">
 
@@ -52,17 +56,17 @@ Un résumé glissant sur 7 jours de vos sessions, tokens, coûts, modifications 
 <img src="./assets/weekly-digest.png" alt="Récap hebdomadaire avec les totaux, les tokens jour par jour et les principaux projets" width="420">
 
 ### 📚 Navigateur de sessions unifié
-Les sessions Claude Code, Codex, Grok, OpenCode, Copilot et Cursor dans une seule liste, regroupées par projet, avec des filtres par modèle et le coût de chaque dossier.
+Les sessions Claude Code, Codex, Antigravity, Cursor, Grok, OpenCode, ZCode, DeepSeek Harness et Copilot dans une seule liste, regroupées par projet, avec des filtres par modèle et le coût de chaque dossier.
 
 <img src="./assets/chat-history.png" alt="Onglet Sessions regroupé par projet, avec le filtre par modèle ouvert" width="420">
 
 ### 🔌 Serveur MCP ccassist
-Un serveur MCP local permet à Claude Code, Codex, Grok, OpenCode et Cursor de lire votre historique de sessions et de reprendre le travail des uns et des autres.
+Un serveur MCP local permet à Claude Code, Codex, Antigravity, Grok, OpenCode et Cursor de lire votre historique de sessions et de reprendre le travail des uns et des autres.
 
 <img src="./assets/history-mcp.png" alt="Onglet MCP listant les outils ccassist disponibles pour les agents CLI" width="420">
 
 ### 📍 Le quota dans la barre d’état
-Les pourcentages Claude, Fable, Codex et Grok sont toujours visibles ; survolez-les pour voir chaque fenêtre et son heure de réinitialisation.
+Les pourcentages Claude, Fable, Codex, Grok et Antigravity sont toujours visibles ; survolez-les pour voir chaque fenêtre et son heure de réinitialisation.
 
 <img src="./assets/usage-quota-statusbar.png" alt="Indicateur de quota dans la barre d’état avec son infobulle" width="555">
 
@@ -70,7 +74,7 @@ Les pourcentages Claude, Fable, Codex et Grok sont toujours visibles ; survolez
 ## 🌟 Fonctionnalités
 
 ### Sessions et historique
-- **Historique unifié** pour Claude Code, Codex, OpenCode, Grok et GitHub Copilot, organisé par projet avec détection du projet en cours
+- **Historique unifié** pour Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness et GitHub Copilot, organisé par projet avec détection du projet en cours
 - **Actions rapides et navigation au clavier** — épinglez, reprenez ou supprimez une session depuis sa ligne ; déplacez-vous avec les flèches, ouvrez avec Entrée, supprimez avec Suppr
 - **Menu contextuel de projet** — clic droit sur l’en-tête d’un projet pour l’épingler, le masquer, l’afficher dans votre gestionnaire de fichiers ou l’ouvrir dans une nouvelle fenêtre
 - **Masquage de sessions individuelles** — allégez la liste sans rien supprimer ; les sessions masquées sont regroupées par projet dans l’onglet Masquées, avec affichage en un clic ou masquage groupé via la multisélection
@@ -102,7 +106,7 @@ Les pourcentages Claude, Fable, Codex et Grok sont toujours visibles ; survolez
 - **Résultats regroupés par session** avec coût, nombre de tokens et de messages, et correspondances surlignées
 
 ### Serveur MCP ccassist — partager le contexte entre assistants
-- **Serveur MCP local** — l’extension peut héberger un serveur MCP local léger pour que Claude Code, Codex, Grok, OpenCode et Cursor puissent interroger votre historique de sessions depuis n’importe lequel d’entre eux (boucle locale uniquement, désactivé par défaut)
+- **Serveur MCP local** — l’extension peut héberger un serveur MCP local léger pour que Claude Code, Codex, Antigravity, Grok, OpenCode et Cursor puissent interroger votre historique de sessions depuis n’importe lequel d’entre eux (boucle locale uniquement, désactivé par défaut)
 - **Continuez le travail d’un outil à l’autre** — dites *« reprends ma dernière session Codex »* dans Claude Code (ou l’inverse) et l’agent récupère un bloc de passation condensé : derniers tours, résumé de la session et modifications effectuées
 - **Configuration en un clic** — lancez **Set up ccassist (MCP + Skill)** depuis la page MCP du panneau latéral ou la palette de commandes ; la commande enregistre le serveur auprès de chaque CLI et installe une compétence `ccassist` qui apprend aux agents quand et comment l’utiliser
 - **Sept outils** — `search_sessions`, `list_recent_sessions`, `get_context` et `get_session` pour retrouver et charger d’anciens travaux, plus `grep_sessions` (recherche littérale dans les transcriptions, sorties d’outils comprises), `get_session_changes` (résumés par fichier ou diffs reconstruits) et `get_file_sessions` (quelles sessions ont touché un fichier) `Pro`
@@ -113,7 +117,7 @@ Les pourcentages Claude, Fable, Codex et Grok sont toujours visibles ; survolez
 - **Suivi du quota** — cartes de quota Claude/Codex en direct, graphique de consommation, historique des réinitialisations hebdomadaires et bilan hebdomadaire, avec détail par modèle, dont Sonnet, Opus et Fable lorsque disponible
 - **Plusieurs comptes Claude et Codex** — enregistrez chaque compte une seule fois, changez de compte actif depuis le panneau latéral, le tableau de bord ou la palette de commandes, et consultez l’utilisation du plan de chaque compte
 - **Graphiques d’utilisation par modèle** pour voir quels modèles portent votre activité et vos coûts dans le temps
-- **Analyse détaillée des coûts** pour tous les modèles Claude, OpenAI, OpenCode, Grok et Copilot pris en charge, y compris l’analyse des tokens de cache
+- **Analyse détaillée des coûts** pour tous les modèles Claude, OpenAI, Gemini, DeepSeek, GLM, OpenCode, Grok, Cursor et Copilot pris en charge, y compris l’analyse des tokens de cache
 - **Analyses par session** — utilisation de la fenêtre de contexte dans le temps (son taux de remplissage, tour par tour), compactages signalés sur la chronologie, pic de contexte comparé à la limite du modèle, et tours sans succès de cache
 - **Indicateur de quota dans la barre d’état**, avec accès rapide au tableau de bord
 
@@ -142,10 +146,10 @@ Ce qui est envoyé : une vérification périodique qui tient à jour votre lice
 
 ## 🚀 Premiers pas
 
-**Prérequis :** VS Code 1.80.0+ et un historique existant de Claude Code, Codex, OpenCode, Grok et/ou GitHub Copilot.
+**Prérequis :** VS Code 1.80.0+ et un historique existant de Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness et/ou GitHub Copilot.
 
 1. Installez l’extension depuis la marketplace des extensions VS Code
-2. L’extension détecte automatiquement votre historique Claude, Codex, OpenCode, Grok et Copilot
+2. L’extension détecte automatiquement votre historique Claude, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness et Copilot
 3. Cliquez sur l’icône CCAssist dans la barre d’activité pour commencer
 
 Cliquez sur une session pour voir la conversation et ses modifications de fichiers, utilisez **Modifications de fichiers** pour un résumé des diffs façon commit, et ouvrez l’onglet **Tableau de bord** pour l’analyse des coûts et du quota.
@@ -175,7 +179,7 @@ Accédez-y via **Paramètres → Extensions → Claude Code Assist**, ou cherche
 
 ## 🔧 Dépannage
 
-**« Aucun répertoire Claude, Codex, OpenCode, Grok ou Copilot trouvé »** — vérifiez que l’assistant concerné a été utilisé au moins une fois et que son répertoire existe, ou définissez un chemin personnalisé dans les paramètres.
+**« Aucun répertoire Claude, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness ou Copilot trouvé »** — vérifiez que l’assistant concerné a été utilisé au moins une fois et que son répertoire existe, ou définissez un chemin personnalisé dans les paramètres.
 
 **Les sessions ne se chargent pas** — cliquez sur **Actualiser les sessions** et vérifiez les chemins de vos répertoires.
 
@@ -208,4 +212,4 @@ Une question, une suggestion, ou simplement envie d’échanger ? N’hésitez 
 
 ---
 
-**Boostez votre workflow avec un historique complet, le suivi des modifications de fichiers et la gestion des sessions dans Claude Code, Codex, OpenCode, Grok et GitHub Copilot.**
+**Boostez votre workflow avec un historique complet, le suivi des modifications de fichiers et la gestion des sessions dans Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness et GitHub Copilot.**

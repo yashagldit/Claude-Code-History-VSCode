@@ -322,6 +322,8 @@
   "Failed to reapply change: {error}": "변경 사항을 다시 적용하지 못했습니다:{error}",
   "Undo is limited to same-day file changes on the Free plan.": "실행 취소는 무료 플랜에서 당일 파일 변경으로 제한됩니다.",
   "Undo is unavailable because this shell change has no observed before-state.": "이 셸 변경에는 관찰된 변경 전 상태가 없어 실행 취소할 수 없습니다.",
+  "Undo is unavailable because this write may have replaced a file that existed before, and its earlier content was not recorded.": "이 쓰기 작업이 기존 파일을 대체했을 수 있으며 이전 내용이 기록되지 않아 실행 취소할 수 없습니다.",
+  "Left {fileNames} as they are: the agent may have replaced files that existed before, so undo does not delete them.": "{fileNames}은(는) 그대로 두었습니다. 에이전트가 기존 파일을 대체했을 수 있으므로 실행 취소 시 삭제하지 않습니다.",
   "Undo is unavailable because this turn includes an inferred shell change with no observed before-state.": "이 턴에는 관찰된 변경 전 상태가 없는 추론된 셸 변경이 포함되어 있어 실행 취소할 수 없습니다.",
   "Unsupported tool type for undo": "실행 취소에 지원되지 않는 도구 유형",
   "Failed to undo change: {error}": "변경을 취소하지 못했습니다:{error}",
@@ -674,6 +676,7 @@
   "Refresh": "새로 고침",
   "Agents": "에이전트",
   "updates every 5 min": "5분마다 업데이트",
+  "Customise": "사용자 지정",
   "#### Cursor{planSuffix}\n\n": "#### Cursor{planSuffix}\n\n",
   "**Cursor**{planSuffix}  \n": "**Cursor**{planSuffix}  \n",
   "Monthly": "월간",
@@ -896,5 +899,14 @@
   "DeepSeek Harness sessions cannot be resumed from a terminal. Reopen them in the DeepSeek Harness app.": "DeepSeek Harness 세션은 터미널에서 재개할 수 없습니다. DeepSeek Harness 앱에서 다시 여세요.",
   "Deleting {0} sessions is not supported yet.": "{0} 세션 삭제는 아직 지원되지 않습니다.",
   "Antigravity Session": "Antigravity 세션",
-  "Antigravity sessions cannot be resumed from a terminal. Reopen them in the Antigravity app.": "Antigravity 세션은 터미널에서 다시 시작할 수 없습니다. Antigravity 앱에서 다시 여세요."
+  "Antigravity sessions cannot be resumed from a terminal. Reopen them in the Antigravity app.": "Antigravity 세션은 터미널에서 다시 시작할 수 없습니다. Antigravity 앱에서 다시 여세요.",
+  "| Antigravity | open the Antigravity app or its VS Code extension |\n": "| Antigravity | Antigravity 앱 또는 VS Code 확장 프로그램 열기 |\n",
+  "⚠️ _Antigravity is not running. Using last available data from {date}._\n\n": "⚠️ _Antigravity가 실행 중이 아닙니다. {date}의 마지막 데이터를 사용합니다._\n\n",
+  "$(warning) _Cached · Antigravity not running_  \n": "$(warning) _캐시됨 · Antigravity 실행 안 됨_  \n",
+  "#### Antigravity{planSuffix}\n\n": "#### Antigravity{planSuffix}\n\n",
+  "Gemini": "Gemini",
+  "Claude/GPT": "Claude/GPT",
+  "Cached": "캐시됨",
+  "last fetched {date}": "마지막으로 가져온 시각 {date}",
+  "Antigravity not running": "Antigravity가 실행 중이 아님"
 }

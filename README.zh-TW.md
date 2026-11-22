@@ -2,20 +2,24 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md) | **繁體中文** | [日本語](./README.ja.md) | [한국어](./README.ko.md) | [Deutsch](./README.de.md) | [Français](./README.fr.md) | [Español](./README.es.md)
 
-> **注意**：這是非官方擴充功能，並非由 Anthropic、OpenAI、SST/OpenCode、xAI/Grok 或 GitHub 製作，也與它們沒有任何關係。
+> **注意**：這是非官方擴充功能，並非由 Anthropic、OpenAI、Google、DeepSeek、SST/OpenCode、xAI/Grok、Cursor、ZCode 或 GitHub 製作，也與它們沒有任何關係。
 
 ![40 秒看懂 Claude Code and Codex Assist：工作階段紀錄、繼續工作階段、配額追蹤、差異、搜尋與跨 CLI 上下文](./assets/ccassist-promo.gif)
 
-直接在 VS Code 中瀏覽你的 **Claude Code**、**Codex**、**OpenCode**、**Grok** 與 **GitHub Copilot** 對話紀錄 — 不必離開編輯器，就能查看檔案差異、搜尋所有對話、追蹤 Token 用量與費用，以及繼續過去的工作階段。它同時也是用量追蹤工具：單一儀表板就能顯示所有 AI 助理的各模型費用、配額消耗趨勢與每週重設歷史記錄；如果你有多個 Claude 或 Codex 登入帳號，也能一鍵切換。想知道是哪段 AI 對話改了某個檔案嗎？檔案時間軸就是 AI 編輯版的 git blame：選一個檔案，就能看到所有改動過它的工作階段與提示，並開啟確切的差異。
+直接在 VS Code 中瀏覽你的 **Claude Code**、**Codex**、**Antigravity**、**Cursor**、**OpenCode**、**ZCode**、**Grok**、**DeepSeek Harness** 與 **GitHub Copilot** 對話紀錄 — 不必離開編輯器，就能查看檔案差異、搜尋所有對話、追蹤 Token 用量與費用，以及繼續過去的工作階段。它同時也是用量追蹤工具：單一儀表板就能顯示所有 AI 助理的各模型費用、配額消耗趨勢與每週重設歷史記錄；如果你有多個 Claude 或 Codex 登入帳號，也能一鍵切換。想知道是哪段 AI 對話改了某個檔案嗎？檔案時間軸就是 AI 編輯版的 git blame：選一個檔案，就能看到所有改動過它的工作階段與提示，並開啟確切的差異。
 
-**🤖 支援全部五種助理：**
+**🤖 支援全部九種助理：**
 - **Claude Code** — `~/.claude/projects/`
 - **Codex** — `~/.codex/sessions/`
+- **Antigravity** — Antigravity App、其 VS Code 擴充功能與 `agy` CLI（`~/.gemini/antigravity/`、`~/.gemini/antigravity-cli/`）
+- **Cursor** — 代理聊天（`~/.cursor/projects/`，工具結果來自 Cursor 的本機資料庫）
 - **OpenCode** — `~/.local/share/opencode/`
+- **ZCode** — `~/.zcode/cli/`
 - **Grok** — `~/.grok/`
+- **DeepSeek Harness** — `~/.dsh/`
 - **GitHub Copilot** — Copilot CLI 與 VS Code 聊天工作階段
 
-五種助理的工作階段都會出現在同一份清單中，並以標籤與圖示區分來源。內建的 **MCP 伺服器** 甚至能讓這些助理彼此共享上下文 — 在 Claude Code 中接續你上一個 Codex 工作階段，或問 Grok 某個過去的 Claude 工作階段改了什麼。
+九種助理的工作階段都會出現在同一份清單中，並以標籤與圖示區分來源。內建的 **MCP 伺服器** 甚至能讓這些助理彼此共享上下文 — 在 Claude Code 中接續你上一個 Codex 工作階段，或問 Grok 某個過去的 Claude 工作階段改了什麼。
 
 **🌐 介面語言：** English | 简体中文 | 繁體中文 | 日本語 | 한국어 | Deutsch | Français | Español
 
@@ -32,7 +36,7 @@
 ![工作階段變更與審查變更](./assets/session-changes.gif)
 
 ### ⏱️ 檔案歷程時間軸
-**AI 對話版的 git blame。** 開啟任一檔案，時間軸就會列出所有編輯過它的工作階段 — 展開工作階段即可看到確切的提示與對應差異，涵蓋 Claude Code、Codex、OpenCode、Grok 與 Copilot。
+**AI 對話版的 git blame。** 開啟任一檔案，時間軸就會列出所有編輯過它的工作階段 — 展開工作階段即可看到確切的提示與對應差異，涵蓋 Claude Code、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness 與 Copilot。
 
 ![檔案歷程時間軸](./assets/timeline-demo.gif)
 
@@ -42,7 +46,7 @@
 <img src="./assets/conversation-view.png" alt="對話檢視，顯示每回合的檔案變更與繼續目標" width="420">
 
 ### 📊 配額消耗趨勢與帳戶切換
-Claude、Codex、Fable 與 Grok 的即時 5 小時與每週配額卡片、預測每個時段何時耗盡的消耗趨勢圖、活動熱度圖，以及每日費用表。可保存多個 Claude 與 Codex 登入帳號，並從帳戶分頁、儀表板的方案分頁，或 **切換 Claude / Codex 帳號** 命令切換；每個帳戶的方案用量分開追蹤，配額歷史記錄不會混在一起。
+Claude、Codex、Fable、Grok 與 Antigravity 的即時 5 小時與每週配額卡片、預測每個時段何時耗盡的消耗趨勢圖、活動熱度圖，以及每日費用表。可保存多個 Claude 與 Codex 登入帳號，並從帳戶分頁、儀表板的方案分頁，或 **切換 Claude / Codex 帳號** 命令切換；每個帳戶的方案用量分開追蹤，配額歷史記錄不會混在一起。
 
 <img src="./assets/account-quota.png" alt="帳戶分頁，顯示配額卡片、消耗趨勢圖與活動熱度圖" width="420">
 
@@ -52,17 +56,17 @@ Claude、Codex、Fable 與 Grok 的即時 5 小時與每週配額卡片、預測
 <img src="./assets/weekly-digest.png" alt="每週彙整，顯示總計、每日 Token 與熱門專案" width="420">
 
 ### 📚 統一的工作階段瀏覽器
-Claude Code、Codex、Grok、OpenCode、Copilot 與 Cursor 的工作階段集中在同一份清單，依專案分組，可依模型篩選，並顯示每個資料夾的費用。
+Claude Code、Codex、Antigravity、Cursor、Grok、OpenCode、ZCode、DeepSeek Harness 與 Copilot 的工作階段集中在同一份清單，依專案分組，可依模型篩選，並顯示每個資料夾的費用。
 
 <img src="./assets/chat-history.png" alt="依專案分組的工作階段分頁，並開啟了模型篩選器" width="420">
 
 ### 🔌 ccassist MCP 伺服器
-本機 MCP 伺服器讓 Claude Code、Codex、Grok、OpenCode 與 Cursor 讀取你的工作階段紀錄，並接手彼此的工作。
+本機 MCP 伺服器讓 Claude Code、Codex、Antigravity、Grok、OpenCode 與 Cursor 讀取你的工作階段紀錄，並接手彼此的工作。
 
 <img src="./assets/history-mcp.png" alt="MCP 分頁，列出 CLI 代理可使用的 ccassist 工具" width="420">
 
 ### 📍 狀態列中的配額
-Claude、Fable、Codex 與 Grok 的百分比隨時可見；滑鼠移上去即可查看每個時段及其重設時間。
+Claude、Fable、Codex、Grok 與 Antigravity 的百分比隨時可見；滑鼠移上去即可查看每個時段及其重設時間。
 
 <img src="./assets/usage-quota-statusbar.png" alt="狀態列配額指示器與滑鼠懸停視窗" width="555">
 
@@ -70,7 +74,7 @@ Claude、Fable、Codex 與 Grok 的百分比隨時可見；滑鼠移上去即可
 ## 🌟 功能
 
 ### 工作階段與紀錄
-- **統一紀錄**：涵蓋 Claude Code、Codex、OpenCode、Grok 與 GitHub Copilot，依專案整理，並自動偵測目前專案
+- **統一紀錄**：涵蓋 Claude Code、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness 與 GitHub Copilot，依專案整理，並自動偵測目前專案
 - **快速操作與鍵盤導覽** — 直接在工作階段列上釘選、繼續或刪除；用方向鍵移動、Enter 開啟、Delete 移除
 - **專案右鍵選單** — 在專案標題上按右鍵即可釘選、隱藏、在檔案總管中顯示，或在新視窗中開啟
 - **隱藏個別工作階段** — 不刪除任何東西也能讓清單更清爽；隱藏的工作階段會集中在「隱藏」分頁並依專案分組，可一鍵取消隱藏，或透過多選批次隱藏
@@ -102,7 +106,7 @@ Claude、Fable、Codex 與 Grok 的百分比隨時可見；滑鼠移上去即可
 - **依工作階段分組的結果**，附費用、Token 與訊息數，並醒目標示相符內容
 
 ### ccassist MCP 伺服器 — 在助理之間共享上下文
-- **本機 MCP 伺服器** — 擴充功能可架設輕量的本機 MCP 伺服器，讓 Claude Code、Codex、Grok、OpenCode 與 Cursor 在各自環境中查詢你的工作階段紀錄（僅限本機迴路，預設關閉）
+- **本機 MCP 伺服器** — 擴充功能可架設輕量的本機 MCP 伺服器，讓 Claude Code、Codex、Antigravity、Grok、OpenCode 與 Cursor 在各自環境中查詢你的工作階段紀錄（僅限本機迴路，預設關閉）
 - **跨工具接續工作** — 在 Claude Code 中說 *「continue my last Codex session」*（反之亦然），代理就會取回一段精簡的交接內容：近期回合、工作階段摘要，以及改了哪些東西
 - **一鍵設定** — 從側邊面板的 MCP 頁面或命令選擇區執行 **Set up ccassist (MCP + Skill)**；它會把伺服器註冊到每個 CLI，並安裝一個 `ccassist` 技能，教代理何時以及如何使用它
 - **七個工具** — `search_sessions`、`list_recent_sessions`、`get_context` 與 `get_session` 用於尋找與載入過去的工作，另有 `grep_sessions`（逐字掃描對話紀錄，包含工具輸出）、`get_session_changes`（各檔案摘要或重建後的差異）與 `get_file_sessions`（哪些工作階段改動過某個檔案）`Pro`
@@ -113,7 +117,7 @@ Claude、Fable、Codex 與 Grok 的百分比隨時可見；滑鼠移上去即可
 - **配額追蹤** — 即時 Claude/Codex 配額卡片、消耗趨勢圖、每週重設歷史記錄與每週摘要，並在可取得時依模型細分，包括 Sonnet、Opus 與 Fable
 - **多個 Claude 與 Codex 帳戶** — 每個登入帳號只需保存一次，即可從側邊面板、儀表板或命令選擇區切換使用中的帳戶，並查看各帳戶的方案用量
 - **模型用量圖表**，顯示隨時間推移哪些模型帶動了你的活動與費用
-- **詳細的費用分析**，涵蓋所有支援的 Claude、OpenAI、OpenCode、Grok 與 Copilot 模型，包含快取 Token 分析
+- **詳細的費用分析**，涵蓋所有支援的 Claude、OpenAI、Gemini、DeepSeek、GLM、OpenCode、Grok、Cursor 與 Copilot 模型，包含快取 Token 分析
 - **單一工作階段分析** — 上下文視窗用量隨時間的變化（逐回合查看上下文用到多滿）、在時間軸上標示的壓縮事件、上下文峰值與模型上限的對比，以及快取未命中的回合
 - **狀態列配額指示器**，可快速開啟儀表板
 
@@ -142,10 +146,10 @@ Claude、Fable、Codex 與 Grok 的百分比隨時可見；滑鼠移上去即可
 
 ## 🚀 開始使用
 
-**事前準備：** VS Code 1.80.0 以上版本，以及既有的 Claude Code、Codex、OpenCode、Grok 和／或 GitHub Copilot 紀錄。
+**事前準備：** VS Code 1.80.0 以上版本，以及既有的 Claude Code、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness 和／或 GitHub Copilot 紀錄。
 
 1. 從 VS Code 擴充功能市集安裝
-2. 擴充功能會自動偵測你的 Claude、Codex、OpenCode、Grok 與 Copilot 紀錄
+2. 擴充功能會自動偵測你的 Claude、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness 與 Copilot 紀錄
 3. 點選活動列中的 CCAssist 圖示開始瀏覽
 
 點選任一工作階段即可查看對話與其檔案變更；使用 **檔案變更** 取得類似 commit 的差異摘要；開啟 **儀表板** 分頁查看費用與配額分析。
@@ -175,7 +179,7 @@ Claude、Fable、Codex 與 Grok 的百分比隨時可見；滑鼠移上去即可
 
 ## 🔧 疑難排解
 
-**「找不到 Claude、Codex、OpenCode、Grok 或 Copilot 目錄」** — 請確認相關助理至少使用過一次且目錄存在，或在設定中指定自訂路徑。
+**「找不到 Claude、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness 或 Copilot 目錄」** — 請確認相關助理至少使用過一次且目錄存在，或在設定中指定自訂路徑。
 
 **工作階段無法載入** — 點選 **重新整理工作階段** 並確認目錄路徑。
 
@@ -208,4 +212,4 @@ Claude、Fable、Codex 與 Grok 的百分比隨時可見；滑鼠移上去即可
 
 ---
 
-**透過完整的對話紀錄、檔案變更追蹤與工作階段管理，提升你在 Claude Code、Codex、OpenCode、Grok 與 GitHub Copilot 上的工作流程。**
+**透過完整的對話紀錄、檔案變更追蹤與工作階段管理，提升你在 Claude Code、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness 與 GitHub Copilot 上的工作流程。**

@@ -2,20 +2,24 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md) | [繁體中文](./README.zh-TW.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md) | **Deutsch** | [Français](./README.fr.md) | [Español](./README.es.md)
 
-> **Hinweis**: Dies ist eine inoffizielle Extension. Sie wurde nicht von Anthropic, OpenAI, SST/OpenCode, xAI/Grok oder GitHub entwickelt und steht in keiner Verbindung zu diesen Unternehmen.
+> **Hinweis**: Dies ist eine inoffizielle Extension. Sie wurde nicht von Anthropic, OpenAI, Google, DeepSeek, SST/OpenCode, xAI/Grok, Cursor, ZCode oder GitHub entwickelt und steht in keiner Verbindung zu diesen Unternehmen.
 
 ![Claude Code and Codex Assist in 40 Sekunden: Sitzungsverlauf, Fortsetzen, Kontingent-Tracking, Diffs, Suche und CLI-übergreifender Kontext](./assets/ccassist-promo.gif)
 
-Durchsuche deinen Chatverlauf aus **Claude Code**, **Codex**, **OpenCode**, **Grok** und **GitHub Copilot** direkt in VS Code: Datei-Diffs ansehen, alle Unterhaltungen durchsuchen, Token-Verbrauch und Kosten verfolgen und frühere Sitzungen fortsetzen, ohne den Editor zu verlassen. Gleichzeitig ist die Extension ein Nutzungs-Tracker: Ein einziges Dashboard zeigt Kosten pro Modell, Kontingent-Burndown und den Verlauf der wöchentlichen Resets für alle deine KI-Assistenten. Und wenn du mehr als ein Claude- oder Codex-Login nutzt, wechselst du mit einem Klick zwischen ihnen. Schon mal gefragt, welche KI-Unterhaltung eine Datei geändert hat? Die Datei-Zeitachse ist git blame für KI-Änderungen: Wähle eine Datei, sieh jede Sitzung und jeden Prompt, der sie berührt hat, und öffne genau das passende Diff.
+Durchsuche deinen Chatverlauf aus **Claude Code**, **Codex**, **Antigravity**, **Cursor**, **OpenCode**, **ZCode**, **Grok**, **DeepSeek Harness** und **GitHub Copilot** direkt in VS Code: Datei-Diffs ansehen, alle Unterhaltungen durchsuchen, Token-Verbrauch und Kosten verfolgen und frühere Sitzungen fortsetzen, ohne den Editor zu verlassen. Gleichzeitig ist die Extension ein Nutzungs-Tracker: Ein einziges Dashboard zeigt Kosten pro Modell, Kontingent-Burndown und den Verlauf der wöchentlichen Resets für alle deine KI-Assistenten. Und wenn du mehr als ein Claude- oder Codex-Login nutzt, wechselst du mit einem Klick zwischen ihnen. Schon mal gefragt, welche KI-Unterhaltung eine Datei geändert hat? Die Datei-Zeitachse ist git blame für KI-Änderungen: Wähle eine Datei, sieh jede Sitzung und jeden Prompt, der sie berührt hat, und öffne genau das passende Diff.
 
-**🤖 Funktioniert mit allen fünf Assistenten:**
+**🤖 Funktioniert mit allen neun Assistenten:**
 - **Claude Code** — `~/.claude/projects/`
 - **Codex** — `~/.codex/sessions/`
+- **Antigravity** — die Antigravity-App, ihre VS Code-Extension und die `agy`-CLI (`~/.gemini/antigravity/`, `~/.gemini/antigravity-cli/`)
+- **Cursor** — Agent-Chats (`~/.cursor/projects/`, mit Tool-Ergebnissen aus Cursors lokaler Datenbank)
 - **OpenCode** — `~/.local/share/opencode/`
+- **ZCode** — `~/.zcode/cli/`
 - **Grok** — `~/.grok/`
+- **DeepSeek Harness** — `~/.dsh/`
 - **GitHub Copilot** — Copilot CLI und Chat-Sitzungen in VS Code
 
-Sitzungen aus allen fünf erscheinen in einer gemeinsamen Liste, mit Badges und Logos, die sie unterscheidbar machen. Ein integrierter **MCP-Server** lässt die Assistenten sogar Kontext miteinander teilen: Setze deine letzte Codex-Sitzung aus Claude Code heraus fort oder frag Grok, was eine frühere Claude-Sitzung geändert hat.
+Sitzungen aus allen neun erscheinen in einer gemeinsamen Liste, mit Badges und Logos, die sie unterscheidbar machen. Ein integrierter **MCP-Server** lässt die Assistenten sogar Kontext miteinander teilen: Setze deine letzte Codex-Sitzung aus Claude Code heraus fort oder frag Grok, was eine frühere Claude-Sitzung geändert hat.
 
 **🌐 Sprachen der Oberfläche:** English | 简体中文 | 繁體中文 | 日本語 | 한국어 | Deutsch | Français | Español
 
@@ -32,7 +36,7 @@ Jeder Turn zeigt die Dateien, die er berührt hat, mit +/- Zählern, Diff, Rück
 ![Sitzungsänderungen und Änderungen prüfen](./assets/session-changes.gif)
 
 ### ⏱️ Datei-Zeitachse
-**git blame, aber für KI-Unterhaltungen.** Öffne eine beliebige Datei, und die Zeitachse zeigt jede Sitzung, die sie bearbeitet hat. Klapp eine Sitzung auf, um den genauen Prompt und sein Diff zu sehen – über Claude Code, Codex, OpenCode, Grok und Copilot hinweg.
+**git blame, aber für KI-Unterhaltungen.** Öffne eine beliebige Datei, und die Zeitachse zeigt jede Sitzung, die sie bearbeitet hat. Klapp eine Sitzung auf, um den genauen Prompt und sein Diff zu sehen – über Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness und Copilot hinweg.
 
 ![Datei-Zeitachse](./assets/timeline-demo.gif)
 
@@ -42,7 +46,7 @@ Gerendertes Transkript mit einer Karte **Turn-Änderungen** pro Turn, Kontextfen
 <img src="./assets/conversation-view.png" alt="Chat-Ansicht mit Dateiänderungen pro Turn und Zielen zum Fortsetzen" width="420">
 
 ### 📊 Kontingent-Burndown & Kontowechsel
-Live-Karten für das 5-Stunden- und Wochenkontingent von Claude, Codex, Fable und Grok, Burndown-Charts, die vorhersagen, wann jedes Fenster erschöpft ist, eine Aktivitäts-Heatmap und eine Kostentabelle Tag für Tag. Speichere mehrere Claude- und Codex-Logins und wechsle zwischen ihnen im Konto-Tab, im Plan-Tab des Dashboards oder mit dem Befehl **Claude-/Codex-Konto wechseln**. Die Plan-Nutzung wird für jedes Konto getrennt erfasst, sodass sich der Kontingentverlauf verschiedener Konten nie vermischt.
+Live-Karten für das 5-Stunden- und Wochenkontingent von Claude, Codex, Fable, Grok und Antigravity, Burndown-Charts, die vorhersagen, wann jedes Fenster erschöpft ist, eine Aktivitäts-Heatmap und eine Kostentabelle Tag für Tag. Speichere mehrere Claude- und Codex-Logins und wechsle zwischen ihnen im Konto-Tab, im Plan-Tab des Dashboards oder mit dem Befehl **Claude-/Codex-Konto wechseln**. Die Plan-Nutzung wird für jedes Konto getrennt erfasst, sodass sich der Kontingentverlauf verschiedener Konten nie vermischt.
 
 <img src="./assets/account-quota.png" alt="Konto-Tab mit Kontingentkarten, Burndown-Chart und Aktivitäts-Heatmap" width="420">
 
@@ -52,17 +56,17 @@ Eine gleitende 7-Tage-Zusammenfassung von Sitzungen, Tokens, Kosten, Änderungen
 <img src="./assets/weekly-digest.png" alt="Wochenrückblick mit Summen, Tokens pro Tag und Top-Projekten" width="420">
 
 ### 📚 Gemeinsamer Sitzungsbrowser
-Sitzungen aus Claude Code, Codex, Grok, OpenCode, Copilot und Cursor in einer Liste, nach Projekt gruppiert, mit Filtern pro Modell und Kosten pro Ordner.
+Sitzungen aus Claude Code, Codex, Antigravity, Cursor, Grok, OpenCode, ZCode, DeepSeek Harness und Copilot in einer Liste, nach Projekt gruppiert, mit Filtern pro Modell und Kosten pro Ordner.
 
 <img src="./assets/chat-history.png" alt="Sitzungen-Tab nach Projekt gruppiert, mit geöffnetem Modellfilter" width="420">
 
 ### 🔌 ccassist MCP-Server
-Ein lokaler MCP-Server erlaubt Claude Code, Codex, Grok, OpenCode und Cursor, deinen Sitzungsverlauf zu lesen und die Arbeit des jeweils anderen fortzusetzen.
+Ein lokaler MCP-Server erlaubt Claude Code, Codex, Antigravity, Grok, OpenCode und Cursor, deinen Sitzungsverlauf zu lesen und die Arbeit des jeweils anderen fortzusetzen.
 
 <img src="./assets/history-mcp.png" alt="MCP-Tab mit den ccassist-Tools, die CLI-Agenten zur Verfügung stehen" width="420">
 
 ### 📍 Kontingent in der Statusleiste
-Die Prozentwerte für Claude, Fable, Codex und Grok sind immer sichtbar. Fahr mit der Maus darüber, um jedes Fenster mit seiner Reset-Zeit zu sehen.
+Die Prozentwerte für Claude, Fable, Codex, Grok und Antigravity sind immer sichtbar. Fahr mit der Maus darüber, um jedes Fenster mit seiner Reset-Zeit zu sehen.
 
 <img src="./assets/usage-quota-statusbar.png" alt="Kontingentanzeige in der Statusleiste mit Hover-Popup" width="555">
 
@@ -70,7 +74,7 @@ Die Prozentwerte für Claude, Fable, Codex und Grok sind immer sichtbar. Fahr mi
 ## 🌟 Funktionen
 
 ### Sitzungen & Verlauf
-- **Gemeinsamer Verlauf** für Claude Code, Codex, OpenCode, Grok und GitHub Copilot, nach Projekt geordnet und mit Erkennung des aktuellen Projekts
+- **Gemeinsamer Verlauf** für Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness und GitHub Copilot, nach Projekt geordnet und mit Erkennung des aktuellen Projekts
 - **Schnellaktionen & Tastaturnavigation** – Sitzungen direkt aus der Zeile anheften, fortsetzen oder löschen; mit den Pfeiltasten bewegen, mit Enter öffnen, mit Entf entfernen
 - **Kontextmenü für Projekte** – Rechtsklick auf einen Projektkopf, um das Projekt anzuheften, auszublenden, im Dateimanager anzuzeigen oder in einem neuen Fenster zu öffnen
 - **Einzelne Sitzungen ausblenden** – die Liste aufräumen, ohne etwas zu löschen; ausgeblendete Sitzungen landen nach Projekt gruppiert im Tab „Ausgeblendet“, lassen sich per Klick wieder einblenden oder per Mehrfachauswahl gesammelt ausblenden
@@ -102,7 +106,7 @@ Die Prozentwerte für Claude, Fable, Codex und Grok sind immer sichtbar. Fahr mi
 - **Nach Sitzung gruppierte Ergebnisse** mit Kosten, Tokens und Nachrichtenanzahl sowie hervorgehobenen Treffern
 
 ### ccassist MCP-Server – Kontext zwischen Assistenten teilen
-- **Lokaler MCP-Server** – die Extension kann einen schlanken lokalen MCP-Server bereitstellen, damit Claude Code, Codex, Grok, OpenCode und Cursor aus jedem dieser Tools heraus deinen Sitzungsverlauf abfragen können (nur Loopback, standardmäßig aus)
+- **Lokaler MCP-Server** – die Extension kann einen schlanken lokalen MCP-Server bereitstellen, damit Claude Code, Codex, Antigravity, Grok, OpenCode und Cursor aus jedem dieser Tools heraus deinen Sitzungsverlauf abfragen können (nur Loopback, standardmäßig aus)
 - **Arbeit toolübergreifend fortsetzen** – sag in Claude Code *„setz meine letzte Codex-Sitzung fort“* (oder umgekehrt), und der Agent holt sich einen kompakten Übergabeblock: letzte Turns, Zusammenfassung der Sitzung und was sich geändert hat
 - **Einrichtung per Klick** – führe **Set up ccassist (MCP + Skill)** auf der MCP-Seite der Seitenleiste oder über die Befehlspalette aus; der Server wird bei jeder CLI registriert, und ein `ccassist`-Skill wird installiert, der Agenten beibringt, wann und wie sie ihn nutzen
 - **Sieben Tools** – `search_sessions`, `list_recent_sessions`, `get_context` und `get_session` zum Finden und Laden früherer Arbeit, dazu `grep_sessions` (wörtlicher Scan der Transkripte inklusive Tool-Ausgaben), `get_session_changes` (Zusammenfassungen pro Datei oder rekonstruierte Diffs) und `get_file_sessions` (welche Sitzungen eine Datei berührt haben) `Pro`
@@ -113,7 +117,7 @@ Die Prozentwerte für Claude, Fable, Codex und Grok sind immer sichtbar. Fahr mi
 - **Kontingent-Tracking** – Live-Kontingentkarten für Claude/Codex, Burndown-Chart, Verlauf der wöchentlichen Resets und Wochenzusammenfassung, mit Aufschlüsselung nach Modell inklusive Sonnet, Opus und Fable, sofern verfügbar
 - **Mehrere Claude- und Codex-Konten** – jedes Login einmal speichern, das aktive Konto in der Seitenleiste, im Dashboard oder über die Befehlspalette wechseln und die Plan-Nutzung pro Konto sehen
 - **Modellnutzungs-Charts** zeigen, welche Modelle deine Aktivität und Kosten im Zeitverlauf treiben
-- **Detaillierte Kostenanalyse** über alle unterstützten Modelle von Claude, OpenAI, OpenCode, Grok und Copilot, inklusive Einblicken in Cache-Tokens
+- **Detaillierte Kostenanalyse** über alle unterstützten Modelle von Claude, OpenAI, Gemini, DeepSeek, GLM, OpenCode, Grok, Cursor und Copilot, inklusive Einblicken in Cache-Tokens
 - **Analysen pro Sitzung** – Kontextfenster-Auslastung im Zeitverlauf (wie voll der Kontext Turn für Turn wurde), Compaction-Ereignisse auf der Zeitachse markiert, maximaler Kontext im Vergleich zum Modelllimit und Turns ohne Cache-Treffer
 - **Kontingentanzeige in der Statusleiste** mit Schnellzugriff aufs Dashboard
 
@@ -142,10 +146,10 @@ Was gesendet wird: ein regelmäßiger Check-in, der Lizenz, Testphase und Modell
 
 ## 🚀 Erste Schritte
 
-**Voraussetzungen:** VS Code 1.80.0+ und ein vorhandener Verlauf aus Claude Code, Codex, OpenCode, Grok und/oder GitHub Copilot.
+**Voraussetzungen:** VS Code 1.80.0+ und ein vorhandener Verlauf aus Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness und/oder GitHub Copilot.
 
 1. Installiere die Extension aus dem VS Code Extensions Marketplace
-2. Die Extension erkennt deinen Verlauf aus Claude, Codex, OpenCode, Grok und Copilot automatisch
+2. Die Extension erkennt deinen Verlauf aus Claude, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness und Copilot automatisch
 3. Klicke in der Aktivitätsleiste auf das CCAssist-Symbol und leg los
 
 Klicke auf eine Sitzung, um die Unterhaltung und ihre Dateiänderungen zu sehen. Unter **Dateiänderungen** findest du eine Diff-Übersicht im Commit-Stil, und der Tab **Dashboard** liefert Analysen zu Kosten und Kontingent.
@@ -175,7 +179,7 @@ Zu finden unter **Einstellungen → Erweiterungen → Claude Code Assist**, oder
 
 ## 🔧 Fehlerbehebung
 
-**„No Claude, Codex, OpenCode, Grok, or Copilot directory found“** – stelle sicher, dass der jeweilige Assistent mindestens einmal benutzt wurde und das Verzeichnis existiert, oder lege in den Einstellungen einen eigenen Pfad fest.
+**„No Claude, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness, or Copilot directory found“** – stelle sicher, dass der jeweilige Assistent mindestens einmal benutzt wurde und das Verzeichnis existiert, oder lege in den Einstellungen einen eigenen Pfad fest.
 
 **Sitzungen werden nicht geladen** – klicke auf **Sitzungen aktualisieren** und prüfe deine Verzeichnispfade.
 
@@ -208,4 +212,4 @@ Fragen, Vorschläge oder einfach Lust auf Austausch? Melde dich!
 
 ---
 
-**Bring deinen Workflow voran – mit umfassendem Verlauf, Tracking von Dateiänderungen und Sitzungsverwaltung für Claude Code, Codex, OpenCode, Grok und GitHub Copilot.**
+**Bring deinen Workflow voran – mit umfassendem Verlauf, Tracking von Dateiänderungen und Sitzungsverwaltung für Claude Code, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness und GitHub Copilot.**

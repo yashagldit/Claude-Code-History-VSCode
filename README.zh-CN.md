@@ -2,20 +2,24 @@
 
 [English](./README.md) | **简体中文** | [繁體中文](./README.zh-TW.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md) | [Deutsch](./README.de.md) | [Français](./README.fr.md) | [Español](./README.es.md)
 
-> **注意**：这是一个非官方扩展，并非由 Anthropic、OpenAI、SST/OpenCode、xAI/Grok 或 GitHub 开发，也与它们没有任何关联。
+> **注意**：这是一个非官方扩展，并非由 Anthropic、OpenAI、Google、DeepSeek、SST/OpenCode、xAI/Grok、Cursor、ZCode 或 GitHub 开发，也与它们没有任何关联。
 
 ![40 秒了解 Claude Code and Codex Assist：会话历史、继续会话、配额追踪、差异、搜索以及跨 CLI 上下文](./assets/ccassist-promo.gif)
 
-直接在 VS Code 中浏览 **Claude Code**、**Codex**、**OpenCode**、**Grok** 和 **GitHub Copilot** 的聊天记录 —— 查看文件差异、搜索所有对话、追踪 Token 用量和费用，无需离开编辑器即可继续以往的会话。它同时也是一个用量追踪器：一个仪表盘就能看到所有 AI 助手的按模型费用、配额燃尽情况和每周重置历史；如果你有多个 Claude 或 Codex 账号，还能一键切换。想知道是哪段 AI 对话改了某个文件？文件时间线就是 AI 编辑版的 git blame：选中一个文件，就能看到改动过它的每个会话和提示词，并打开确切的差异。
+直接在 VS Code 中浏览 **Claude Code**、**Codex**、**Antigravity**、**Cursor**、**OpenCode**、**ZCode**、**Grok**、**DeepSeek Harness** 和 **GitHub Copilot** 的聊天记录 —— 查看文件差异、搜索所有对话、追踪 Token 用量和费用，无需离开编辑器即可继续以往的会话。它同时也是一个用量追踪器：一个仪表盘就能看到所有 AI 助手的按模型费用、配额燃尽情况和每周重置历史；如果你有多个 Claude 或 Codex 账号，还能一键切换。想知道是哪段 AI 对话改了某个文件？文件时间线就是 AI 编辑版的 git blame：选中一个文件，就能看到改动过它的每个会话和提示词，并打开确切的差异。
 
-**🤖 支持全部五款助手：**
+**🤖 支持全部九款助手：**
 - **Claude Code** — `~/.claude/projects/`
 - **Codex** — `~/.codex/sessions/`
+- **Antigravity** — Antigravity 应用、其 VS Code 扩展以及 `agy` CLI（`~/.gemini/antigravity/`、`~/.gemini/antigravity-cli/`）
+- **Cursor** — 代理聊天（`~/.cursor/projects/`，工具结果来自 Cursor 的本地数据库）
 - **OpenCode** — `~/.local/share/opencode/`
+- **ZCode** — `~/.zcode/cli/`
 - **Grok** — `~/.grok/`
+- **DeepSeek Harness** — `~/.dsh/`
 - **GitHub Copilot** — Copilot CLI 和 VS Code 聊天会话
 
-五款助手的会话汇集在同一个列表中，用标识和图标加以区分。内置的 **MCP 服务器** 甚至能让各个助手彼此共享上下文 —— 在 Claude Code 中继续你上一个 Codex 会话，或者让 Grok 告诉你某个 Claude 会话改了什么。
+九款助手的会话汇集在同一个列表中，用标识和图标加以区分。内置的 **MCP 服务器** 甚至能让各个助手彼此共享上下文 —— 在 Claude Code 中继续你上一个 Codex 会话，或者让 Grok 告诉你某个 Claude 会话改了什么。
 
 **🌐 界面语言：** English | 简体中文 | 繁體中文 | 日本語 | 한국어 | Deutsch | Français | Español
 
@@ -32,7 +36,7 @@
 ![会话更改与查看更改](./assets/session-changes.gif)
 
 ### ⏱️ 文件历史时间线
-**AI 对话版的 git blame。** 打开任意文件，时间线会列出所有编辑过它的会话 —— 展开会话即可看到确切的提示词及其差异，涵盖 Claude Code、Codex、OpenCode、Grok 和 Copilot。
+**AI 对话版的 git blame。** 打开任意文件，时间线会列出所有编辑过它的会话 —— 展开会话即可看到确切的提示词及其差异，涵盖 Claude Code、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness 和 Copilot。
 
 ![文件历史时间线](./assets/timeline-demo.gif)
 
@@ -42,7 +46,7 @@
 <img src="./assets/conversation-view.png" alt="对话视图，显示按回合的文件更改和继续目标" width="420">
 
 ### 📊 配额燃尽与账号切换
-Claude、Codex、Fable 和 Grok 的 5 小时及每周实时配额卡片，配合预测每个窗口何时耗尽的燃尽图、活动热图和逐日费用表。可以保存多个 Claude 和 Codex 账号，并在账户标签页、仪表盘的套餐标签页或 **切换 Claude / Codex 账号** 命令中随时切换；每个账号的套餐用量都单独追踪，配额历史绝不会混在一起。
+Claude、Codex、Fable、Grok 和 Antigravity 的 5 小时及每周实时配额卡片，配合预测每个窗口何时耗尽的燃尽图、活动热图和逐日费用表。可以保存多个 Claude 和 Codex 账号，并在账户标签页、仪表盘的套餐标签页或 **切换 Claude / Codex 账号** 命令中随时切换；每个账号的套餐用量都单独追踪，配额历史绝不会混在一起。
 
 <img src="./assets/account-quota.png" alt="账户标签页，显示配额卡片、燃尽图和活动热图" width="420">
 
@@ -52,17 +56,17 @@ Claude、Codex、Fable 和 Grok 的 5 小时及每周实时配额卡片，配合
 <img src="./assets/weekly-digest.png" alt="每周汇总，显示总计、逐日 Token 和热门项目" width="420">
 
 ### 📚 统一会话浏览器
-Claude Code、Codex、Grok、OpenCode、Copilot 和 Cursor 的会话集中在一个列表中，按项目分组，支持按模型筛选并显示每个文件夹的费用。
+Claude Code、Codex、Antigravity、Cursor、Grok、OpenCode、ZCode、DeepSeek Harness 和 Copilot 的会话集中在一个列表中，按项目分组，支持按模型筛选并显示每个文件夹的费用。
 
 <img src="./assets/chat-history.png" alt="会话标签页按项目分组，并展开了模型筛选器" width="420">
 
 ### 🔌 ccassist MCP 服务器
-本地 MCP 服务器让 Claude Code、Codex、Grok、OpenCode 和 Cursor 能读取你的会话历史，并接续彼此的工作。
+本地 MCP 服务器让 Claude Code、Codex、Antigravity、Grok、OpenCode 和 Cursor 能读取你的会话历史，并接续彼此的工作。
 
 <img src="./assets/history-mcp.png" alt="MCP 标签页，列出 CLI 代理可用的 ccassist 工具" width="420">
 
 ### 📍 状态栏中的配额
-Claude、Fable、Codex 和 Grok 的配额百分比始终可见；悬停即可查看每个窗口及其重置时间。
+Claude、Fable、Codex、Grok 和 Antigravity 的配额百分比始终可见；悬停即可查看每个窗口及其重置时间。
 
 <img src="./assets/usage-quota-statusbar.png" alt="状态栏配额指示器及悬停弹窗" width="555">
 
@@ -70,7 +74,7 @@ Claude、Fable、Codex 和 Grok 的配额百分比始终可见；悬停即可查
 ## 🌟 功能
 
 ### 会话与历史记录
-- **统一历史记录**：涵盖 Claude Code、Codex、OpenCode、Grok 和 GitHub Copilot，按项目整理，并自动识别当前项目
+- **统一历史记录**：涵盖 Claude Code、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness 和 GitHub Copilot，按项目整理，并自动识别当前项目
 - **快捷操作与键盘导航** —— 直接在会话行中置顶、继续或删除；用方向键移动、Enter 打开、Delete 删除
 - **项目右键菜单** —— 右键点击项目标题即可置顶、隐藏、在文件管理器中显示，或在新窗口中打开
 - **隐藏单个会话** —— 无需删除即可清理列表；隐藏的会话按项目归入“已隐藏”标签页，可一键取消隐藏，也可多选批量隐藏
@@ -102,7 +106,7 @@ Claude、Fable、Codex 和 Grok 的配额百分比始终可见；悬停即可查
 - **按会话分组的结果**，显示费用、Token 和消息数，并高亮匹配内容
 
 ### ccassist MCP 服务器 —— 在助手之间共享上下文
-- **本地 MCP 服务器** —— 扩展可以托管一个轻量的本地 MCP 服务器，让 Claude Code、Codex、Grok、OpenCode 和 Cursor 在各自内部查询你的会话历史（仅限本机回环地址，默认关闭）
+- **本地 MCP 服务器** —— 扩展可以托管一个轻量的本地 MCP 服务器，让 Claude Code、Codex、Antigravity、Grok、OpenCode 和 Cursor 在各自内部查询你的会话历史（仅限本机回环地址，默认关闭）
 - **跨工具接续工作** —— 在 Claude Code 中说一句 *"继续我上一个 Codex 会话"*（反之亦然），代理就会拉取一份精炼的交接摘要：最近的回合、会话摘要以及改动内容
 - **一键配置** —— 在侧边面板的 MCP 页面或命令面板中运行 **Set up ccassist (MCP + Skill)**；它会把服务器注册到每个 CLI，并安装一个 `ccassist` 技能，教代理何时以及如何使用它
 - **七个工具** —— `search_sessions`、`list_recent_sessions`、`get_context` 和 `get_session` 用于查找和加载以往的工作，另有 `grep_sessions`（逐字扫描对话记录，包括工具输出）、`get_session_changes`（按文件的摘要或重建的差异）和 `get_file_sessions`（哪些会话改动过某个文件） `Pro`
@@ -113,7 +117,7 @@ Claude、Fable、Codex 和 Grok 的配额百分比始终可见；悬停即可查
 - **配额追踪** —— 实时 Claude/Codex 配额卡片、燃尽图、每周重置历史和每周摘要，并在可用时按模型细分，包括 Sonnet、Opus 和 Fable
 - **多个 Claude 和 Codex 账号** —— 每个账号只需登录保存一次，即可在侧边面板、仪表盘或命令面板中切换当前账号，并查看每个账号的套餐用量
 - **模型用量图表**，展示一段时间内是哪些模型在驱动你的活动和费用
-- **详细的费用分析**，覆盖所有受支持的 Claude、OpenAI、OpenCode、Grok 和 Copilot 模型，并包含缓存 Token 洞察
+- **详细的费用分析**，覆盖所有受支持的 Claude、OpenAI、Gemini、DeepSeek、GLM、OpenCode、Grok、Cursor 和 Copilot 模型，并包含缓存 Token 洞察
 - **单会话分析** —— 上下文窗口用量随时间的变化（逐回合显示上下文占用了多少）、在时间线上标出的压缩事件、上下文峰值与模型上限的对比，以及缓存未命中的回合
 - **状态栏配额指示器**，可快速打开仪表盘
 
@@ -142,10 +146,10 @@ Claude、Fable、Codex 和 Grok 的配额百分比始终可见；悬停即可查
 
 ## 🚀 快速上手
 
-**前提条件：** VS Code 1.80.0+，以及 Claude Code、Codex、OpenCode、Grok 和/或 GitHub Copilot 的已有历史记录。
+**前提条件：** VS Code 1.80.0+，以及 Claude Code、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness 和/或 GitHub Copilot 的已有历史记录。
 
 1. 从 VS Code 扩展市场安装
-2. 扩展会自动识别你的 Claude、Codex、OpenCode、Grok 和 Copilot 历史记录
+2. 扩展会自动识别你的 Claude、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness 和 Copilot 历史记录
 3. 点击活动栏中的 CCAssist 图标即可开始浏览
 
 点击任意会话即可查看对话及其文件更改；使用 **文件更改** 查看类似提交记录的差异摘要；打开 **仪表盘** 标签页查看费用和配额分析。
@@ -175,7 +179,7 @@ Claude、Fable、Codex 和 Grok 的配额百分比始终可见；悬停即可查
 
 ## 🔧 故障排除
 
-**"No Claude, Codex, OpenCode, Grok, or Copilot directory found"（未找到 Claude、Codex、OpenCode、Grok 或 Copilot 目录）** —— 请确认相应的助手至少使用过一次且目录存在，或在设置中指定自定义路径。
+**"No Claude, Codex, Antigravity, Cursor, OpenCode, ZCode, Grok, DeepSeek Harness, or Copilot directory found"（未找到 Claude、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness 或 Copilot 目录）** —— 请确认相应的助手至少使用过一次且目录存在，或在设置中指定自定义路径。
 
 **会话无法加载** —— 点击 **刷新会话** 并检查目录路径。
 
@@ -208,4 +212,4 @@ Claude、Fable、Codex 和 Grok 的配额百分比始终可见；悬停即可查
 
 ---
 
-**为 Claude Code、Codex、OpenCode、Grok 和 GitHub Copilot 提供完整的历史记录、文件更改追踪和会话管理，全面提升你的工作流。**
+**为 Claude Code、Codex、Antigravity、Cursor、OpenCode、ZCode、Grok、DeepSeek Harness 和 GitHub Copilot 提供完整的历史记录、文件更改追踪和会话管理，全面提升你的工作流。**

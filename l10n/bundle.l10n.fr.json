@@ -322,6 +322,8 @@
   "Failed to reapply change: {error}": "Échec de la réapplication de la modification :{error}",
   "Undo is limited to same-day file changes on the Free plan.": "L'annulation est limitée aux modifications de fichiers le jour même sur le forfait gratuit.",
   "Undo is unavailable because this shell change has no observed before-state.": "L'annulation est indisponible car cette modification shell ne possède aucun état antérieur observé.",
+  "Undo is unavailable because this write may have replaced a file that existed before, and its earlier content was not recorded.": "L'annulation est indisponible car cette écriture a peut-être remplacé un fichier qui existait déjà, et son contenu antérieur n'a pas été enregistré.",
+  "Left {fileNames} as they are: the agent may have replaced files that existed before, so undo does not delete them.": "{fileNames} laissés tels quels : l'agent a peut-être remplacé des fichiers qui existaient déjà, l'annulation ne les supprime donc pas.",
   "Undo is unavailable because this turn includes an inferred shell change with no observed before-state.": "L'annulation est indisponible car ce tour contient une modification shell déduite sans état antérieur observé.",
   "Unsupported tool type for undo": "Type d'outil non pris en charge pour l'annulation",
   "Failed to undo change: {error}": "Échec de l'annulation de la modification :{error}",
@@ -674,6 +676,7 @@
   "Refresh": "Actualiser",
   "Agents": "Agents",
   "updates every 5 min": "mise à jour toutes les 5 min",
+  "Customise": "Personnaliser",
   "#### Cursor{planSuffix}\n\n": "#### Cursor{planSuffix}\n\n",
   "**Cursor**{planSuffix}  \n": "**Cursor**{planSuffix}  \n",
   "Monthly": "Mensuel",
@@ -896,5 +899,14 @@
   "DeepSeek Harness sessions cannot be resumed from a terminal. Reopen them in the DeepSeek Harness app.": "Les sessions DeepSeek Harness ne peuvent pas être reprises depuis un terminal. Rouvrez-les dans l’application DeepSeek Harness.",
   "Deleting {0} sessions is not supported yet.": "La suppression des sessions {0} n’est pas encore prise en charge.",
   "Antigravity Session": "Session Antigravity",
-  "Antigravity sessions cannot be resumed from a terminal. Reopen them in the Antigravity app.": "Les sessions Antigravity ne peuvent pas être reprises depuis un terminal. Rouvrez-les dans l'application Antigravity."
+  "Antigravity sessions cannot be resumed from a terminal. Reopen them in the Antigravity app.": "Les sessions Antigravity ne peuvent pas être reprises depuis un terminal. Rouvrez-les dans l'application Antigravity.",
+  "| Antigravity | open the Antigravity app or its VS Code extension |\n": "| Antigravity | ouvrez l’app Antigravity ou son extension VS Code |\n",
+  "⚠️ _Antigravity is not running. Using last available data from {date}._\n\n": "⚠️ _Antigravity n’est pas lancé. Dernières données disponibles du {date} utilisées._\n\n",
+  "$(warning) _Cached · Antigravity not running_  \n": "$(warning) _En cache · Antigravity n’est pas lancé_  \n",
+  "#### Antigravity{planSuffix}\n\n": "#### Antigravity{planSuffix}\n\n",
+  "Gemini": "Gemini",
+  "Claude/GPT": "Claude/GPT",
+  "Cached": "En cache",
+  "last fetched {date}": "dernière récupération {date}",
+  "Antigravity not running": "Antigravity n’est pas lancé"
 }

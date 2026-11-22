@@ -2,6 +2,22 @@
 
 All notable changes to the Claude Code and Codex Assist extension will be documented in this file.
 
+## [0.8.4] - 2026-11-23
+
+### Added
+
+- **Antigravity Plan Quota** - Your Antigravity quota (Gemini and Claude/GPT pools, 5-hour and weekly) now appears in the status bar as "Ag", on the dashboard's Plan usage tab, and in the sidebar Account tab while the Antigravity app or VS Code extension is running.
+- **Antigravity CLI Sessions** - Sessions from the `agy` CLI now appear alongside Antigravity app sessions, and resume in a terminal with `agy --conversation` (new setting `claude-history.resume.skipPermissionsAntigravity`). ccassist MCP setup now also finds machines that only have the `agy` CLI.
+- **Antigravity Live Status and Hooks** - Antigravity history rows now show whether a session is still working, and live-status hooks can be turned on for Antigravity in one click, as for Claude and Codex.
+- **Customise the Status Bar** - A new experiment in the Experiments tab lets you choose where the quota item sits and which numbers it shows for each agent. Open it from the status bar tooltip or the dashboard's "Agents I use" menu.
+
+### Improved
+
+- **Quota Stays Visible When a Fetch Fails** - The status bar and dashboard now keep showing the last quota reading for up to 7 days (instead of 12 hours), marked as cached with when it was last fetched.
+- **"Agents I Use" Only Affects Plan Usage** - The setting now lists only agents with plan quota (Claude, Codex, Grok, Cursor, and Antigravity) and only changes the Plan usage tab and status bar. Usage, Activity, and Projects always include every agent.
+- **Responsive Plan Usage Cards** - Plan usage cards now fit up to three per row and wrap cleanly on narrower dashboards.
+- **Updated Model Pricing** - Added rates for GPT-6.2 Sol and Astra.
+
 ## [0.8.3] - 2026-11-21
 
 ### Added
