@@ -908,5 +908,6 @@
   "Claude/GPT": "Claude/GPT",
   "Cached": "キャッシュ",
   "last fetched {date}": "最終取得 {date}",
-  "Antigravity not running": "Antigravity が起動していません"
+  "Antigravity not running": "Antigravity が起動していません",
+  "Can't read Cursor's encrypted sign-in": "Cursor の暗号化されたサインイン情報を読み取れません"
 }

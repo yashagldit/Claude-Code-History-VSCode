@@ -2491,6 +2491,7 @@
   "dash.plan.emptyBody": "Claude Code、Codex、Grok、Cursor 或 Antigravity 回報訂閱方案用量後，配額會顯示在這裡。請先使用其中之一，然後重新整理。",
   "dash.plan.cachedAgo": "快取 · {ago}前",
   "dash.plan.cachedTitle": "暫無新資料。上次取得：{time}。",
+  "dash.plan.refreshProvider": "重新整理 {name} 配額",
   "dash.agents.customize": "選擇代理",
   "dash.agents.customizeTitle": "我使用的代理",
   "dash.agents.customizeHint": "只有這些代理會回報方案配額。未勾選的會從方案用量中隱藏，也不會取得其配額。在你自訂之前，狀態列沿用此清單。用量與活動仍包含所有代理。",
@@ -2805,5 +2806,12 @@
   "account.burnAntigravityGemini5h": "Antigravity Gemini · 5 小時",
   "account.burnAntigravityGeminiWeekly": "Antigravity Gemini · 每週",
   "account.burnAntigravityOther5h": "Antigravity Claude/GPT · 5 小時",
-  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · 每週"
+  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · 每週",
+  "dash.plan.cursorLocked": "Cursor 在這台 Mac 上加密了登入資訊。在 macOS 提示中選擇「永遠允許」，之後便不再詢問。",
+  "dash.plan.cursorDenied": "未允許 Cursor 的鑰匙圈存取。在 macOS 提示中選擇「永遠允許」，之後便不再詢問。",
+  "dash.plan.cursorUnsupported": "Cursor 以 CCAssist 尚無法讀取的格式儲存登入資訊。",
+  "dash.plan.cursorPlatform": "Cursor 加密了登入資訊，CCAssist 在此平台上尚無法讀取。",
+  "dash.plan.cursorAllow": "允許存取鑰匙圈",
+  "dash.plan.cursorAllowing": "正在等待鑰匙圈…",
+  "dash.plan.cursorAllowTitle": "讀取「Cursor Safe Storage」金鑰。macOS 會要求輸入密碼；選擇「永遠允許」即可不再詢問。金鑰只保留在記憶體中，從不寫入磁碟。"
 }

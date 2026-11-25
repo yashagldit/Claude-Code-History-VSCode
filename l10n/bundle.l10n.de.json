@@ -908,5 +908,6 @@
   "Claude/GPT": "Claude/GPT",
   "Cached": "Gecacht",
   "last fetched {date}": "zuletzt abgerufen {date}",
-  "Antigravity not running": "Antigravity läuft nicht"
+  "Antigravity not running": "Antigravity läuft nicht",
+  "Can't read Cursor's encrypted sign-in": "Die verschlüsselte Cursor-Anmeldung kann nicht gelesen werden"
 }

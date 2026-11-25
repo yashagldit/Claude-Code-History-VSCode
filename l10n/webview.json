@@ -2491,6 +2491,7 @@
   "dash.plan.emptyBody": "Quota shows up here once Claude Code, Codex, Grok, Cursor or Antigravity report usage for a subscription plan. Use one of them, then refresh.",
   "dash.plan.cachedAgo": "cached · {ago} ago",
   "dash.plan.cachedTitle": "New data is not available. Last fetched {time}.",
+  "dash.plan.refreshProvider": "Refresh {name} quota",
   "dash.agents.customize": "Choose agents",
   "dash.agents.customizeTitle": "Agents I use",
   "dash.agents.customizeHint": "Only these agents report plan quota. Unchecked ones are hidden from Plan usage and their quota is not fetched. The status bar follows this list until you customise it. Usage and activity still include every agent.",
@@ -2805,5 +2806,12 @@
   "account.burnAntigravityGemini5h": "Antigravity Gemini · 5-hour",
   "account.burnAntigravityGeminiWeekly": "Antigravity Gemini · weekly",
   "account.burnAntigravityOther5h": "Antigravity Claude/GPT · 5-hour",
-  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · weekly"
+  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · weekly",
+  "dash.plan.cursorLocked": "Cursor encrypts its sign-in on this Mac. In the macOS prompt, choose Always Allow so it won't ask again.",
+  "dash.plan.cursorDenied": "Keychain access for Cursor was not allowed. Choose Always Allow in the macOS prompt so it won't ask again.",
+  "dash.plan.cursorUnsupported": "Cursor stores its sign-in in a format CCAssist can't read yet.",
+  "dash.plan.cursorPlatform": "Cursor encrypts its sign-in, which CCAssist can't read on this platform yet.",
+  "dash.plan.cursorAllow": "Allow Keychain access",
+  "dash.plan.cursorAllowing": "Waiting for Keychain…",
+  "dash.plan.cursorAllowTitle": "Reads the \"Cursor Safe Storage\" key. macOS asks for your password; choose Always Allow so it won't ask again. The key stays in memory and is never saved."
 }

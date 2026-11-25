@@ -2491,6 +2491,7 @@
   "dash.plan.emptyBody": "La cuota aparecerá aquí cuando Claude Code, Codex, Grok, Cursor o Antigravity informen el uso de un plan de suscripción. Usa uno de ellos y luego actualiza.",
   "dash.plan.cachedAgo": "en caché · hace {ago}",
   "dash.plan.cachedTitle": "No hay datos nuevos. Última obtención: {time}.",
+  "dash.plan.refreshProvider": "Actualizar cuota de {name}",
   "dash.agents.customize": "Elegir agentes",
   "dash.agents.customizeTitle": "Agentes que uso",
   "dash.agents.customizeHint": "Solo estos agentes informan de cuota del plan. Los no marcados se ocultan del uso del plan y no se consulta su cuota. La barra de estado sigue esta lista hasta que la personalices. El uso y la actividad siguen incluyendo todos los agentes.",
@@ -2805,5 +2806,12 @@
   "account.burnAntigravityGemini5h": "Antigravity Gemini · 5 horas",
   "account.burnAntigravityGeminiWeekly": "Antigravity Gemini · semanal",
   "account.burnAntigravityOther5h": "Antigravity Claude/GPT · 5 horas",
-  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · semanal"
+  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · semanal",
+  "dash.plan.cursorLocked": "Cursor cifra su inicio de sesión en este Mac. En el aviso de macOS, elige Permitir siempre para que no vuelva a preguntar.",
+  "dash.plan.cursorDenied": "No se permitió el acceso al llavero para Cursor. Elige Permitir siempre en el aviso de macOS para que no vuelva a preguntar.",
+  "dash.plan.cursorUnsupported": "Cursor guarda su inicio de sesión en un formato que CCAssist aún no puede leer.",
+  "dash.plan.cursorPlatform": "Cursor cifra su inicio de sesión, y CCAssist aún no puede leerlo en esta plataforma.",
+  "dash.plan.cursorAllow": "Permitir acceso al llavero",
+  "dash.plan.cursorAllowing": "Esperando al llavero…",
+  "dash.plan.cursorAllowTitle": "Lee la clave «Cursor Safe Storage». macOS te pedirá la contraseña; elige Permitir siempre para que no vuelva a preguntar. La clave solo se guarda en memoria y nunca se almacena."
 }

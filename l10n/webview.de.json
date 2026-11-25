@@ -2491,6 +2491,7 @@
   "dash.plan.emptyBody": "Das Kontingent erscheint hier, sobald Claude Code, Codex, Grok, Cursor oder Antigravity die Nutzung eines Abo-Plans melden. Nutzen Sie eines davon und aktualisieren Sie dann.",
   "dash.plan.cachedAgo": "zwischengespeichert · vor {ago}",
   "dash.plan.cachedTitle": "Keine neuen Daten verfügbar. Zuletzt abgerufen {time}.",
+  "dash.plan.refreshProvider": "{name}-Kontingent aktualisieren",
   "dash.agents.customize": "Agenten auswählen",
   "dash.agents.customizeTitle": "Agenten, die ich nutze",
   "dash.agents.customizeHint": "Nur diese Agenten melden ein Plan-Kontingent. Nicht ausgewählte werden in der Plan-Nutzung ausgeblendet, und ihr Kontingent wird nicht abgerufen. Die Statusleiste folgt dieser Liste, bis Sie sie anpassen. Nutzung und Aktivität enthalten weiterhin alle Agenten.",
@@ -2805,5 +2806,12 @@
   "account.burnAntigravityGemini5h": "Antigravity Gemini · 5 Stunden",
   "account.burnAntigravityGeminiWeekly": "Antigravity Gemini · wöchentlich",
   "account.burnAntigravityOther5h": "Antigravity Claude/GPT · 5 Stunden",
-  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · wöchentlich"
+  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · wöchentlich",
+  "dash.plan.cursorLocked": "Cursor verschlüsselt seine Anmeldung auf diesem Mac. Wähle in der macOS-Abfrage „Immer erlauben“, damit sie nicht erneut erscheint.",
+  "dash.plan.cursorDenied": "Der Schlüsselbundzugriff für Cursor wurde nicht erlaubt. Wähle in der macOS-Abfrage „Immer erlauben“, damit sie nicht erneut erscheint.",
+  "dash.plan.cursorUnsupported": "Cursor speichert seine Anmeldung in einem Format, das CCAssist noch nicht lesen kann.",
+  "dash.plan.cursorPlatform": "Cursor verschlüsselt seine Anmeldung, die CCAssist auf dieser Plattform noch nicht lesen kann.",
+  "dash.plan.cursorAllow": "Schlüsselbundzugriff erlauben",
+  "dash.plan.cursorAllowing": "Warte auf den Schlüsselbund…",
+  "dash.plan.cursorAllowTitle": "Liest den Schlüssel „Cursor Safe Storage“. macOS fragt nach deinem Passwort; wähle „Immer erlauben“, damit die Abfrage nicht erneut erscheint. Der Schlüssel bleibt nur im Arbeitsspeicher und wird nie gespeichert."
 }

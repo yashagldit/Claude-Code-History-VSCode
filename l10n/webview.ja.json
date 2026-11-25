@@ -2491,6 +2491,7 @@
   "dash.plan.emptyBody": "Claude Code、Codex、Grok、Cursor、Antigravity がサブスクリプションプランの使用状況を報告すると、クォータがここに表示されます。いずれかを使用してから更新してください。",
   "dash.plan.cachedAgo": "キャッシュ · {ago}前",
   "dash.plan.cachedTitle": "新しいデータはありません。最終取得: {time}。",
+  "dash.plan.refreshProvider": "{name} のクォータを更新",
   "dash.agents.customize": "エージェントを選択",
   "dash.agents.customizeTitle": "使用するエージェント",
   "dash.agents.customizeHint": "プランのクォータを報告するのはこれらのエージェントだけです。チェックを外したエージェントはプラン使用量に表示されず、クォータも取得されません。ステータスバーはカスタマイズするまでこの一覧に従います。使用量とアクティビティには引き続きすべてのエージェントが含まれます。",
@@ -2805,5 +2806,12 @@
   "account.burnAntigravityGemini5h": "Antigravity Gemini · 5時間",
   "account.burnAntigravityGeminiWeekly": "Antigravity Gemini · 週間",
   "account.burnAntigravityOther5h": "Antigravity Claude/GPT · 5時間",
-  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · 週間"
+  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · 週間",
+  "dash.plan.cursorLocked": "この Mac では Cursor がサインイン情報を暗号化しています。macOS の確認で「常に許可」を選ぶと、次回から確認されません。",
+  "dash.plan.cursorDenied": "Cursor のキーチェーンアクセスが許可されませんでした。macOS の確認で「常に許可」を選ぶと、次回から確認されません。",
+  "dash.plan.cursorUnsupported": "Cursor のサインイン情報は、CCAssist がまだ読み取れない形式で保存されています。",
+  "dash.plan.cursorPlatform": "Cursor はサインイン情報を暗号化しており、このプラットフォームでは CCAssist はまだ読み取れません。",
+  "dash.plan.cursorAllow": "キーチェーンへのアクセスを許可",
+  "dash.plan.cursorAllowing": "キーチェーンを待機中…",
+  "dash.plan.cursorAllowTitle": "「Cursor Safe Storage」キーを読み取ります。macOS がパスワードを求めます。「常に許可」を選ぶと次回から確認されません。キーはメモリ上にのみ保持され、保存されることはありません。"
 }

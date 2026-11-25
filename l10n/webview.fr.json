@@ -2491,6 +2491,7 @@
   "dash.plan.emptyBody": "Le quota apparaîtra ici dès que Claude Code, Codex, Grok, Cursor ou Antigravity signaleront l’utilisation d’un abonnement. Utilisez l’un d’eux, puis actualisez.",
   "dash.plan.cachedAgo": "en cache · il y a {ago}",
   "dash.plan.cachedTitle": "Aucune nouvelle donnée. Dernière récupération : {time}.",
+  "dash.plan.refreshProvider": "Actualiser le quota {name}",
   "dash.agents.customize": "Choisir les agents",
   "dash.agents.customizeTitle": "Agents que j’utilise",
   "dash.agents.customizeHint": "Seuls ces agents remontent un quota de forfait. Ceux qui sont décochés sont masqués de l’utilisation du forfait et leur quota n’est pas récupéré. La barre d’état suit cette liste tant que vous ne la personnalisez pas. L’utilisation et l’activité incluent toujours tous les agents.",
@@ -2805,5 +2806,12 @@
   "account.burnAntigravityGemini5h": "Antigravity Gemini · 5 heures",
   "account.burnAntigravityGeminiWeekly": "Antigravity Gemini · hebdomadaire",
   "account.burnAntigravityOther5h": "Antigravity Claude/GPT · 5 heures",
-  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · hebdomadaire"
+  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · hebdomadaire",
+  "dash.plan.cursorLocked": "Cursor chiffre sa connexion sur ce Mac. Dans la demande de macOS, choisissez Toujours autoriser pour qu’elle ne revienne pas.",
+  "dash.plan.cursorDenied": "L’accès au trousseau pour Cursor n’a pas été autorisé. Choisissez Toujours autoriser dans la demande de macOS pour qu’elle ne revienne pas.",
+  "dash.plan.cursorUnsupported": "Cursor enregistre sa connexion dans un format que CCAssist ne sait pas encore lire.",
+  "dash.plan.cursorPlatform": "Cursor chiffre sa connexion, que CCAssist ne peut pas encore lire sur cette plateforme.",
+  "dash.plan.cursorAllow": "Autoriser l’accès au trousseau",
+  "dash.plan.cursorAllowing": "En attente du trousseau…",
+  "dash.plan.cursorAllowTitle": "Lit la clé « Cursor Safe Storage ». macOS vous demande votre mot de passe ; choisissez Toujours autoriser pour qu’il ne redemande pas. La clé reste en mémoire et n’est jamais enregistrée."
 }

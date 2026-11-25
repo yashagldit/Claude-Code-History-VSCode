@@ -908,5 +908,6 @@
   "Claude/GPT": "Claude/GPT",
   "Cached": "캐시됨",
   "last fetched {date}": "마지막으로 가져온 시각 {date}",
-  "Antigravity not running": "Antigravity가 실행 중이 아님"
+  "Antigravity not running": "Antigravity가 실행 중이 아님",
+  "Can't read Cursor's encrypted sign-in": "Cursor의 암호화된 로그인 정보를 읽을 수 없습니다"
 }

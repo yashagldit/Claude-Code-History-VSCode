@@ -908,5 +908,6 @@
   "Claude/GPT": "Claude/GPT",
   "Cached": "快取",
   "last fetched {date}": "上次取得 {date}",
-  "Antigravity not running": "Antigravity 未執行"
+  "Antigravity not running": "Antigravity 未執行",
+  "Can't read Cursor's encrypted sign-in": "無法讀取 Cursor 的加密登入資訊"
 }

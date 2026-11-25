@@ -2491,6 +2491,7 @@
   "dash.plan.emptyBody": "Claude Code、Codex、Grok、Cursor 或 Antigravity 上报订阅套餐用量后，配额将显示在这里。请先使用其中之一，然后刷新。",
   "dash.plan.cachedAgo": "缓存 · {ago}前",
   "dash.plan.cachedTitle": "暂无新数据。上次获取：{time}。",
+  "dash.plan.refreshProvider": "刷新 {name} 配额",
   "dash.agents.customize": "选择智能体",
   "dash.agents.customizeTitle": "我使用的智能体",
   "dash.agents.customizeHint": "只有这些智能体会报告套餐配额。未勾选的会从套餐用量中隐藏，也不会获取其配额。在你自定义之前，状态栏沿用此列表。用量和活动仍包含所有智能体。",
@@ -2805,5 +2806,12 @@
   "account.burnAntigravityGemini5h": "Antigravity Gemini · 5 小时",
   "account.burnAntigravityGeminiWeekly": "Antigravity Gemini · 每周",
   "account.burnAntigravityOther5h": "Antigravity Claude/GPT · 5 小时",
-  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · 每周"
+  "account.burnAntigravityOtherWeekly": "Antigravity Claude/GPT · 每周",
+  "dash.plan.cursorLocked": "Cursor 在此 Mac 上加密了登录信息。在 macOS 提示中选择“始终允许”，之后便不再询问。",
+  "dash.plan.cursorDenied": "未允许 Cursor 的钥匙串访问。在 macOS 提示中选择“始终允许”，之后便不再询问。",
+  "dash.plan.cursorUnsupported": "Cursor 以 CCAssist 尚无法读取的格式存储登录信息。",
+  "dash.plan.cursorPlatform": "Cursor 加密了登录信息，CCAssist 在此平台上尚无法读取。",
+  "dash.plan.cursorAllow": "允许访问钥匙串",
+  "dash.plan.cursorAllowing": "正在等待钥匙串…",
+  "dash.plan.cursorAllowTitle": "读取“Cursor Safe Storage”密钥。macOS 会要求输入密码；选择“始终允许”即可不再询问。密钥只保存在内存中，从不写入磁盘。"
 }
